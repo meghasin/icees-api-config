@@ -1,4 +1,4 @@
-# icees-api-config
+# config files for icees-api 
 
 ## How to run qc tool
 
