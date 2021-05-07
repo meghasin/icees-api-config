@@ -420,6 +420,26 @@ def print_matches(window, left, right, a_type, b_type, a_only, b_only, a_update,
         refresh(a_file, b_file, tables)
         return a_file, b_file, tables
 
+    def handle_window_resize(window):
+        window._teardown()
+        setup_window(window)
+
+        nonlocal header_pane
+        nonlocal top_pane
+        nonlocal left_pane
+        nonlocal right_pane
+        nonlocal horizontal_splitter
+        nonlocal vertical_splitter
+
+        header_pane = window.children["header_pane"]
+        top_pane = window.children["top_pane"]
+        left_pane = window.children["left_pane"]
+        right_pane = window.children["right_pane"]
+        horizontal_splitter = window.children["horizontal_splitter"]
+        vertical_splitter = window.children["vertical_splitter"]
+
+        refresh_content(a_file, b_file, tables)
+        
     a_file, b_file, tables = refresh_files(left, right)
 
     def handleCursorMove(source, oc, c):
@@ -545,35 +565,15 @@ def print_matches(window, left, right, a_type, b_type, a_only, b_only, a_update,
             window._onKey(ch)
         window.update()
 
-
-def handle_window_resize(window):
-    return
-    header_pane = window.children["header_pane"]
-    top_pane = window.children["top_pane"]
-    left_pane = window.children["left_pane"]
-    right_pane = window.children["right_pane"]
-    horizontal_splitter = window.children["horizontal_splitter"]
-    vertical_splitter = window.children["vertical_splitter"]
-
-    height, width = window.size()
-    splitterx = width // 2
-    splittery = height // 2
-    top_height = max(0, splittery - 1)
-    bottom_height = max(0, height - splittery - 2)
-    left_width = splitterx
-    right_width = width - splitterx - 1
-    header_pane.resize_move(3, width, 1, 0)
-    top_pane.resize_move(top_height - 3, width, 4, 0)
-    left_pane.resize_move(bottom_height, left_width, splittery + 1, 0)
-    right_pane.resize_move(bottom_height, right_width, splittery + 1, splitterx + 1)
-    horizontal_splitter.resize_move(1, width, splittery, 0)
-    vertical_splitter.resize_move(bottom_height, 1, splittery + 1, splitterx)
-    window.update()
-
     
 def create_window(stdscr):
-    height, width = stdscr.getmaxyx()
     window = Window(stdscr)
+    setup_window(window)
+    return window
+    
+
+def setup_window(window):
+    height, width = window.size()
     splitterx = width // 2
     splittery = height // 2
     top_height = max(0, splittery - 1)
@@ -586,8 +586,7 @@ def create_window(stdscr):
     right_pane = window.pane("right_pane", bottom_height, right_width, splittery + 1, splitterx + 1, False)
     horizontal_splitter = window.fill("horizontal_splitter", 1, width, splittery, 0, "-")
     vertical_splitter = window.fill("vertical_splitter", bottom_height, 1, splittery + 1, splitterx, "|")
-
-    return window
+    window.update()
 
 
 def curses_main(stdscr, args):

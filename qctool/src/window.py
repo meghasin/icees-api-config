@@ -139,6 +139,9 @@ class Widget:
     def _onKey(self, ch):
         return WindowPass()
 
+    def __del__(self):
+        del self.window
+
 
 def draw_border(win):
     h, w = win.getmaxyx()
@@ -474,6 +477,14 @@ class Window(Widget):
         self.children[name] = text
         return text
 
+    def _teardown(self):
+        for c in self.children.values():
+            del c
+        self.children.clear()
+
+    def __del__(self):
+        self._teardown()
+        
     def popup(self, footer, create_window, key_handler, h=None, w=None, window_y=None, window_x=None):
         window_h, window_w = self.size()
 
