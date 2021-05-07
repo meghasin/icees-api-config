@@ -1,9 +1,4 @@
 patient:
-  PseudoID:
-    type: integer
-    minimum: 1
-    maximum: 9999
-    biolinkType: null
   AgeQualifyingLab:
     type: integer
     minimum: 1
