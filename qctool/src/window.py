@@ -1,11 +1,9 @@
 import sys
 from dataclasses import dataclass
 import logging
-from colorama import init, Fore, Back, Style
 import curses
 from tx.functional.either import Left, Right
-
-init()
+from coloredtext import ColoredText
 
 logging.basicConfig(filename="qctool.log",
                             filemode='a',
@@ -14,9 +12,6 @@ logging.basicConfig(filename="qctool.log",
                             level=logging.DEBUG)
 
 logger = logging.getLogger(__name__)
-
-HIGHLIGHT = Fore.WHITE + Back.BLUE
-RESET = Style.RESET_ALL
 
 NORMAL_COLOR = 0
 SELECTED_NORMAL_COLOR = 1
@@ -39,27 +34,6 @@ def clip(a, b, c):
         return a
 
     
-def colorize_line(s):
-    color_string = []
-
-    while True:
-        start = s.find(HIGHLIGHT)
-        if start == -1:
-            if len(s) > 0:
-                color_string.append((s, NORMAL_COLOR))
-            break
-        else:
-            end = s.find(RESET)
-            color_string.append((s[:start], NORMAL_COLOR))
-            color_string.append((s[start + len(HIGHLIGHT):end], HIGHLIGHT_COLOR))
-            s = s[end + len(RESET):]
-    return color_string
-
-
-def colorize(s):
-    return [colorize_line(line) for line in s.split("\n")]
-
-
 def selection_color(c, selected):
     if selected:
         if c == NORMAL_COLOR:
@@ -119,7 +93,9 @@ class Widget:
         
     def _update_line(self, window_y, window_x, line, window_w, selected):
         current_window_x = window_x
-        for string, color in line:
+        for cstr in line.coloredStrings():
+            color = cstr.color
+            string = cstr.string
             self.window.insnstr(window_y, current_window_x, string, window_w - window_x, curses.color_pair(selection_color(color, selected)))
             current_window_x += len(string)
             if current_window_x >= window_w:
@@ -190,7 +166,7 @@ def popup(window, h, w, y, x, footer, create_window, key_handler):
 class Pane(Widget):
     def __init__(self, window, selectable, max_lines=None):
         super().__init__(window)
-        self.lines = []
+        self.lines = ColoredText()
         # coordinates of the cursor relative to the document        
         self.current_document_y = 0
         self.current_document_x = 0
@@ -207,27 +183,27 @@ class Pane(Widget):
         # event handlers
         self.cursorMoveHandlers = []
 
-    def print(self, s):
-        self.current_document_y += len(s.split("\n"))
+    def print(self, s: ColoredText) -> None:
+        self.current_document_y += s.numberOfLines()
         self.append(s)
             
-    def append(self, s):
+    def append(self, s: ColoredText) -> None:
         self._append(s)
         self.update()
 
-    def _append(self, s):
+    def _append(self, s : ColoredText) -> None:
         nlines = len(s)
-        if self.max_lines is not None and len(self.lines) + nlines > self.max_lines:
-            self.lines = self.lines[len(self.lines) + nlines - self.max_lines:]
-        self.lines.extend(colorize(s))
+        if self.max_lines is not None and self.lines.numberOfLines() + nlines > self.max_lines:
+            self.lines = self.lines[self.lines.numberOfLines() + nlines - self.max_lines:]
+        self.lines += s
         self._clip_coordinates()
 
-    def replace(self, s):
+    def replace(self, s: ColoredText) -> None:
         self._replace(s)
         self.update()
 
-    def _replace(self, s):
-        self.lines = []
+    def _replace(self, s: ColoredText) -> None:
+        self.lines.clear()
         self._append(s)
 
     def move(self, document_dy, document_dx):
@@ -251,7 +227,7 @@ class Pane(Widget):
             self._onCursorMove(oc, c)
 
     def _clip_coordinates(self):
-        document_height = len(self.lines)
+        document_height = self.lines.numberOfLines()
         self.current_document_y = clip(self.current_document_y, self.top_padding, max(0, document_height - 1 - self.bottom_padding))
         self.current_document_x = clip(self.current_document_x, self.left_padding, max(0, len(self.lines[self.current_document_y]) - 1 - self.right_padding) if document_height > 0 else 0)
         
@@ -260,12 +236,12 @@ class Pane(Widget):
         self.move(document_dy * window_h, document_dx * window_w)
         
     def _scroll_window(self, window_h, window_w):
-        document_h = len(self.lines)
+        document_h = self.lines.numberOfLines()
         self.window_document_y = clip(self.window_document_y, self.current_document_y - window_h + 1, self.current_document_y)
         self.window_document_y = clip(self.window_document_y, 0, max(0, document_h - window_h))
 
     def _clear(self):
-        self.lines = []
+        self.lines.clear()
         self._move(0, 0)
 
     def clear(self):
@@ -279,7 +255,7 @@ class Pane(Widget):
         if clear:
             self.window.clear()
         window_h, window_w = self.window.getmaxyx()
-        document_h = len(self.lines)
+        document_h = self.lines.numberOfLines()
 
         self._scroll_window(window_h, window_w)
         min_document_y = self.window_document_y
@@ -352,11 +328,14 @@ class Text(Widget):
             self.window.clear()
         window_h, window_w = self.window.getmaxyx()
 
-        lines = self.text.split("\n")
+        lines = self.text.lines()
 
         for window_y in range(min(window_h, len(lines) - self.window_document_y)):
             line = lines[self.window_document_y + window_y]
-            self.window.insnstr(window_y, 0, line, window_w)
+            x = 0
+            for string in line.coloredStrings():
+                self.window.insnstr(window_y, x, string.string, window_w, curses.color_pair(string.color))
+                x += len(string)
             
         if refresh:
             self.window.refresh()
@@ -411,25 +390,25 @@ class TextField(Widget):
 class Window(Widget):
     def __init__(self, window):
         super().__init__(window)
-        self.footer = []
-        self.header = []
+        self.footer = ColoredText()
+        self.header = ColoredText()
         self.children = {}
         self.focus = None
         self.border = False
 
-    def set_footer(self, s):
+    def set_footer(self, s : ColoredText) -> None:
         self._set_footer(s)
         self.update()
 
-    def _set_footer(self, s):
-        self.footer = colorize(s)
+    def _set_footer(self, s : ColoredText) -> None:
+        self.footer = s
 
-    def set_header(self, s):
+    def set_header(self, s : ColoredText) -> None:
         self._set_header(s)
         self.update()
 
-    def _set_header(self, s):
-        self.header = colorize(s)        
+    def _set_header(self, s : ColoredText) -> None:
+        self.header = s        
 
     def _update_header(self, window_h, window_w):
         for header_y, line in enumerate(self.header):
@@ -439,7 +418,7 @@ class Window(Widget):
             self._update_line(header_window_y, 0, line, window_w, False)
             
     def _update_footer(self, window_h, window_w):
-        footer_height = len(self.footer)
+        footer_height = self.footer.numberOfLines()
         for footer_y, line in enumerate(self.footer[max(0, footer_height - window_h):]):
             footer_window_y = window_h - (footer_height - footer_y)
             self._update_line(footer_window_y, 0, line, window_w, False)

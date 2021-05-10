@@ -1,8 +1,8 @@
 import sys
+from typing import Tuple
 import Levenshtein
 import argparse
 from argparse import RawTextHelpFormatter
-from prettytable import PrettyTable
 import difflib
 from itertools import chain
 import asyncio
@@ -11,8 +11,10 @@ import logging
 import os
 from functools import reduce
 from tx.functional.either import Left, Right
-from window import Window, Pane, HIGHLIGHT, RESET, init_colors, SELECTED_NORMAL_COLOR, popup, draw_textfield, WindowExit, WindowPass, WindowContinue
+from window import HIGHLIGHT_COLOR, NORMAL_COLOR, Window, Pane, init_colors, SELECTED_NORMAL_COLOR, popup, draw_textfield, WindowExit, WindowPass, WindowContinue
 from file import make_file
+from coloredtext import toColoredText, ColoredText
+from table import format_table
 
 APPLICATION_TITLE = "ICEES FHIR-PIT Configuration Tool"
 HELP_TEXT_SHORT = "H help U update tables Q exit "
@@ -154,56 +156,55 @@ def truncate_set(a, b, a_only, b_only, similarity_threshold, n, ignore_suffix):
     return topnaction, n >= 0 and len(ls) > n
 
 
-def colorize_diff(a, b):
+def colorize_diff(a: str, b: str) -> Tuple[ColoredText, ColoredText]:
     sm = difflib.SequenceMatcher(a=a, b=b, autojunk=False)
     opcodes = sm.get_opcodes()
-    a_colorized = ""
-    b_colorized = ""
-    ab = HIGHLIGHT
-    bb = HIGHLIGHT
-    reset_all = RESET
+    a_colorized = ColoredText()
+    b_colorized = ColoredText()
+    ab = HIGHLIGHT_COLOR
+    bb = HIGHLIGHT_COLOR
     for tag, i1, i2, j1, j2 in opcodes:
         a_segment = a[i1:i2]
         b_segment = b[j1:j2]
         if tag == "equal":
-            a_colorized += a_segment
-            b_colorized += b_segment
+            a_colorized += toColoredText(NORMAL_COLOR, a_segment)
+            b_colorized += toColoredText(NORMAL_COLOR, b_segment)
         elif tag == "delete":
-            a_colorized += ab + a_segment + reset_all
+            a_colorized += toColoredText(ab, a_segment)
         elif tag == "insert":
-            b_colorized += bb + b_segment + reset_all
+            b_colorized += toColoredText(bb, b_segment)
         elif tag == "replace":
-            a_colorized += ab + a_segment + reset_all
-            b_colorized += bb + b_segment + reset_all
+            a_colorized += toColoredText(ab, a_segment)
+            b_colorized += toColoredText(bb, b_segment)
     return (a_colorized, b_colorized)
     
     
 def to_prettytable(l):
     if l[0] is None:
-        return ["", l[1], "", l[3], l[4], str(l[5])]
+        return [toColoredText(NORMAL_COLOR, ""), toColoredText(NORMAL_COLOR, l[1]), toColoredText(NORMAL_COLOR, ""), toColoredText(NORMAL_COLOR, l[3]), toColoredText(NORMAL_COLOR, l[4]), toColoredText(NORMAL_COLOR, str(l[5]))]
     elif l[1] is None:
-        return [l[0], "", "", l[3], l[4], str(l[5])]
+        return [toColoredText(NORMAL_COLOR, l[0]), toColoredText(NORMAL_COLOR, ""), toColoredText(NORMAL_COLOR, ""), toColoredText(NORMAL_COLOR, l[3]), toColoredText(NORMAL_COLOR, l[4]), toColoredText(NORMAL_COLOR, str(l[5]))]
     else:
-        return list(colorize_diff(l[0], l[1])) + [f"{l[2]:.2f}", l[3], l[4], str(l[5])]
+        return list(colorize_diff(l[0], l[1])) + [toColoredText(NORMAL_COLOR, f"{l[2]:.2f}"), toColoredText(NORMAL_COLOR, l[3]), toColoredText(NORMAL_COLOR, l[4]), toColoredText(NORMAL_COLOR, str(l[5]))]
 
     
 def help(window):
     def create_window(popwindow):
         poph, popw = popwindow.size()
-        text = popwindow.text("text_pane", poph - 1, popw - 1, 1, 1, HELP_TEXT_LONG)
+        text = popwindow.text("text_pane", poph - 1, popw - 1, 1, 1, toColoredText(NORMAL_COLOR, HELP_TEXT_LONG))
 
     def key_handler(win, ch):
         return WindowExit(None) if ch == 27 else WindowPass()
 
-    window.popup("ESCAPE exit", create_window, key_handler, None)
+    window.popup(toColoredText(NORMAL_COLOR, "ESCAPE exit"), create_window, key_handler, None)
 
     
 def enter_var_name(window, key_a, key_b):
 
     def create_window(popwindow):
         _, popw = popwindow.size()
-        a_text = popwindow.text("a_text", 1, popw - 2, 1, 1, f"a: {key_a}")
-        b_text = popwindow.text("b_text", 1, popw - 2, 2, 1, f"b: {key_b}")
+        a_text = popwindow.text("a_text", 1, popw - 2, 1, 1, toColoredText(NORMAL_COLOR, f"a: {key_a}"))
+        b_text = popwindow.text("b_text", 1, popw - 2, 2, 1, toColoredText(NORMAL_COLOR, f"b: {key_b}"))
         c_textfield = popwindow.textfield("c_textfield", popw - 2, 3, 1, "c:", "")
         popwindow.focus = "c_textfield"
 
@@ -216,11 +217,14 @@ def enter_var_name(window, key_a, key_b):
         else:
             return WindowPass()
 
-    c = window.popup("ENTER confirm ESCAPE exit", create_window, key_handler, h = 5)
+    c = window.popup(toColoredText(NORMAL_COLOR, "ENTER confirm ESCAPE exit"), create_window, key_handler, h = 5)
 
     return c
 
 
+def format_row(row):
+    return [toColoredText(NORMAL_COLOR, header) for header in row]
+        
 def choose_candidate(window, candidates):
     help_text_short = "UP DOWN PAGE UP PAGE DOWN navigate ENTER confirm ESCAPE exit"
 
@@ -230,26 +234,16 @@ def choose_candidate(window, candidates):
     table_w = reduce(lambda x, y: x + y + 1, column_ws, 0)
     headers = ["candidate", "ratio"]
 
-    def format_row(row, column_ws):
-        return "|".join([elem.center(w) for elem, w in zip(row, column_ws)])
-        
-    header_lines = [
-        format_row(headers, column_ws),
-        "-" * table_w
-    ]
-    header = "\n".join(header_lines)
+    def f(candidates):
+        return format_table(NORMAL_COLOR, format_row(headers), list(map(format_row, map(lambda r : [r[0], f"{r[1]:.2f}"], candidates))), upper_border = False, left_border=False, right_border=False)
     
-    def format_table(candidates):
-    
-        lines = [format_row([candidate, f"{ratio:.2f}"], column_ws) for candidate, ratio in candidates] + ["-" * table_w]
+    header, content, footer = f(candidates)
 
-        content = "\n".join(lines)
+    content += toColoredText(NORMAL_COLOR, "\n")
+    content += footer
 
-        return content
-
-    content = format_table(candidates)
     _, w = window.size()
-    popw = min(len(header.split("\n")[0]) + 2, w * 4 // 5)
+    popw = min(len(header.lines()[0]) + 2, w * 4 // 5)
 
     popwindow = None
 
@@ -258,8 +252,12 @@ def choose_candidate(window, candidates):
         
     def update_content(source, oc, c):
         popcontent_pane = popwindow.children["content_pane"]
-        candidates_filtered = [(candidate, ratio) for candidate, ratio in candidates if match(c, candidate)]
-        content = format_table(candidates_filtered)
+        candidates_filtered = [[candidate, ratio] for candidate, ratio in candidates if match(c, candidate)]
+        header, content, footer = f(candidates_filtered)
+
+        content += toColoredText(NORMAL_COLOR, "\n")
+        content += footer
+
         popcontent_pane._replace(content)
 
     def create_window(window):
@@ -291,10 +289,9 @@ def choose_candidate(window, candidates):
         elif ch == 27:
             return WindowExit(None)
 
-    c = window.popup(help_text_short, create_window, key_handler, w=popw)
+    c = window.popup(toColoredText(NORMAL_COLOR, help_text_short), create_window, key_handler, w=popw)
 
     return c
-
 
 def print_matches(window, left, right, a_type, b_type, a_only, b_only, a_update, b_update, table_names, similarity_threshold, max_entries, ignore_suffix):
     
@@ -343,29 +340,27 @@ def print_matches(window, left, right, a_type, b_type, a_only, b_only, a_update,
             
         left_pane._clear()
         right_pane._clear()
-        left_pane._append(dump_get_a)
-        right_pane._append(dump_get_b)
+        left_pane._append(toColoredText(NORMAL_COLOR, dump_get_a))
+        right_pane._append(toColoredText(NORMAL_COLOR, dump_get_b))
         i = get_current_row_id() + 1
         n = get_total_rows(tables)
         if i > n: # i might be on the ...
             i = n
 
-        footer = f"{HIGHLIGHT}{i} / {n}{RESET} {HELP_TEXT_SHORT}"
+        footer = toColoredText(HIGHLIGHT_COLOR, f"{i} / {n}") + toColoredText(NORMAL_COLOR, f" {HELP_TEXT_SHORT}")
         window._set_footer(footer)
 
         window.update()
 
     def refresh_content(a_file, b_file, tables):
-        nav = f"{APPLICATION_TITLE} "
+        nav = toColoredText(NORMAL_COLOR, f"{APPLICATION_TITLE} ")
         for i, n in enumerate(table_names):
             if i > 0:
-                nav += " "
+                nav += toColoredText(NORMAL_COLOR, " ")
             if i == current_table:
-                nav += HIGHLIGHT
-                nav += n
-                nav += RESET
+                nav += toColoredText(HIGHLIGHT_COLOR, n)
             else:
-                nav += n
+                nav += toColoredText(NORMAL_COLOR, n)
         window._set_header(nav)
 
         name = table_names[current_table]
@@ -374,14 +369,15 @@ def print_matches(window, left, right, a_type, b_type, a_only, b_only, a_update,
         if ellipsis:
             table_copy.append(["...", None, None, "", Noop()])
 
-        x = PrettyTable()
-        x.field_names = [left, right, "ratio", "a", "b", "update"]
+        column_names = [toColoredText(NORMAL_COLOR, left), toColoredText(NORMAL_COLOR, right), toColoredText(NORMAL_COLOR, "ratio"), toColoredText(NORMAL_COLOR, "a"), toColoredText(NORMAL_COLOR, "b"), toColoredText(NORMAL_COLOR, "update")]
+        rows = list(map(to_prettytable, table_copy))
 
-        x.add_rows(map(to_prettytable, table_copy))
-        top_pane.bottom_padding = 1
-        lines = str(x).split("\n")
-        header = "\n".join(lines[:3])
-        content = "\n".join(lines[3:])
+        header, content, footer = format_table(NORMAL_COLOR, column_names, rows)
+
+        content += toColoredText(NORMAL_COLOR, "\n")
+        content += footer
+
+        top_pane.bottom_padding = footer.numberOfLines()
         header_pane._replace(header)
         top_pane._replace(content)
         window.update()
@@ -393,22 +389,22 @@ def print_matches(window, left, right, a_type, b_type, a_only, b_only, a_update,
         window.update()
 
     def refresh_files(a_filename, b_filename):
-        window.set_header(APPLICATION_TITLE)
-        window.set_footer(f"loading {a_filename} ...")
+        window.set_header(toColoredText(NORMAL_COLOR, APPLICATION_TITLE))
+        window.set_footer(toColoredText(NORMAL_COLOR, f"loading {a_filename} ..."))
         try:
             a_file = make_file(a_type, a_filename)
         except Exception as e:
             logger.error(f"error loading {a_filename}\n")
             raise
 
-        window.set_footer(f"loading {b_filename} ...")
+        window.set_footer(toColoredText(NORMAL_COLOR, f"loading {b_filename} ..."))
         try:
             b_file = make_file(b_type, b_filename)
         except Exception as e:
             logger.error(f"error loading {b_filename}\n")
             raise
 
-        window.set_footer(f"comparing...")
+        window.set_footer(toColoredText(NORMAL_COLOR, f"comparing..."))
         tables = {}
         for table in table_names:
             a_var_names = a_file.get_keys(table)
@@ -547,16 +543,16 @@ def print_matches(window, left, right, a_type, b_type, a_only, b_only, a_update,
                     refresh_content(a_file, b_file, tables)
         elif ch == ord("u"):
             for name, (table, _) in tables.items():
-                window.set_footer(f"updating table {name} ...")
+                window.set_footer(toColoredText(NORMAL_COLOR, f"updating table {name} ..."))
                 for row in table:
                     key_a, key_b, _, _, _, action = row
                     action.update(name, key_a, a_file, key_b, b_file)
                     row[5] = Noop()
                 if a_update is not None:
-                    window.set_footer(f"writing to file {a_update} ...")
+                    window.set_footer(toColoredText(NORMAL_COLOR, f"writing to file {a_update} ..."))
                     a_file.dump(a_update)
                 if b_update is not None:
-                    window.set_footer(f"writing to file {b_update} ...")
+                    window.set_footer(toColoredText(NORMAL_COLOR, f"writing to file {b_update} ..."))
                     b_file.dump(b_update)
             file_a, file_b, tables = refresh_files(left if a_update is None else a_update, right if b_update is None else b_update)
         elif ch == ord("q"):
