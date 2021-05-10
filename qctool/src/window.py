@@ -3,7 +3,7 @@ from dataclasses import dataclass
 import logging
 import curses
 from tx.functional.either import Left, Right
-from coloredtext import ColoredText
+from coloredtext import ColoredText, toColoredText
 
 logging.basicConfig(filename="qctool.log",
                             filemode='a',
@@ -164,7 +164,7 @@ def popup(window, h, w, y, x, footer, create_window, key_handler):
     
     
 class Pane(Widget):
-    def __init__(self, window, selectable, max_lines=None):
+    def __init__(self, window, selectable, editable=False, max_lines=None):
         super().__init__(window)
         self.lines = ColoredText()
         # coordinates of the cursor relative to the document        
@@ -175,6 +175,7 @@ class Pane(Widget):
         self.window_document_x = 0
         self.max_lines = max_lines
         self.selectable = selectable
+        self.editable = editable
         # padding in the document where the cursor cannot pass
         self.top_padding = 0
         self.bottom_padding = 0
@@ -182,6 +183,7 @@ class Pane(Widget):
         self.right_padding = 0
         # event handlers
         self.cursorMoveHandlers = []
+        self.keyHandlers = []
 
     def print(self, s: ColoredText) -> None:
         self.current_document_y += s.numberOfLines()
@@ -229,7 +231,7 @@ class Pane(Widget):
     def _clip_coordinates(self):
         document_height = self.lines.numberOfLines()
         self.current_document_y = clip(self.current_document_y, self.top_padding, max(0, document_height - 1 - self.bottom_padding))
-        self.current_document_x = clip(self.current_document_x, self.left_padding, max(0, len(self.lines[self.current_document_y]) - 1 - self.right_padding) if document_height > 0 else 0)
+        self.current_document_x = clip(self.current_document_x, self.left_padding, max(0, len(self.lines[self.current_document_y]) - self.right_padding) if document_height > 0 else 0)
         
     def move_page(self, document_dy, document_dx):
         window_h, window_w = self.window.getmaxyx()
@@ -271,7 +273,7 @@ class Pane(Widget):
         return self.current_document_y - self.window_document_y, self.current_document_x - self.window_document_x
 
     def _onKey(self, ch):
-        if self.selectable:
+        if self.selectable or self.editable:
             if ch == curses.KEY_UP:
                 self.move(-1, 0)
                 return WindowContinue()
@@ -284,10 +286,59 @@ class Pane(Widget):
             elif ch == curses.KEY_NPAGE:
                 self.move_page(+1, 0)
                 return WindowContinue()
-            else:
-                return WindowPass()
-        else:
-            return WindowPass()
+        if self.editable:
+            logger.info("editable")
+            if ch == curses.KEY_LEFT:
+                self.move(0, -1)
+                return WindowContinue()
+            elif ch == curses.KEY_RIGHT:
+                self.move(0, +1)
+                return WindowContinue()
+            elif ch == curses.KEY_HOME:
+                self.move(0, -self.current_document_x)
+                return WindowContinue()
+            elif ch == curses.KEY_END:
+                self.move(0, len(self.lines[self.current_document_y]))
+
+                return WindowContinue()
+            elif ch == curses.KEY_ENTER or ch == ord("\n") or ch == ord("\r"):
+                color = self.lines.getColorAt(self.current_document_y, self.current_document_x)
+                self._replace(self.lines.insert(self.current_document_y, self.current_document_x, toColoredText(color, "\n")))
+                self.move(1, -self.current_document_x)
+                return WindowContinue()
+            elif ch == curses.KEY_BACKSPACE or ch == ord("\b") or ch == 127:
+                if self.current_document_x == 0:
+                    if self.current_document_y == 0:
+                        return WindowContinue()
+                    else:
+                        offset_y = -1 
+                        offset_x = len(self.lines[self.current_document_y - 1])
+                else:
+                    offset_y = 0
+                    offset_x = -1
+                    
+                self.move(offset_y, offset_x)
+                self._replace(self.lines.delete(self.current_document_y, self.current_document_x))
+                return WindowContinue()
+            elif ch == curses.KEY_DC:
+                self._replace(self.lines.delete(self.current_document_y, self.current_document_x))
+                return WindowContinue()
+            elif 32 <= ch <= 126 or 128 <= ch <= 255:
+                color = self.lines.getColorAt(self.current_document_y, self.current_document_x)
+                char = chr(ch)
+                self._replace(self.lines.insert(self.current_document_y, self.current_document_x, toColoredText(color, char)))
+                self.move(0, +1)
+                return WindowContinue()
+
+        for h in self.keyHandlers:
+            ret = h(self, ch)
+            if ret is not None:
+                return ret
+        
+        return WindowPass()
+
+    def addKeyHandler(self, h):
+        self.keyHandlers.append(h)
 
     def _onCursorMove(self, oc, c):
         for h in self.cursorMoveHandlers:
