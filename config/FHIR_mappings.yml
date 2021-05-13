@@ -1,6 +1,7 @@
 # SARS-CoV-2 Positive Cohort Characteristics and Clinical Course
 FHIR:
 
+# New mappings
 Ventilation:
   Procedure:
   - system: https://icd.who.int
@@ -162,7 +163,8 @@ CysticFibrosisDx:
   -	system: https://icd.who.int
     code: ICD10:E84.*
 # note: https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E84-
-  # ICEES-specific
+
+# ICEES-specific
   WHOSeverityScore:
     Observation:
     - system: https://browser.ihtsdotools.org
@@ -277,6 +279,7 @@ CysticFibrosisDx:
       code: 'SCTID: 285101004'
             # note: https://browser.ihtsdotools.org/?perspective=full&conceptId1=285101004&edition=MAIN/2020-07-31&release=&languages=en
             # note: Landfill site (environment)
+            # note: this variable will not be in the FHIR files
   CharlsonComorbidityIndex:
     Measurement:
     - system: http://hl7.org/fhir/sid/icd-10-cm
