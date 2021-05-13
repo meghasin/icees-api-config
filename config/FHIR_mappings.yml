@@ -1,6 +1,35 @@
 # SARS-CoV-2 Positive Cohort Characteristics and Clinical Course
 FHIR:
 
+Ventilation:
+  Condition:
+  - system: https://icd.who.int
+    code: ICD10PCS:540945Z
+  - system: https://icd.who.int
+    code: ICD10PCS:540955Z
+  - system: https://icd.who.int
+    code: ICD10PCS:540935Z
+  - system: https://icd.who.int
+    code: ICD10PCS:5A1945ZA1955Z
+  - system: https://icd.who.int
+    code: ICD10PCS:5A1935Z
+  - system: https://datadictionary.nhs.uk/supporting_information/opcs_classification_of_interventions_and_procedures.html
+    code: OPCS4:E85.8
+  - system: https://www.ama-assn.org/amaone/cpt-current-procedural-terminology
+    code: CTP4:1014859
+  - system: https://www.ama-assn.org/amaone/cpt-current-procedural-terminology
+    code: CPT4:94656
+  - system: https://www.ama-assn.org/amaone/cpt-current-procedural-terminology
+    code: CPT4:94003
+  - system: https://www.ama-assn.org/amaone/cpt-current-procedural-terminology
+    code: CPT4:94002
+  - system: https://www.ama-assn.org/amaone/cpt-current-procedural-terminology
+    code: CPT4:94657
+  - system: https://www.ama-assn.org/amaone/cpt-current-procedural-terminology
+    code: CPT4:1015098
+  - system: https://www.ama-assn.org/amaone/cpt-current-procedural-terminology
+    code: CPT4:4168F
+      # note: https://drive.google.com/file/d/1_4LJHn30AqJT0K7S2zRz4Wn-iZhjBmoR/view?usp=sharing
 DILIDx:
   Condition:
     -	system: https://icd.who.int
