@@ -12,6 +12,7 @@ DILIDx:
       code: ICD10:K71.*
 # note: https://www.icd10data.com/ICD10CM/Codes/K00-K95/K70-K77/K71-
 NeonatalRespiratoryDistressDx:
+  Condition:
     -	system: https://icd.who.int
       code: ICD9:769.*
 # note: http://www.icd9data.com/2014/Volume1/760-779/764-779/default.htm
@@ -22,6 +23,7 @@ NeonatalRespiratoryDistressDx:
       code: ICD10:P22.*
 # note: https://www.icd10data.com/ICD10CM/Codes/P00-P96/P19-P29/P22-
 LateralityDefect_ SitusInversusOrHeterotaxyDx:
+  Condition:
     -	system: https://icd.who.int
       code: ICD9:759.3
 # note: http://www.icd9data.com/2014/Volume1/740-759/759/759.3.htm
@@ -33,82 +35,88 @@ LateralityDefect_ SitusInversusOrHeterotaxyDx:
       code: ICD10:Q24.8
 # note: https://www.icd10data.com/ICD10CM/Codes/Q00-Q99/Q20-Q28/Q24-/Q24.8
 DailyWetCoughDx:
+  Condition:
     -	system: https://icd.who.int
       code: ICD10:R05
 # note: https://www.icd10data.com/ICD10CM/Codes/R00-R99/R00-R09/R05-/R05
 # note: not in ICD9
 MiddleEarDiseaseDx:
+  Condition:
     -	system: https://icd.who.int
       code: ICD9:380.*
     -	system: https://icd.who.int
-code: ICD9:381.*
--	system: https://icd.who.int
-code: ICD9:382.*
--	system: https://icd.who.int
-code: ICD9:383.*
--	system: https://icd.who.int
-code: ICD9:384.*
--	system: https://icd.who.int
-code: ICD9:385.*
--	system: https://icd.who.int
-code: ICD9:386.*
--	system: https://icd.who.int
-code: ICD9:387.*
--	system: https://icd.who.int
-code: ICD9:388.*
--	system: https://icd.who.int
-code: ICD9:389.*
+      code: ICD9:381.*
+    -	system: https://icd.who.int
+      code: ICD9:382.*
+    -	system: https://icd.who.int
+      code: ICD9:383.*
+    -	system: https://icd.who.int
+      code: ICD9:384.*
+    -	system: https://icd.who.int
+      code: ICD9:385.*
+    -	system: https://icd.who.int
+      code: ICD9:386.*
+    -	system: https://icd.who.int
+      code: ICD9:387.*
+    -	system: https://icd.who.int
+      code: ICD9:388.*
+    -	system: https://icd.who.int
+      code: ICD9:389.*
 # note: http://www.icd9data.com/2014/Volume1/320-389/380-389/default.htm
--	system: https://icd.who.int
-code: ICD10:H65.*
--	system: https://icd.who.int
-code: ICD10:H66.*
--	system: https://icd.who.int
-code: ICD10:H67.*
--	system: https://icd.who.int
-code: ICD10:H68.*
--	system: https://icd.who.int
-code: ICD10:H69.*
--	system: https://icd.who.int
-code: ICD10:H70.*
--	system: https://icd.who.int
-code: ICD10:H71.*
--	system: https://icd.who.int
-code: ICD10:H72.*
--	system: https://icd.who.int
-code: ICD10:H73.*
--	system: https://icd.who.int
-code: ICD10:H74.*
--	system: https://icd.who.int
-code: ICD10:H75.*
+    -	system: https://icd.who.int
+      code: ICD10:H65.*
+    -	system: https://icd.who.int
+      code: ICD10:H66.*
+    -	system: https://icd.who.int
+      code: ICD10:H67.*
+    -	system: https://icd.who.int
+      code: ICD10:H68.*
+    -	system: https://icd.who.int
+      code: ICD10:H69.*
+    -	system: https://icd.who.int
+      code: ICD10:H70.*
+    -	system: https://icd.who.int
+      code: ICD10:H71.*
+    -	system: https://icd.who.int
+      code: ICD10:H72.*
+    -	system: https://icd.who.int
+      code: ICD10:H73.*
+    -	system: https://icd.who.int
+      code: ICD10:H74.*
+    -	system: https://icd.who.int
+      code: ICD10:H75.*
 # note: https://www.icd10data.com/ICD10CM/Codes/H60-H95/H65-H75
 ChronicNasalCongestionDx:
--	system: https://icd.who.int
-code: ICD9:472.*
+  Condition:
+    -	system: https://icd.who.int
+      code: ICD9:472.*
 # note: http://www.icd9data.com/2014/Volume1/460-519/470-478/472/default.htm
--	system: https://icd.who.int
-code: ICD10:R09.81
+    -	system: https://icd.who.int
+      code: ICD10:R09.81
 # note: https://www.icd10data.com/ICD10CM/Codes/R00-R99/R00-R09/R09-
 BronchiectasisDx:
--	system: https://icd.who.int
-code: ICD9:748.61
+  Condition:
+    -	system: https://icd.who.int
+      code: ICD9:748.61
 # note: http://www.icd9data.com/2014/Volume1/740-759/748/748.61.htm
--	system: https://icd.who.int
-code: ICD10:J47
+    -	system: https://icd.who.int
+      code: ICD10:J47
 # note: https://www.icd10data.com/ICD10CM/Codes/J00-J99/J40-J47/J47-/J47
 MaleInfertilityDueToSpermDysfunctionDx:
--	system: https://icd.who.int
-code: ICD9:606.*
+  Condition:
+    -	system: https://icd.who.int
+      code: ICD9:606.*
 # note: http://www.icd9data.com/2014/Volume1/580-629/600-608/606/default.htm
--	system: https://icd.who.int
-code: ICD10:N46.*
+    -	system: https://icd.who.int
+      code: ICD10:N46.*
 # note: https://www.icd10data.com/ICD10CM/Codes/N00-N99/N40-N53/N46-
 CysticFibrosisDx:
--	system: https://icd.who.int
-code: ICD9:277.0
+  Condition:
+    -	system: https://icd.who.int
+      code: ICD9:277.0
 # note: http://www.icd9data.com/2014/Volume1/240-279/270-279/277/277.0.htm
--	system: https://icd.who.int
-code: ICD10:E84.*
+    -	system: https://icd.who.int
+      code: ICD10:E84.*
 # note: https://www.icd10data.com/ICD10CM/Codes/E00-E89/E70-E88/E84-
   # ICEES-specific
   WHOSeverityScore:
