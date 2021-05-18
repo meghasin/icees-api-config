@@ -10,30 +10,65 @@ import curses
 import logging
 import os
 from functools import reduce
+from dataclasses import dataclass
+import csv
+from collections import defaultdict
 from tx.functional.either import Left, Right
-from window import HIGHLIGHT_COLOR, NORMAL_COLOR, Window, Pane, init_colors, SELECTED_NORMAL_COLOR, popup, draw_textfield, WindowExit, WindowPass, WindowContinue
-from file import make_file
+from window import HIGHLIGHT_COLOR, NORMAL_COLOR, Window, Pane, init_colors, SELECTED_NORMAL_COLOR, popup, draw_textfield, WindowExit, WindowPass, WindowContinue, ERROR_COLOR
+from file import make_file, MappingFile
 from coloredtext import toColoredText, ColoredText
 from table import format_table
 
 APPLICATION_TITLE = "ICEES FHIR-PIT Configuration Tool"
-HELP_TEXT_SHORT = "H help TAB change focus U update tables Q exit "
-HELP_TEXT_LONG = """
-COMMA     previous table        PERIOD    next table 
-UP        move up               PAGE UP   page up
-DOWN      move down             PAGE DOWN page down
-A         use a                 B         use b 
-D         customize b           E         customize a
-C         customize             S         skip
-F         pick candidate from a G         pick candidate from b 
-U         update tables         H         help
-TAB       change focus          Q         quit
+HELP_TEXT_SHORT = "H help M menu U update tables Q exit "
+
+@dataclass
+class Command:
+    key: str
+    key_name: str
+    text: str
+    extended: bool # whether not show in the main window
+    menu: bool # whether show in the menu
+    
+COMMANDS = [
+    Command(ord(","), "COMMA", "previous table", False, True),
+    Command(ord("."), "PERIOD", "next table", False, True),
+    Command(curses.KEY_UP, "UP", "move up", True, False),
+    Command(curses.KEY_DOWN, "DOWN", "move down", True, False),
+    Command(curses.KEY_PPAGE, "PAGE UP", "page up", True, False),
+    Command(curses.KEY_NPAGE, "PAGE DOWN", "page down", True, False),
+    Command(ord("a"), "A", "use a", False, True),
+    Command(ord("b"), "B", "use b", False, True),
+    Command(ord("d"), "D", "customize b", False, True),
+    Command(ord("e"), "E", "customize a", False, True),
+    Command(ord("c"), "C", "customize", False, True),
+    Command(ord("s"), "S", "skip", False, True),
+    Command(ord("f"), "F", "pick candidate from a", False, True),
+    Command(ord("g"), "G", "pick candidate from b", False, True),
+    Command(ord("l"), "L", "update a value", False, True),
+    Command(ord("r"), "R", "update b value", False, True),
+    Command(ord("u"), "U", "update tables", False, True),
+    Command(ord("v"), "V", "update a by loading codes from a table", False, True),
+    Command(ord("w"), "W", "update b by loading codes from a table", False, True),
+    Command(ord("h"), "H", "help", False, True),
+    Command(ord("m"), "M", "menu", False, False),
+    Command(ord("q"), "Q", "quit", False, True)
+]
+
+command_keys = [c.key for c in COMMANDS if not c.extended]
+menu_keys = [c.key for c in COMMANDS if c.menu]
+
+help_texts = [c.key_name.ljust(10) + c.text for c in COMMANDS if not c.extended]
+help_texts_width = max(map(len, help_texts))
+HELP_TEXT_LONG = "\n".join(l.ljust(help_texts_width) + " " + r.ljust(help_texts_width) for l, r in zip(help_texts[::2], help_texts[1::2])) + """
 
 In the a and b columns
           variable exists in other file
 x         variable doesn't exist in other file
 o         variable is a candidate
 """
+
+MENU_TEXT = "\n".join(c.key_name.ljust(10) + c.text for c in COMMANDS if c.menu)
 
 # from https://stackoverflow.com/a/6386990
 logging.basicConfig(filename="qctool.log",
@@ -187,18 +222,70 @@ def to_prettytable(l):
     else:
         return list(colorize_diff(l[0], l[1])) + [toColoredText(NORMAL_COLOR, f"{l[2]:.2f}"), toColoredText(NORMAL_COLOR, l[3]), toColoredText(NORMAL_COLOR, l[4]), toColoredText(NORMAL_COLOR, str(l[5]))]
 
+def pick_file(window, starting_path):
+
+    path = os.path.abspath(starting_path)
+
+    help_text_short = "UP DOWN PAGE UP PAGE DOWN navigate ENTER confirm ESCAPE exit"
+
+    def _refresh_content(popwindow):
+        files = os.listdir(path)
+        header_pane = popwindow.children["header_pane"]
+        poph, popw = popwindow.size()
+        popcontent_pane = popwindow.children["content_pane"]
+        header_pane.text = toColoredText(NORMAL_COLOR, f"{path}\n{'-' * (popw - 2)}")
+        popcontent_pane._replace(toColoredText(NORMAL_COLOR, "\n".join([".."] + files)))
+
+    def create_window(popwindow):
+        popwindow.window.keypad(1)
+        poph, popw = popwindow.size()
+        header_pane = popwindow.text("header_pane", 2, popw - 2, 1, 1, toColoredText(NORMAL_COLOR, ""))
+        popcontent_pane = popwindow.pane("content_pane", poph - 4, popw - 2, 3, 1, True)
+        _refresh_content(popwindow)
+
+    def key_handler(popwindow, ch):
+        nonlocal path
+        popcontent_pane = popwindow.children["content_pane"]
+        if key_enter(ch):
+            filename = popcontent_pane.lines.lines()[popcontent_pane.current_document_y].toString()
+            if filename == "..":
+                path = os.path.dirname(path)
+                _refresh_content(popwindow)
+                return WindowContinue()
+            else:
+                path = os.path.join(path, filename)
+                if os.path.isfile(path):
+                    return WindowExit(path)
+                elif os.path.isdir(path):
+                    _refresh_content(popwindow)
+                    return WindowContinue()
+        elif key_escape(ch):
+            return WindowExit(None)
+        else:
+            return WindowPass()
+
+    return window.popup(toColoredText(NORMAL_COLOR, help_text_short), create_window, key_handler, None)
     
+
 def help(window):
     def create_window(popwindow):
         poph, popw = popwindow.size()
         text = popwindow.text("text_pane", poph - 1, popw - 1, 1, 1, toColoredText(NORMAL_COLOR, HELP_TEXT_LONG))
 
     def key_handler(win, ch):
-        return WindowExit(None) if ch == 27 else WindowPass()
+        return WindowExit(None) if key_escape(ch) else WindowPass()
 
     window.popup(toColoredText(NORMAL_COLOR, "ESCAPE exit"), create_window, key_handler, None)
 
-    
+
+def key_enter(ch):
+    return ch == curses.KEY_ENTER or ch == ord("\n") or ch == ord("\r")
+
+
+def key_escape(ch):
+    return ch == 27
+
+
 def enter_var_name(window, key_a, key_b):
 
     def create_window(popwindow):
@@ -209,10 +296,10 @@ def enter_var_name(window, key_a, key_b):
         popwindow.focus = "c_textfield"
 
     def key_handler(window, ch):
-        if ch == curses.KEY_ENTER or ch == ord("\n") or ch == ord("\r"):
+        if key_enter(ch):
             c_textfield = window.children["c_textfield"]
             return WindowExit(c_textfield.text)
-        elif ch == 27:
+        elif key_escape(ch):
             return WindowExit(None)
         else:
             return WindowPass()
@@ -282,11 +369,11 @@ def choose_candidate(window, candidates):
         popcontent_pane = popwindow.children["content_pane"]
         search_textfield = popwindow.children["search_textfield"]
 
-        if ch == curses.KEY_ENTER or ch == ord("\n") or ch == ord("\r"):
+        if key_enter(ch):
             i = candidates_get_current_row_id(popcontent_pane)
             c = candidates[i]
             return WindowExit(c)
-        elif ch == 27:
+        elif key_escape(ch):
             return WindowExit(None)
 
     c = window.popup(toColoredText(NORMAL_COLOR, help_text_short), create_window, key_handler, w=popw)
@@ -322,8 +409,20 @@ def print_matches(window, left, right, a_type, b_type, a_only, b_only, a_update,
 
     old_key_a = None
     old_key_b = None
-    
-    def refresh_bottom_panes(a_file, b_file, tables):
+
+    def refresh_footer(tables):
+        if window.focus == "left_pane" or window.focus == "right_pane":
+            footer = toColoredText(NORMAL_COLOR, "ESCAPE exit")
+        else:
+            i = get_current_row_id() + 1
+            n = get_total_rows(tables)
+            if i > n: # i might be on the ...
+                i = n
+            footer = toColoredText(HIGHLIGHT_COLOR, f"{i} / {n}") + toColoredText(NORMAL_COLOR, f" {HELP_TEXT_SHORT}")
+
+        window.set_footer(footer)
+
+    def refresh_bottom_panes(a_file, b_file, tables, force=False):
         nonlocal old_key_a
         nonlocal old_key_b
         name = table_names[current_table]
@@ -345,24 +444,17 @@ def print_matches(window, left, right, a_type, b_type, a_only, b_only, a_update,
             dump_get_a = ""
             dump_get_b = ""
 
-        if key_a != old_key_a:
+        if force or key_a != old_key_a:
             old_key_a = key_a
             left_pane._clear()
             left_pane._append(toColoredText(NORMAL_COLOR, dump_get_a))
 
-        if key_b != old_key_b:
+        if force or key_b != old_key_b:
             old_key_b = key_b
             right_pane._clear()
             right_pane._append(toColoredText(NORMAL_COLOR, dump_get_b))
-            
-        i = get_current_row_id() + 1
-        n = get_total_rows(tables)
-        if i > n: # i might be on the ...
-            i = n
 
-        footer = toColoredText(HIGHLIGHT_COLOR, f"{i} / {n}") + toColoredText(NORMAL_COLOR, f" {HELP_TEXT_SHORT}")
-        window._set_footer(footer)
-
+        refresh_footer(tables)
         window.update()
 
     def refresh_content(a_file, b_file, tables):
@@ -449,27 +541,79 @@ def print_matches(window, left, right, a_type, b_type, a_only, b_only, a_update,
 
         refresh_content(a_file, b_file, tables)
         
-    def setFocus(focusIndex):
-        logger.info(f"=={focusIndex}")
-        window.focus = focusRing[focusIndex]
-        if window.focus == "left_pane" or window.focus == "right_pane":
-            window.children[window.focus].editable = True
-
-
-    def nextFocus(focusIndex):
-        logger.info(focusIndex)
+    def setFocusByName(focus):
         if window.focus == "left_pane" or window.focus == "right_pane":
             window.children[window.focus].editable = False
-        focusIndex = (focusIndex + 1) % len(focusRing)
-        logger.info(f"->{focusIndex}")
-        setFocus(focusIndex)
-        return focusIndex
+        window.focus = focus
+        if focus == "left_pane" or focus == "right_pane":
+            window.children[focus].editable = True
 
-        
-    focusRing = ["top_pane", "left_pane", "right_pane"]
-    focusIndex = 0
+    # def setFocus(focusIndex):
+    #     logger.info(f"=={focusIndex}")
+    #     setFocusByName(focusRing[focusIndex])
 
-    setFocus(focusIndex)
+    # def nextFocus(focusIndex):
+    #     logger.info(focusIndex)
+    #     focusIndex = (focusIndex + 1) % len(focusRing)
+    #     logger.info(f"->{focusIndex}")
+    #     setFocus(focusIndex)
+    #     return focusIndex
+
+    def edit_left():
+        setFocusByName("left_pane")
+        refresh_footer(tables)
+
+    def edit_right():
+        setFocusByName("right_pane")
+        refresh_footer(tables)
+
+    def extract_mappings(yamlfile, filename):
+        if isinstance(yamlfile, MappingFile):
+            with open(filename, newline="") as f:
+                reader = csv.reader(f)
+                header = next(reader)
+                code_index = header.index("Code")
+                vocab_index = header.index("Vocab")
+                mappings = defaultdict(list)
+                for row in reader:
+                    code = row[code_index]
+                    vocab = row[vocab_index]
+                    if vocab == "RxNorm":
+                        mappings["MedicationRequest"].append({
+                            "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                            "code": code
+                        })
+            return dict(mappings)
+        else:
+            raise RuntimeError("unsupported file type")
+
+    def menu():
+        def create_window(popwindow):
+            poph, popw = popwindow.size()
+            menu_pane = popwindow.pane("menu_pane", poph - 1, popw - 1, 1, 1, selectable=True)
+            menu_pane.lines = toColoredText(NORMAL_COLOR, MENU_TEXT)
+            popwindow.window.keypad(1)
+
+        def key_handler(popwin, ch):
+            if ch in menu_keys:
+                return WindowExit(ch)
+            elif key_escape(ch):
+                return WindowExit(None)
+            elif key_enter(ch):
+                menu_pane = popwin.children["menu_pane"]
+                key_name = menu_pane.lines.toString().split("\n")[menu_pane.current_document_y].split(" ")[0]
+                key = next(c.key for c in COMMANDS if c.key_name == key_name)
+                return WindowExit(key)
+            else:
+                return WindowPass()
+            
+        c = window.popup(toColoredText(NORMAL_COLOR, "ENTER confirm ESCAPE exit"), create_window, key_handler, w=max(map(len, MENU_TEXT.split("\n"))) + 2)
+        return c
+
+    # focusRing = ["top_pane", "left_pane", "right_pane"]
+    # focusIndex = 0
+
+    setFocusByName("top_pane")
 
     a_file, b_file, tables = refresh_files(left, right)
 
@@ -478,128 +622,183 @@ def print_matches(window, left, right, a_type, b_type, a_only, b_only, a_update,
         
     top_pane.addCursorMoveHandler(handleCursorMove)
 
-    while True:
-        
-        ch = window.getch()
-        if ch == curses.KEY_RESIZE:
-            handle_window_resize(window)
-        elif ch == ord("\t"):
-            focusIndex = nextFocus(focusIndex)
-        elif focusRing[focusIndex] == "top_pane":
-            if ch == ord("."):
-                current_table += 1
-                current_table %= ntables
-                refresh(a_file, b_file, tables)
-            elif ch == ord(","):
-                current_table += ntables - 1
-                current_table %= ntables
-                refresh(a_file, b_file, tables)
-            elif ch == ord("f"):
-                name = table_names[current_table]
-                row = get_current_row(tables)
-                if row is not None:
-                    key_b = row[1]
-                    a = a_file.get_keys(name)            
-                    candidates_a = find_candidates(a, key_b, similarity_threshold, max_entries, ignore_suffix)
-                    c = choose_candidate(window, candidates_a)
-                    if c is not None:
-                        candidate_a, ratio = c
-                        row[0] = candidate_a
-                        row[2] = ratio
-                        row[3] = "o"
-                    refresh_content(a_file, b_file, tables)
-            elif ch == ord("g"):
-                name = table_names[current_table]
-                row = get_current_row(tables)
-                if row is not None:
-                    key_a = row[0]
-                    b = b_file.get_keys(name)            
-                    candidates_b = find_candidates(b, key_a, similarity_threshold, max_entries, ignore_suffix)
-                    c = choose_candidate(window, candidates_b)
-                    if c is not None:
-                        candidate_b, ratio = c
-                        row[1] = candidate_b
-                        row[2] = ratio
-                        row[4] = "o"
-                    refresh_content(a_file, b_file, tables)
-            elif ch == ord("h"):
-                help(window)
+    def handle_command(ch):
+        nonlocal current_table
+        nonlocal a_file
+        nonlocal b_file
+        nonlocal tables
+        if ch == ord("."):
+            current_table += 1
+            current_table %= ntables
+            refresh(a_file, b_file, tables)
+        elif ch == ord(","):
+            current_table += ntables - 1
+            current_table %= ntables
+            refresh(a_file, b_file, tables)
+        elif ch == ord("f"):
+            name = table_names[current_table]
+            row = get_current_row(tables)
+            if row is not None:
+                key_b = row[1]
+                a = a_file.get_keys(name)            
+                candidates_a = find_candidates(a, key_b, similarity_threshold, max_entries, ignore_suffix)
+                c = choose_candidate(window, candidates_a)
+                if c is not None:
+                    candidate_a, ratio = c
+                    row[0] = candidate_a
+                    row[2] = ratio
+                    row[3] = "o"
                 refresh_content(a_file, b_file, tables)
-            elif ch == ord("a"):
+        elif ch == ord("g"):
+            name = table_names[current_table]
+            row = get_current_row(tables)
+            if row is not None:
+                key_a = row[0]
+                b = b_file.get_keys(name)            
+                candidates_b = find_candidates(b, key_a, similarity_threshold, max_entries, ignore_suffix)
+                c = choose_candidate(window, candidates_b)
+                if c is not None:
+                    candidate_b, ratio = c
+                    row[1] = candidate_b
+                    row[2] = ratio
+                    row[4] = "o"
+                refresh_content(a_file, b_file, tables)
+        elif ch == ord("h"):
+            help(window)
+            refresh_content(a_file, b_file, tables)
+        elif ch == ord("a"):
+            if b_update is not None:
+                name = table_names[current_table]
+                row = get_current_row(tables)
+                if row is not None:
+                    row[5] = UseA()
+                    refresh_content(a_file, b_file, tables)
+        elif ch == ord("b"):
+            if a_update is not None:
+                name = table_names[current_table]
+                row = get_current_row(tables)
+                if row is not None:
+                    row[5] = UseB()
+                    refresh_content(a_file, b_file, tables)
+        elif ch == ord("c"):
+            if a_update is not None or b_update is not None:
+                name = table_names[current_table]
+                row = get_current_row(tables)
+                if row is not None:
+                    key_a, key_b, _, _, _, _ = row
+
+                    c = enter_var_name(window, key_a, key_b)
+                    if c is not None:
+                        row[5] = Customize(c)
+                    refresh_content(a_file, b_file, tables)
+        elif ch == ord("d"):
+            if a_update is not None or b_update is not None:
+                name = table_names[current_table]
+                row = get_current_row(tables)
+                if row is not None:
+                    key_a, key_b, _, _, _, _ = row
+
+                    c = enter_var_name(window, key_a, key_b)
+                    if c is not None:
+                        row[5] = CustomizeB(c)
+                    refresh_content(a_file, b_file, tables)
+        elif ch == ord("e"):
+            if a_update is not None or b_update is not None:
+                name = table_names[current_table]
+                row = get_current_row(tables)
+                if row is not None:
+                    key_a, key_b, _, _, _, _ = row
+
+                    c = enter_var_name(window, key_a, key_b)
+                    if c is not None:
+                        row[5] = CustomizeA(c)
+                    refresh_content(a_file, b_file, tables)
+        elif ch == ord("s"):
+            if a_update is not None:
+                name = table_names[current_table]
+                row = get_current_row(tables)
+                if row is not None:
+                    row[5] = Noop()
+                    refresh_content(a_file, b_file, tables)
+        elif ch == ord("l"):
+            edit_left()
+        elif ch == ord("r"):
+            edit_right()
+        elif ch == ord("u"):
+            for name, (table, _) in tables.items():
+                window.set_footer(toColoredText(NORMAL_COLOR, f"updating table {name} ..."))
+                for row in table:
+                    key_a, key_b, _, _, _, action = row
+                    action.update(name, key_a, a_file, key_b, b_file)
+                    row[5] = Noop()
+                if a_update is not None:
+                    window.set_footer(toColoredText(NORMAL_COLOR, f"writing to file {a_update} ..."))
+                    a_file.dump(a_update)
                 if b_update is not None:
-                    name = table_names[current_table]
-                    row = get_current_row(tables)
-                    if row is not None:
-                        row[5] = UseA()
-                        refresh_content(a_file, b_file, tables)
-            elif ch == ord("b"):
-                if a_update is not None:
-                    name = table_names[current_table]
-                    row = get_current_row(tables)
-                    if row is not None:
-                        row[5] = UseB()
-                        refresh_content(a_file, b_file, tables)
-            elif ch == ord("c"):
-                if a_update is not None or b_update is not None:
-                    name = table_names[current_table]
-                    row = get_current_row(tables)
-                    if row is not None:
-                        key_a, key_b, _, _, _, _ = row
+                    window.set_footer(toColoredText(NORMAL_COLOR, f"writing to file {b_update} ..."))
+                    b_file.dump(b_update)
+            file_a, file_b, tables = refresh_files(left if a_update is None else a_update, right if b_update is None else b_update)
+        elif ch == ord("v"):
+            filename = pick_file(window, ".")
+            if filename is not None:
+                mappings = extract_mappings(a_file, filename)
+                name = table_names[current_table]
+                row = get_current_row(tables)
+                key_a, _, _, _, _, _ = row
+                a_file.update_value(name, key_a, mappings)
+                refresh_bottom_panes(a_file, b_file, tables, force=True)
+        elif ch == ord("w"):
+            filename = pick_file(window, ".")
+            if filename is not None:
+                mappings = extract_mappings(b_file, filename)
+                name = table_names[current_table]
+                row = get_current_row(tables)
+                _, key_b, _, _, _, _ = row
+                logger.info(str(mappings))
+                b_file.update_value(name, key_b, mappings)
+                refresh_bottom_panes(a_file, b_file, tables, force=True)
 
-                        c = enter_var_name(window, key_a, key_b)
-                        if c is not None:
-                            row[5] = Customize(c)
-                        refresh_content(a_file, b_file, tables)
-            elif ch == ord("d"):
-                if a_update is not None or b_update is not None:
-                    name = table_names[current_table]
-                    row = get_current_row(tables)
-                    if row is not None:
-                        key_a, key_b, _, _, _, _ = row
-
-                        c = enter_var_name(window, key_a, key_b)
-                        if c is not None:
-                            row[5] = CustomizeB(c)
-                        refresh_content(a_file, b_file, tables)
-            elif ch == ord("e"):
-                if a_update is not None or b_update is not None:
-                    name = table_names[current_table]
-                    row = get_current_row(tables)
-                    if row is not None:
-                        key_a, key_b, _, _, _, _ = row
-
-                        c = enter_var_name(window, key_a, key_b)
-                        if c is not None:
-                            row[5] = CustomizeA(c)
-                        refresh_content(a_file, b_file, tables)
-            elif ch == ord("s"):
-                if a_update is not None:
-                    name = table_names[current_table]
-                    row = get_current_row(tables)
-                    if row is not None:
-                        row[5] = Noop()
-                        refresh_content(a_file, b_file, tables)
-            elif ch == ord("u"):
-                for name, (table, _) in tables.items():
-                    window.set_footer(toColoredText(NORMAL_COLOR, f"updating table {name} ..."))
-                    for row in table:
-                        key_a, key_b, _, _, _, action = row
-                        action.update(name, key_a, a_file, key_b, b_file)
-                        row[5] = Noop()
-                    if a_update is not None:
-                        window.set_footer(toColoredText(NORMAL_COLOR, f"writing to file {a_update} ..."))
-                        a_file.dump(a_update)
-                    if b_update is not None:
-                        window.set_footer(toColoredText(NORMAL_COLOR, f"writing to file {b_update} ..."))
-                        b_file.dump(b_update)
-                file_a, file_b, tables = refresh_files(left if a_update is None else a_update, right if b_update is None else b_update)
-            elif ch == ord("q"):
-                break
+    while True:
+        try:
+            ch = window.getch()
+            if ch == curses.KEY_RESIZE:
+                handle_window_resize(window)
+            elif window.focus == "top_pane":
+                if ch in command_keys and ch != ord("q") and ch != ord("m"):
+                    handle_command(ch)
+                elif ch == ord("m"):
+                    ch2 = menu()
+                    if ch2 == ord("q"):
+                        break
+                    handle_command(ch2)
+                    refresh_footer(tables)
+                elif ch == ord("q"):
+                    break
+                else:
+                    window._onKey(ch)
             else:
-                window._onKey(ch)
-        else:
-            window._onKey(ch)
-        window.update()
+                if key_escape(ch):
+                    if window.focus == "left_pane":
+                        name = table_names[current_table]
+                        row = get_current_row(tables)
+                        if row is not None:
+                            key_a, _, _, _, _, _ = row
+
+                            a_file.update_value(name, key_a, a_file.yaml.load(left_pane.lines.toString()))
+                    elif window.focus == "right_pane":
+                        name = table_names[current_table]
+                        row = get_current_row(tables)
+                        if row is not None:
+                            _, key_b, _, _, _, _ = row
+
+                            b_file.update_value(name, key_b, b_file.yaml.load(right_pane.lines.toString()))
+                    setFocusByName("top_pane")
+                    refresh_footer(tables)
+                else:
+                    window._onKey(ch)
+            window.update()
+        except Exception as e:
+            window.set_footer(toColoredText(ERROR_COLOR, str(e)))                                         
 
     
 def create_window(stdscr):

@@ -14,6 +14,14 @@ def update_key(d, ok, nk):
     else:
         return Left(f"variable {ok} does not exist")
 
+    
+def update_value(d, k, nv):
+    if k in d:
+        d[k] = nv
+        return Right(())
+    else:
+        return Left(f"variable {k} does not exist")
+
 
 # from https://stackoverflow.com/a/63179923
 def object_to_yaml_str(yaml, obj, options=None):
@@ -44,7 +52,7 @@ class YAMLFile:
             self.yaml.dump(self.obj, of)
 
     def dump_get(self, table, key):
-        return self.get(table, key).rec(lambda y: y, lambda x: object_to_yaml_str(self.yaml, {key: x}))
+        return self.get(table, key).rec(lambda y: y, lambda x: object_to_yaml_str(self.yaml, x))
 
 
 class FeaturesFile(YAMLFile):
@@ -56,7 +64,10 @@ class FeaturesFile(YAMLFile):
         return self.obj[table].keys()
         
     def update_key(self, table, old_key, new_key):
-        update_key(self.obj[table], old_key, new_key)
+        return update_key(self.obj[table], old_key, new_key)
+
+    def update_value(self, table, key, new_value):
+        return update_value(self.obj[table], key, new_value)
 
     def get(self, table, key):
         if key in self.obj[table]:
@@ -75,7 +86,10 @@ class IdentifiersFile(YAMLFile):
         return self.obj[table].keys()
         
     def update_key(self, table, old_key, new_key):
-        update_key(self.obj[table], old_key, new_key)
+        return update_key(self.obj[table], old_key, new_key)
+
+    def update_value(self, table, key, new_value):
+        return update_value(self.obj[table], key, new_value)
 
     def get(self, table, key):
         if key in self.obj[table]:
@@ -156,6 +170,30 @@ class MappingFile(YAMLFile):
                             return Right(())
         
         return Left(f"variable {old_key} no longer exists")
+
+    def update_value(self, table, key, new_value):
+        FHIR, GEOID, NearestRoad, NearestPoint, Visit = self.get_sub_objects()
+        FHIR_keys, GEOID_keys, NearestRoad_keys, NearestPoint_keys, Visit_keys = self.get_sub_keys(FHIR, GEOID, NearestRoad, NearestPoint, Visit)
+        if key in FHIR_keys:
+            self.obj["FHIR"][key] = new_value
+            return Right(())
+
+        for name, keys in GEOID_keys.items():
+            if key in keys:
+                GEOID[name] = new_value
+                return Right(())
+
+        for name, keys in NearestRoad_keys.items():
+            if key in keys:
+                NearestRoad[name] = new_value
+                return Right(())
+        
+        for name, keys in NearestPoint_keys.items():
+            if key in keys:
+                NearestPoint[name] = new_value
+                return Right(())
+        
+        return Left(f"variable {key} no longer exists")
 
     def get(self, table, key):
         FHIR, GEOID, NearestRoad, NearestPoint, Visit = self.get_sub_objects()

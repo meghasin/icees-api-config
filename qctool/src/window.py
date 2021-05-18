@@ -17,12 +17,14 @@ NORMAL_COLOR = 0
 SELECTED_NORMAL_COLOR = 1
 HIGHLIGHT_COLOR = 2
 SELECTED_HIGHLIGHT_COLOR = 3
+ERROR_COLOR = 4
 
 
 def init_colors():
     curses.init_pair(HIGHLIGHT_COLOR, curses.COLOR_WHITE, curses.COLOR_BLUE)
     curses.init_pair(SELECTED_NORMAL_COLOR, curses.COLOR_BLACK, curses.COLOR_WHITE)
     curses.init_pair(SELECTED_HIGHLIGHT_COLOR, curses.COLOR_WHITE, curses.COLOR_BLUE)
+    curses.init_pair(ERROR_COLOR, curses.COLOR_BLACK, curses.COLOR_RED)
 
     
 def clip(a, b, c):
@@ -176,6 +178,7 @@ class Pane(Widget):
         self.max_lines = max_lines
         self.selectable = selectable
         self.editable = editable
+        self.edited = False
         # padding in the document where the cursor cannot pass
         self.top_padding = 0
         self.bottom_padding = 0
@@ -299,12 +302,12 @@ class Pane(Widget):
                 return WindowContinue()
             elif ch == curses.KEY_END:
                 self.move(0, len(self.lines[self.current_document_y]))
-
                 return WindowContinue()
             elif ch == curses.KEY_ENTER or ch == ord("\n") or ch == ord("\r"):
                 color = self.lines.getColorAt(self.current_document_y, self.current_document_x)
                 self._replace(self.lines.insert(self.current_document_y, self.current_document_x, toColoredText(color, "\n")))
                 self.move(1, -self.current_document_x)
+                self.edited = True
                 return WindowContinue()
             elif ch == curses.KEY_BACKSPACE or ch == ord("\b") or ch == 127:
                 if self.current_document_x == 0:
@@ -319,15 +322,18 @@ class Pane(Widget):
                     
                 self.move(offset_y, offset_x)
                 self._replace(self.lines.delete(self.current_document_y, self.current_document_x))
+                self.edited = True
                 return WindowContinue()
             elif ch == curses.KEY_DC:
                 self._replace(self.lines.delete(self.current_document_y, self.current_document_x))
+                self.edited = True
                 return WindowContinue()
             elif 32 <= ch <= 126 or 128 <= ch <= 255:
                 color = self.lines.getColorAt(self.current_document_y, self.current_document_x)
                 char = chr(ch)
                 self._replace(self.lines.insert(self.current_document_y, self.current_document_x, toColoredText(color, char)))
                 self.move(0, +1)
+                self.edited = True
                 return WindowContinue()
 
         for h in self.keyHandlers:
@@ -434,10 +440,8 @@ class TextField(Widget):
             h(self, oc, c)
         
     def addChangeHandler(self, h):
-        self.changeHandlers.append(h)
-        
+        self.changeHandlers.append(h)        
 
-        
 class Window(Widget):
     def __init__(self, window):
         super().__init__(window)
@@ -494,12 +498,6 @@ class Window(Widget):
         textfield = TextField(window, label, initial_text)
         self.children[name] = textfield
         return textfield
-        
-    def textarea(self, name, h, w, window_y, window_x, initial_text):
-        window = self._new_window(1, w, window_y, window_x)
-        textarea = TextArea(window, initial_text)
-        self.children[name] = textarea
-        return textarea
         
     def text(self, name, h, w, window_y, window_x, text):
         window = self._new_window(h, w, window_y, window_x)
@@ -577,5 +575,3 @@ class Window(Widget):
                     return res
 
         return WindowPass()
-                
-
