@@ -333,11 +333,13 @@ def choose_candidate(window, candidates):
     popw = min(len(header.lines()[0]) + 2, w * 4 // 5)
 
     popwindow = None
+    candidates_filtered = None
 
     def match(c, candidate):
         return c.lower() in candidate.lower()
         
     def update_content(source, oc, c):
+        nonlocal candidates_filtered
         popcontent_pane = popwindow.children["content_pane"]
         candidates_filtered = [[candidate, ratio] for candidate, ratio in candidates if match(c, candidate)]
         header, content, footer = f(candidates_filtered)
@@ -361,6 +363,7 @@ def choose_candidate(window, candidates):
 
         popheader_pane._replace(header)
         popcontent_pane._replace(content)
+        update_content(None, None, "")
 
     def candidates_get_current_row_id(popcontent_pane):
         return max(0, popcontent_pane.current_document_y)
@@ -371,7 +374,7 @@ def choose_candidate(window, candidates):
 
         if key_enter(ch):
             i = candidates_get_current_row_id(popcontent_pane)
-            c = candidates[i]
+            c = candidates_filtered[i]
             return WindowExit(c)
         elif key_escape(ch):
             return WindowExit(None)
