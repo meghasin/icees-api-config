@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 
 def format_table(color, column_names, rows, upper_border=True, lower_border=True, left_border=True, right_border=True):
-    columns = list(map(list, zip(*rows)))
+    columns = list(map(list, zip(*rows))) if len(rows) > 0 else [[] for _ in column_names]
     column_widths = [max(chain([len(column_name)], (len(a) for a in column if a is not None))) + 2 for column_name, column in zip(column_names, columns)]
     logger.info(column_names)
     logger.info(column_widths)
