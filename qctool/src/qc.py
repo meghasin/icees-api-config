@@ -306,9 +306,6 @@ def refresh_bottom_panes(window, config, mode, force=False):
             key = None
             dump_get = ""
 
-        logger.info(f"refresh_bottom_pane: dump_get = {dump_get}")
-
-
         if force or key != mode.cache_file.old_key:
             mode.cache_file.old_key = key
             bottom_pane = window.children["bottom_pane"]
@@ -505,7 +502,7 @@ def print_matches(window, config, init_mode):
         elif ch == ord("n"):
             new_row(window, config, mode)
         elif ch == ord("h"):
-            help(window)
+            help(window, mode)
             refresh_content(window, config, mode)
         else:
             if isinstance(mode, DiffMode):
@@ -664,10 +661,10 @@ def print_matches(window, config, init_mode):
             if ch == curses.KEY_RESIZE:
                 handle_window_resize(window)
             elif window.focus == "top_pane":
-                if ch in command_keys and ch != ord("q") and ch != ord("m"):
+                if ch in command_keys(mode) and ch != ord("q") and ch != ord("m"):
                     handle_command(ch)
                 elif ch == ord("m"):
-                    ch2 = menu(window)
+                    ch2 = menu(window, mode)
                     if ch2 == ord("q"):
                         break
                     handle_command(ch2)

@@ -7,6 +7,8 @@ from window import WindowPass, WindowContinue, WindowExit, NORMAL_COLOR
 from table import format_table
 from coloredtext import toColoredText
 from file import YAMLFile
+from mode import DiffMode, FocusedMode
+from typing import Type, List
 
 @dataclass
 class Command:
@@ -15,42 +17,52 @@ class Command:
     text: str
     extended: bool # whether not show in the main window
     menu: bool # whether show in the menu
+    modes: List[Type]
     
 COMMANDS = [
-    Command(ord(","), "COMMA", "previous table", False, True),
-    Command(ord("."), "PERIOD", "next table", False, True),
-    Command(curses.KEY_UP, "UP", "move up", True, False),
-    Command(curses.KEY_DOWN, "DOWN", "move down", True, False),
-    Command(curses.KEY_PPAGE, "PAGE UP", "page up", True, False),
-    Command(curses.KEY_NPAGE, "PAGE DOWN", "page down", True, False),
-    Command(ord("i"), "I", "focus on a", False, True),
-    Command(ord("j"), "J", "focus on b", False, True),
-    Command(ord("k"), "K", "diff mode", False, True),
-    Command(ord("a"), "A", "use a", False, True),
-    Command(ord("b"), "B", "use b", False, True),
-    Command(ord("d"), "D", "customize b", False, True),
-    Command(ord("e"), "E", "customize a", False, True),
-    Command(ord("c"), "C", "customize", False, True),
-    Command(ord("s"), "S", "skip", False, True),
-    Command(ord("f"), "F", "pick candidate from a", False, True),
-    Command(ord("g"), "G", "pick candidate from b", False, True),
-    Command(ord("l"), "L", "update a value", False, True),
-    Command(ord("r"), "R", "update b value", False, True),
-    Command(ord("u"), "U", "update tables", False, True),
-    Command(ord("v"), "V", "update a by loading codes from a table", False, True),
-    Command(ord("w"), "W", "update b by loading codes from a table", False, True),
-    Command(ord("n"), "N", "append new row", False, True),
-    Command(ord("h"), "H", "help", False, True),
-    Command(ord("m"), "M", "menu", False, False),
-    Command(ord("q"), "Q", "quit", False, True)
+    Command(ord(","), "COMMA", "previous table", False, True, [DiffMode, FocusedMode]),
+    Command(ord("."), "PERIOD", "next table", False, True, [DiffMode, FocusedMode]),
+    Command(curses.KEY_UP, "UP", "move up", True, False, [DiffMode, FocusedMode]),
+    Command(curses.KEY_DOWN, "DOWN", "move down", True, False, [DiffMode, FocusedMode]),
+    Command(curses.KEY_PPAGE, "PAGE UP", "page up", True, False, [DiffMode, FocusedMode]),
+    Command(curses.KEY_NPAGE, "PAGE DOWN", "page down", True, False, [DiffMode, FocusedMode]),
+    Command(ord("i"), "I", "focus on a", False, True, [DiffMode, FocusedMode]),
+    Command(ord("j"), "J", "focus on b", False, True, [DiffMode, FocusedMode]),
+    Command(ord("k"), "K", "diff mode", False, True, [DiffMode, FocusedMode]),
+    Command(ord("a"), "A", "use a", False, True, [DiffMode]),
+    Command(ord("b"), "B", "use b", False, True, [DiffMode]),
+    Command(ord("d"), "D", "customize b", False, True, [DiffMode]),
+    Command(ord("e"), "E", "customize a", False, True, [DiffMode, FocusedMode]),
+    Command(ord("c"), "C", "customize", False, True, [DiffMode]),
+    Command(ord("s"), "S", "skip", False, True, [DiffMode, FocusedMode]),
+    Command(ord("f"), "F", "pick candidate from a", False, True, [DiffMode, FocusedMode]),
+    Command(ord("g"), "G", "pick candidate from b", False, True, [DiffMode]),
+    Command(ord("l"), "L", "update a value", False, True, [DiffMode, FocusedMode]),
+    Command(ord("r"), "R", "update b value", False, True, [DiffMode]),
+    Command(ord("u"), "U", "update tables", False, True, [DiffMode, FocusedMode]),
+    Command(ord("v"), "V", "update a by loading codes from a table", False, True, [DiffMode, FocusedMode]),
+    Command(ord("w"), "W", "update b by loading codes from a table", False, True, [DiffMode]),
+    Command(ord("n"), "N", "append new row", False, True, [DiffMode, FocusedMode]),
+    Command(ord("h"), "H", "help", False, True, [DiffMode, FocusedMode]),
+    Command(ord("m"), "M", "menu", False, False, [DiffMode, FocusedMode]),
+    Command(ord("q"), "Q", "quit", False, True, [DiffMode, FocusedMode])
 ]
 
-command_keys = [c.key for c in COMMANDS if not c.extended]
-menu_keys = [c.key for c in COMMANDS if c.menu]
+def instanceofs(mode, modes):
+    return any(isinstance(mode, t) for t in modes)
+        
 
-help_texts = [c.key_name.ljust(10) + c.text for c in COMMANDS if not c.extended]
-help_texts_width = max(map(len, help_texts))
-HELP_TEXT_LONG = "\n".join(l.ljust(help_texts_width) + " " + r.ljust(help_texts_width) for l, r in zip(help_texts[::2], help_texts[1::2])) + """
+def command_keys(mode):
+    return [c.key for c in COMMANDS if not c.extended and instanceofs(mode, c.modes)]
+
+
+def menu_keys(mode):
+    return [c.key for c in COMMANDS if c.menu and instanceofs(mode, c.modes)]
+
+def HELP_TEXT_LONG(mode):
+    help_texts = [c.key_name.ljust(10) + c.text for c in COMMANDS if not c.extended and instanceofs(mode, c.modes)]
+    help_texts_width = max(map(len, help_texts))
+    return "\n".join(l.ljust(help_texts_width) + " " + r.ljust(help_texts_width) for l, r in zip(help_texts[::2], help_texts[1::2])) + """
 
 In the a and b columns
           variable exists in other file
@@ -58,7 +70,8 @@ x         variable doesn't exist in other file
 o         variable is a candidate
 """
 
-MENU_TEXT = "\n".join(c.key_name.ljust(10) + c.text for c in COMMANDS if c.menu)
+def MENU_TEXT(mode):
+    return "\n".join(c.key_name.ljust(10) + c.text for c in COMMANDS if c.menu and instanceofs(mode, c.modes))
 
 def key_enter(ch):
     return ch == curses.KEY_ENTER or ch == ord("\n") or ch == ord("\r")
@@ -124,8 +137,8 @@ def popup_text(window, text_content):
     window.popup(toColoredText(NORMAL_COLOR, "ESCAPE exit"), create_window, key_handler, None)
 
 
-def help(window):
-    popup_text(window, HELP_TEXT_LONG)
+def help(window, mode):
+    popup_text(window, HELP_TEXT_LONG(mode))
 
 
 def enter_var_name(window, key_a, key_b):
@@ -319,15 +332,15 @@ def choose_candidate(window, candidates):
     return c
 
 
-def menu(window):
+def menu(window, mode):
     def create_window(popwindow):
         poph, popw = popwindow.size()
         menu_pane = popwindow.pane("menu_pane", poph - 1, popw - 1, 1, 1, selectable=True)
-        menu_pane.lines = toColoredText(NORMAL_COLOR, MENU_TEXT)
+        menu_pane.lines = toColoredText(NORMAL_COLOR, MENU_TEXT(mode))
         popwindow.window.keypad(1)
 
     def key_handler(popwin, ch):
-        if ch in menu_keys:
+        if ch in menu_keys(mode):
             return WindowExit(ch)
         elif key_escape(ch):
             return WindowExit(None)
@@ -339,5 +352,5 @@ def menu(window):
         else:
             return WindowPass()
 
-    c = window.popup(toColoredText(NORMAL_COLOR, "ENTER confirm ESCAPE exit"), create_window, key_handler, w=max(map(len, MENU_TEXT.split("\n"))) + 2)
+    c = window.popup(toColoredText(NORMAL_COLOR, "ENTER confirm ESCAPE exit"), create_window, key_handler, w=max(map(len, MENU_TEXT(mode).split("\n"))) + 2)
     return c
