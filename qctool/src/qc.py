@@ -236,7 +236,7 @@ def reload_files(window, config, mode):
             logger.error(f"error loading {filename}\n")
             raise
 
-        mode.update_file(config, fil, {name : ([], False) for name in config.table_names})
+        mode.update_file(config, fil, {name : ([[key, Noop()] for key in fil.get_keys(name)], False) for name in config.table_names})
     
     refresh(window, config, mode)
     
@@ -302,10 +302,12 @@ def refresh_bottom_panes(window, config, mode, force=False):
                 dump_get = ""
             else:
                 dump_get = mode.cache_file.fil.dump_get(name, key)
-
         else:
             key = None
             dump_get = ""
+
+        logger.info(f"refresh_bottom_pane: dump_get = {dump_get}")
+
 
         if force or key != mode.cache_file.old_key:
             mode.cache_file.old_key = key
@@ -359,7 +361,7 @@ def refresh_content(window, config, mode):
     
 def handle_window_resize(window, config, mode):
     window._teardown()
-    setup_window(window, mode)
+    setup_window(window, config, mode)
 
     refresh_content(window, config, mode)
 
@@ -401,7 +403,7 @@ def diff_mode(window, config):
 
 def refresh_mode(window, config, mode):
     window._teardown()
-    setup_window(window, mode)
+    setup_window(window, config, mode)
     reload_files(window, config, mode)
 
 def extract_mappings(yamlfile, filename):
@@ -479,14 +481,9 @@ def print_matches(window, config, init_mode):
     setFocusByName(window, "top_pane")
     reload_files(window, config, mode)
 
-    def handleCursorMove(source, oc, c):
-        refresh_bottom_panes(window, config, mode)
-        
-    window.children["top_pane"].addCursorMoveHandler(handleCursorMove)
-
     def handle_command(ch):
         nonlocal mode
-        ntable = len(config.table_names)
+        ntables = len(config.table_names)
         name = config.table_names[mode.cache_tables.current_table]
         row = get_current_row(window.children["top_pane"], config, mode)
         
@@ -711,13 +708,13 @@ def print_matches(window, config, init_mode):
             window.set_footer(toColoredText(ERROR_COLOR, str(e)))                                         
 
     
-def create_window(stdscr, mode):
+def create_window(stdscr, config, mode):
     window = Window(stdscr)
-    setup_window(window, mode)
+    setup_window(window, config, mode)
     return window
     
 
-def setup_window(window, mode):
+def setup_window(window, config, mode):
     height, width = window.size()
     splittery = height // 2
     top_height = max(0, splittery - 1)
@@ -726,7 +723,6 @@ def setup_window(window, mode):
     top_pane = window.pane("top_pane", top_height - 3, width, 4, 0, True)
     horizontal_splitter = window.fill("horizontal_splitter", 1, width, splittery, 0, "-")
 
-    logger.info(f"setup_window: mode = {mode}")
     if isinstance(mode, DiffMode):
         splitterx = width // 2
         left_width = splitterx
@@ -736,7 +732,12 @@ def setup_window(window, mode):
         vertical_splitter = window.fill("vertical_splitter", bottom_height, 1, splittery + 1, splitterx, "|")
     else:
         bottom_pane = window.pane("bottom_pane", bottom_height, width, splittery + 1, 0, False)
+
+    def handleCursorMove(source, oc, c):
+        refresh_bottom_panes(window, config, mode)
         
+    top_pane.addCursorMoveHandler(handleCursorMove)
+    
     window.update()
 
 
@@ -777,7 +778,7 @@ def curses_main(stdscr, args):
 
     mode = DiffMode(CacheFile(a_filename, a_type, a_update), CacheFile(b_filename, b_type, b_update))
 
-    window = create_window(stdscr, mode)
+    window = create_window(stdscr, config, mode)
 
     print_matches(window, config, mode)
 
