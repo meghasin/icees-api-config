@@ -23,7 +23,7 @@ Dhall records are like Javascript objects, with slightly different syntax, repla
 ```
 
 ### Record Types
-We can define types for records, Dhall checks the type to ensure that a value is well-typed. This allows us to rule out type errors such as missing fields, misspelt fields, fields with wrong type in records. Each field can have a primitive type such as `Text`, `Bool`, `Integer`, `Number` or a record type.
+We can define types for records, Dhall checks the type to ensure that a value is well-typed. This allows us to rule out type errors such as missing fields, misspelt fields, and fields with wrong type in records. Each field can have a primitive type such as `Text`, `Bool`, `Integer`, `Number` or a record type.
 
 For example we can define:
 ```haskell
