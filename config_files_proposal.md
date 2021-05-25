@@ -59,18 +59,16 @@ Here we name record ```{
 
 ### Union Type
 
-Dhall allows defining enums in the form of union types. Each variant is allowed to have an optional value of a type. For example,
+Dhall allows defining enums in the form of union types. Each alternative is allowed to have an optional value of a type. For example,
 
 ```haskell
 let BinningStrategy = < Cut : Integer | QCut : Integer | NoBinning >
 ```
-We define a type for binning strategies. The `Cut` variant allows an integer number of binning. Same for `QCut`. `NoBinning` doesn't need any. For example, a value of this type can be `Cut 4`, `Cut 5`,`QCut 4`, or `NoBinning`.
+We define a type for binning strategies. `Cut` allows an integer number of binning. Same for `QCut`. `NoBinning` doesn't need any. For example, a value of this type can be `Cut 4`, `Cut 5`, `QCut 4`, or `NoBinning`.
 
 ### Function
 
-Dhall allows defining functions similar to Javascript's lambda. Instead of using the  `(x) => ...` syntax, it uses the `\x : t -> ...` syntax where `t` is the type of `x`
-
-For example,
+Dhall allows defining functions similar to Javascript's lambda. Instead of using the  `x => ...` syntax, it uses the `\x : t -> ...` syntax where `t` is the type of `x`. For example,
 
 ```haskell
 let cut = \ x : Integer -> Cut x
@@ -88,15 +86,19 @@ For each ICEES variables `A`, create a `A.dhall` file.
 
 ```haskell
 let FeatureVariable = { 
-    name: Text,  -- variable name 
+    name: Text, -- variable name 
     mapping: Mapping, -- mapping 
     binning_strategies: Optional (List BinningStrategy), -- binning strategies
     feature: ICEESFeature, -- ICEES feature 
-    identifiers: Identifiers, -- identifiers 
+    identifiers: Identifiers -- identifiers 
 } 
 ```
 
 `Mapping` is defined as follow: 
+
+```haskell
+let Mapping = < GenericFHIRMapping | SpecializedFHIRMapping | EnvironmentalMapping | GEOIDMapping | NearestPointMapping | NearestFeatureMapping >
+```
 
 Currently there are six main sources FHIR-PIT maps feature variables: 
  * Generic FHIR mapping (Condition, Procedure, MedicationRequest, Observation) 
@@ -106,14 +108,15 @@ Currently there are six main sources FHIR-PIT maps feature variables:
  * From lat, lon to nearest point (CAFO, landfill) 
  * From lat, lon to nearest feature (nearest road) 
     
+
 We define the following six record types: 
 
 ```haskell
-type GenericFHIRMapping = { 
-    resource: Text -- FHIR resource type 
-    system: Text -- FHIR system
-    code: Text -- FHIR code
-    system_is_regex: Optional Bool -- system contains a regular expression
+let GenericFHIRMapping = { 
+    resource: Text, -- FHIR resource type 
+    system: Text, -- FHIR system
+    code: Text, -- FHIR code
+    system_is_regex: Optional Bool, -- system contains a regular expression
     code_is_regex: Optional Bool -- code contains a regular expression
 } 
 ```
@@ -123,7 +126,7 @@ For generic FHIR mappings, we match data to ICEES feature variables according to
 ```haskell
 let SpecializeFHIRMapping = < Visit: FHIRMappingVisit | Age | Race | Sex | Ethnicity | Weight | Height | BMI >
 
-let FHIRMappingVisit = List Text -- a list of Diagnoses for filtering visits that count towards the ICEES feature variable
+let FHIRMappingVisit = List Text -- a list of diagnoses for filtering visits that count towards the ICEES feature variable
 ```
 
 We enumerate specialized FHIR mappings.
@@ -187,8 +190,8 @@ ICEES features are defined as follows:
 
 ```haskell
 let ICEESFeature = {
-    feature_type: ICEESAPIType -- ICEES API type
-    biolink_type: Text -- biolink type
+    feature_type: ICEESAPIType, -- ICEES API type
+    biolink_types: List Text -- biolink types
 }
 
 let ICEESAPIType = <String: TypeString | Integer : TypeInteger | Number >
@@ -217,10 +220,10 @@ The identifiers type is a list of identifiers.
 ```haskell
 let BinningStrategy = {
     method: BinningMethod, -- binning method
-    suffix: Optional Text, -- optional suffix for feature variable referencing this binning strategy
+    suffix: Optional Text -- optional suffix for feature variable referencing this binning strategy
 }
 
-let BinningMethod = < Cut : Integer | QCut : Integer | Bins : List Bin | NoBinning>
+let BinningMethod = < Cut : Integer | QCut : Integer | Bins : List Bin | NoBinning >
 
 let Bin = {
     lower_bound: Double,
@@ -309,7 +312,7 @@ To add a new ICEES Feature Variable, for example `AvgDailyPM2.5Exposure`
 ```haskell
 {
     name = "AvgDailyPM2.5Exposure",
-    mapping = EnvironmentalMapping {
+    mapping = Mapping.EnvironmentalMapping {
         dataset = "cmaq",
         column = "pm2.5",
         statitics = [
@@ -329,12 +332,24 @@ To add a new ICEES Feature Variable, for example `AvgDailyPM2.5Exposure`
     },
     binningStrategies = [
         {
-            strategy = Cut
+            strategy = Cut 5
         },
         {
-            strategy = QCut,
+            strategy = QCut 5,
             suffix = "_qcut"
         }
+    ],
+    feature = {
+        feature_type = ICEESAPIType.Integer {
+            minimum = 1,
+            maximum = 5
+        },
+        biolink_types = [
+            "biolink:ChemicalSubstance"
+        ]
+    },
+    identifiers = [
+        "MESH:D052638"
     ]
 }
 ```
