@@ -135,10 +135,10 @@ We enumerate specialized FHIR mappings.
 let EnvironmentalMapping = { 
     dataset: Text, -- the dataset where the data come from
     column: Text, -- the column in the dataset
-    statistics: List StatisticSuffix -- the statistics of the data that we calculate
+    statistics: List StatisticVariant -- the statistics of the data that we calculate
 }
 
-let StatisticSuffix = {
+let StatisticVariant = {
     statistic: Statistic, -- the statistic to calculate
     rename: Optional RenameAs -- optional rename of feature variable for referencing this statistic
 }
