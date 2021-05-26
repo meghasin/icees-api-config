@@ -225,14 +225,18 @@ let BinningStrategy = {
 
 let BinningMethod = < Cut : Integer | QCut : Integer | Bins : List Bin | NoBinning >
 
-let Bin = {
+let Bin = < Range : BinRange | String : BinString >
+
+let BinRange = {
     lower_bound: Double,
     upper_bound: Double,
     name: Text
 }
+
+let BinString = List Text
 ```
 
-We support three binning strategies: equal-widthed bins, quantiles, and customized bins.
+We support three binning strategies: equal-widthed bins, quantiles, and customized bins. For customized bins, we support bin as range or discrete bin.
 
 ## Directory Structure
 
