@@ -234,11 +234,11 @@ let BinningMethod = < Cut : Integer | QCut : Integer | Bins : Bins | NoBinning >
 
 let Bins = < RangeBins : RangeBins | String : List (List String) >
 
-let RangeBins = { -- see pandas.cut() method
-    bins: List Double,
-    right: Bool,
-    include_lowest: Bool,
-    labels: List Text
+let RangeBins = { -- see pandas.cut()
+    bins: List Double, -- bin edges
+    right: Bool, -- include the rightmost edges
+    include_lowest: Bool, -- whether the first bin should be left-inclusive or not
+    labels: List Text -- bin labels. should be of the same number as the bins
 }
 
 let BinString = List Text
