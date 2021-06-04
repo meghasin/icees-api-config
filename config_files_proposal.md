@@ -234,7 +234,7 @@ let BinningMethod = < Cut : Integer | QCut : Integer | Bins : Bins | NoBinning >
 
 let Bins = < RangeBins : RangeBins | String : List (List String) >
 
-let RangeBins = { -- see pandas.cut method
+let RangeBins = { -- see pandas.cut() method
     bins: List Double,
     right: Bool,
     include_lowest: Bool,
