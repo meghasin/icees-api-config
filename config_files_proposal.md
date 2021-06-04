@@ -163,13 +163,18 @@ let FeatureType = < string | number >
 For geoid mapping, we match data from a table, with one column being the geoid, and other columns being the features. We allow multiple datasets, for example, ACS and ACS ur. Each dataset is referenced by its name. A column in the dataset is specified for mapping to the ICEES feature variable. A type is specified to parse the data.
  
 ```haskell
-let NearestPointMapping = < FeatureAttribute : FeatureAttribute | Distance >
+let NearestPointMapping = < FeatureAttribute : FeatureAttribute | Distance : Distance >
 
 let FeatureAttribute = { 
     dataset: Text, -- the dataset where the data come from
     name: Text, -- feature attribute name
     datatype: FeatureType -- the type of the data
 } 
+
+let Distance = {
+    dataset: Text, -- the dataset where the data come from
+    maximum: Double, -- the maximum distance
+}
 ```
  
 For nearest point mapping, we match data from a shapefile. We allow mapping a special ICEES feature variable from the distance. For the nearest point, we allow mapping attributes to ICEES feature variables.
@@ -191,8 +196,10 @@ ICEES features are defined as follows:
 ```haskell
 let ICEESFeature = {
     feature_type: ICEESAPIType, -- ICEES API type
-    biolink_types: List Text -- biolink types
+    biolink_types: List BiolinkType -- biolink types
 }
+
+let BiolinkType = Text
 
 let ICEESAPIType = <String: TypeString | Integer : TypeInteger | Number >
 
@@ -223,14 +230,15 @@ let BinningStrategy = {
     suffix: Optional Text -- optional suffix for feature variable referencing this binning strategy
 }
 
-let BinningMethod = < Cut : Integer | QCut : Integer | Bins : List Bin | NoBinning >
+let BinningMethod = < Cut : Integer | QCut : Integer | Bins : Bins | NoBinning >
 
-let Bin = < Range : BinRange | String : BinString >
+let Bins = < RangeBins : RangeBins | String : List (List String) >
 
-let BinRange = {
-    lower_bound: Double,
-    upper_bound: Double,
-    name: Text
+let RangeBins = { -- see pandas.cut method
+    bins: List Double,
+    right: Bool,
+    include_lowest: Bool,
+    labels: List Text
 }
 
 let BinString = List Text
