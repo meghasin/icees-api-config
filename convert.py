@@ -20,7 +20,6 @@ for table, table_mappings in old_mappings.items():
         if column in mappings:
             pass
         else:
-            print(column, column_mapping)
             biolinkType = column_mapping["biolinkType"]
             if biolinkType is None:
                 categories = []
@@ -30,10 +29,11 @@ for table, table_mappings in old_mappings.items():
                 categories = biolinkType
             else:
                 raise TypeError(f"unsupported biolinkType {biolinkType}")
+            ty = column_mapping["type"]
             mappings[column] = {
                 "categories": categories,
                 "identifiers": old_identifiers[table].get(column, []),
-                "type": column_mapping["type"]
+                "type": ty
             }
             maximum = column_mapping.get("maximum")
             minimum = column_mapping.get("minimum")
@@ -42,6 +42,13 @@ for table, table_mappings in old_mappings.items():
                 value_sets[column] = list(range(minimum, maximum+1))
             elif enum is not None:
                 value_sets[column] = enum
+            elif ty == "integer":
+                print(f"no value set for {table}>{column}, default to 0 to 9999")
+                value_sets[column] = list(range(10000))
+            else:
+                print(f"no value set for {table}>{column}, default to []")
+                value_sets[column] = []
+                
 
 with open(new_mappings_file_path, "w") as new_mappings_file:
     yaml.dump(mappings, new_mappings_file)

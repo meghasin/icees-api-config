@@ -1239,6 +1239,12 @@ Amiodarone_gtt:
   - SCTID:318180009
   - SCTID:52574003
   type: integer
+AmoxicillinDILIDx:
+  categories:
+  - Disease
+  - ' DiseaseOrPhenotypicFeature'
+  identifiers: []
+  type: integer
 Anakinra:
   categories:
   - ChemicalSubstance
