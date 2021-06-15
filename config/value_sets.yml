@@ -60142,17 +60142,21 @@ Albumin_flag_last:
 - high
 - abnormal
 Albuterol:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AlbuterolVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AlcoholDependenceDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AlcoholDependenceDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AlcoholRelatedLiverDisease:
 - false
 - true
@@ -80178,35 +80182,45 @@ AlkalinePhosphatase_Peak_DILIOnsetToMonth6_ULN:
 - 4
 - 5
 AlopeciaDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AlopeciaDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Amiodarone_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AmoxicillinDILIDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Anakinra:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Androstenedione:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AndrostenedioneVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AntiInfectivesAntibiotics:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AntiInfectivesHydroxychloroquine:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AntiInfectivesRemdesivir:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Anti_HAV:
 - false
 - true
@@ -80226,32 +80240,41 @@ Anti_HCV:
 - false
 - true
 Antibiotics:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AnxietyDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AnxietyDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Arformoterol:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ArformoterolVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AsthmaDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AsthmaDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AutismDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AutismDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 AutoimmuneHepatitis:
 - false
 - true
@@ -90650,11 +90673,13 @@ BaseDeficit_flag_last:
 - normal
 - high
 Beclomethasone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 BeclomethasoneVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Bilirubin_DILIOnset_ULN:
 - 1
 - 2
@@ -110705,14 +110730,17 @@ BrainNatriureticPeptide_flag_last:
 - normal
 - high
 Bronchiectasis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Budesonide:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 BudesonideVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 C-reactiveProtein:
 - 0
 - 1
@@ -110743,8 +110771,9 @@ CK_flag_last:
 - normal
 - high
 CRRT_HD:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CURRENT_AGE:
 - 0-2
 - 3-17
@@ -110759,56 +110788,73 @@ CURRENT_AGE2:
 - 45-64
 - 65-89
 CancerDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CardiovascularSupportAmiodarone_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CardiovascularSupportDobutamine_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CardiovascularSupportDopamine_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CardiovascularSupportEpinephrine_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CardiovascularSupportEsmolol_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CardiovascularSupportIsoproterenol_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CardiovascularSupportLevosimendan_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CardiovascularSupportMilrinone_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CardiovascularSupportNorepinephrine_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CardiovascularSupportPhenylephrine_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CardiovascularSupportVasopressin_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CardiovascularSupporyECLS:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CervicalCancerDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CervicalCancerDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Cetirizine:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CetirizineVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CharlsonComorbidityIndex:
 - 0
 - 1
@@ -110849,8 +110895,9 @@ CharlsonComorbidityIndex:
 - 36
 - 37
 ChronicArteryDiseaseDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ChronicDILI:
 - false
 - true
@@ -110861,32 +110908,40 @@ ChronicHepatitisC_Screening:
 - false
 - true
 ChronicKidneyDiseaseDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ChronicNasalCongestion:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ChronicObstructivePulmonaryDiseaseDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Ciclesonide:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CiclesonideVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Cirrhosis:
 - false
 - true
 Citalopram:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CitalopramVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CodeBlueVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ConcomitantDrugs:
 - 0-2
 - 3-4
@@ -110895,26 +110950,33 @@ CongestiveHeartFailure:
 - false
 - true
 ConvalescentPlasma:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CoronaryArteryDisease:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CoughDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CoughDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CroupDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CroupDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 CysticFibrosis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 D-dimer:
 - 0
 - 1
@@ -140958,8 +141020,9 @@ D28_ASTHMA:
 - 'True'
 - 'False'
 DILIDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 DILIN_SeverityScore:
 - Mild
 - Moderate
@@ -140985,8 +141048,9 @@ DRB1*15:01:
 - OneCopy
 - TwoCopies
 DailyWetCough:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Days_ALT_DILIOnsetToPeak:
 - 1
 - 2
@@ -230991,54 +231055,68 @@ Death:
 - false
 - true
 DepressionDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 DepressionDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Dexamethasone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 DiabetesDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 DiabetesDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 DiabetesEndocrineDisorder:
 - false
 - true
 Diphenhydramine:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 DiphenhydramineVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 DischargeStatus: []
 Dobutamine_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Dopamine_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 DrugAllergy:
 - false
 - true
 DrugDependenceDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 DrugDependenceDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Duloxetine:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 DuloxetineVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ECLS:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ESTPROPHOUSEHOLDSNOAUTO_cut:
 - 1
 - 2
@@ -241105,11 +241183,13 @@ ETHNICITY:
 - Unknown/NR
 - Hispanic Latino
 EndometriosisDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 EndometriosisDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 EosinophilCount:
 - 1
 - 2
@@ -251114,8 +251194,9 @@ Eosinophil_GreaterThan500:
 - false
 - true
 Epinephrine_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ErythrocyteSedimentationRate:
 - 0
 - 1
@@ -251128,14 +251209,17 @@ ErythrocyteSedimentationRate_flag_last:
 - normal
 - high
 Escitalopram:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 EscitalopramVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Esmolol_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 EstHouseholdIncome:
 - 1
 - 2
@@ -251183,26 +251267,33 @@ EstResidentialDensity25Plus:
 - 4
 - 5
 EstimatedGFR:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Estradiol:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 EstradiolVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Estrogen:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 EstrogenVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Estropipate:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 EstropipateVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Ethnicity:
 - Not Hispanic
 - Unknown
@@ -251214,8 +251305,9 @@ FamilyHistoryLiverDisease:
 - false
 - true
 FentanylVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Ferritin:
 - 0
 - 1
@@ -251231,20 +251323,25 @@ Fever:
 - false
 - true
 FeverDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Fexofenadine:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 FexofenadineVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 FibromyalgiaDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 FibromyalgiaDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 FinalCausalityScore:
 - Unlikely
 - Possible
@@ -251252,29 +251349,37 @@ FinalCausalityScore:
 - Highly Likely
 - Definite
 Flunisolide:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 FlunisolideVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Fluoxetine:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 FluoxetineVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Fluticasone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 FluticasoneVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Formoterol:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 FormoterolVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 GENDER:
 - Female
 - Male
@@ -251285,11 +251390,13 @@ GilbertsSyndrome:
 - false
 - true
 Goserelin:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 GoserelinVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 HBV_Positive:
 - 1
 - 2
@@ -271300,11 +271407,13 @@ HCV_RNA:
 - false
 - true
 HIVInfection:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 HIVInfectionDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 HIV_Positive:
 - false
 - true
@@ -271316,8 +271425,9 @@ HeartDisease:
 - false
 - true
 HeartFailureDiseaseDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Hemochromatosis:
 - false
 - true
@@ -271347,14 +271457,17 @@ HgbA1C_flag_last:
 - normal
 - high
 HighFlowNasalCannula:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Histrelin:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 HistrelinVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 HospitalLOS:
 - 0
 - 1
@@ -281360,17 +281473,21 @@ Hospitalization_NewProlonged:
 - false
 - true
 Hydroxychloroquine:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Hydroxyzine:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 HydroxyzineVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 HypertensionDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ICU:
 - false
 - true
@@ -301398,32 +301515,40 @@ INR_Peak_DILIOnsetToMonth6_ULN:
 - 4
 - 5
 IN_EPR:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 IN_FINAL_SAMPLE:
 - 'True'
 - 'False'
 IN_ICEES:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ImmunodulationAnakinra:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ImmunodulationConvalescentPlasma:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ImmunodulationDexamethaone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ImmunodulationIVIG:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ImmunodulationPredinoseOrMethylpredinose:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ImmunodulationTocilizumab:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Implicated_Drug1_Assessment:
 - Possible 25-50%
 - Probable 50-75%
@@ -301440,11 +301565,13 @@ Implicated_Drug3_Assessment:
 - Highly likely 75-95%
 - Definite Greater than 95%
 Indacaterol:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 IndacaterolVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Inflluenza7pointClinicalStatusScore:
 - 0
 - 1
@@ -301476,26 +301603,32 @@ Initial_RUCAM:
 - Probable
 - Highly Probable
 IntravenousImmunoglobulin:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 InvasiveVentilation:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Ipratropium:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 IpratropiumVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 IschemicHepatitis:
 - false
 - true
 IsolationFlag:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Isoproterenol_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Itching:
 - false
 - true
@@ -301503,11 +301636,13 @@ Jaundice:
 - false
 - true
 KidneyCancerDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 KidneyCancerDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 LDH:
 - 0
 - 1
@@ -311538,23 +311673,28 @@ Latency:
 - 9998
 - 9999
 LateralityDefect_SitusInversusOrHeterotaxy:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Leuprolide:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 LeuprolideVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Levosimendan_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 LiverBiopsy_Screen:
 - false
 - true
 LiverDiseaseDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 LiverRelatedDeath:
 - false
 - true
@@ -311586,11 +311726,13 @@ MajorRoadwayHighwayExposure2:
 - 5
 - 6
 MaleInfertilityDueToSpermDysfunction:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 MaleInfertilityDueToSpermDysfunctoon:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Malignancy:
 - false
 - true
@@ -311763,68 +311905,87 @@ MaxDailyPM2.5Exposure_qcut:
 - 4
 - 5
 Medroxyprogresterone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 MedroxyprogresteroneVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 MenopauseDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 MenopauseDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Mepolizumab:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 MepolizumabVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Metaproterenol:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 MetaproterenolVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Metformin:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 MetforminVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 MiddleEarDisease:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Milrinone_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Mometasone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 MometasoneVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 MorphineVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 NAFLD:
 - false
 - true
 NaloxoneVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Nandrolone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 NandroloneVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Nausea:
 - false
 - true
 NeonatalRespiratoryDistress:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 NeurologicalDisease:
 - false
 - true
@@ -311832,14 +311993,17 @@ Neutropenia:
 - false
 - true
 NitricOxideOrFolan:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 NonInvasivePositivePressureVentilation:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Norepinephrine_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 O3_ANNUAL_AVERAGE_cut:
 - 1
 - 2
@@ -321857,35 +322021,45 @@ ORIGINAL_ANALYTIC_SAMPLE:
 - 'True'
 - 'False'
 ObesityBMI:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ObesityBMIVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ObesityDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ObesityDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Omalizumab:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 OmalizumabVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 OvarianCancerDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 OvarianCancerDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 OvarianDysfunctionDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 OvarianDysfunctionDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 PCA_Race:
 - White
 - Black
@@ -321893,8 +322067,9 @@ PCA_Race:
 - Hispanic
 - Other/Multiracial
 PCDDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 PM25_ANNUAL_AVERAGE_cut:
 - 1
 - 2
@@ -331909,18 +332084,21 @@ PM25_N_OBS:
 - 9998
 - 9999
 Paroxetine:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ParoxetineVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 PatternLiverInjury_Onset:
 - Cholestatic
 - Hepatocellular
 - Mixed
 Phenylephrine_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 PlateletCount:
 - 0
 - 1
@@ -331933,35 +332111,44 @@ PlateletCount_flag_last:
 - normal
 - high
 PneumoniaDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 PneumoniaDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Prasterone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 PrasteroneVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Prednisone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 PrednisoneOrCorticosteroids_Tx:
 - false
 - true
 PrednisoneOrMethylprednisone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 PrednisoneVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 PregnancyDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 PregnancyDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 PrimaryBiliaryCirrhosis:
 - false
 - true
@@ -331980,23 +332167,29 @@ Procalcitonin_flag_last:
 - normal
 - high
 Progesterone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ProgesteroneVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Propranolol:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 PropranololVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ProstateCancerDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ProstateCancerDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 PulmonaryDisease:
 - false
 - true
@@ -342048,29 +342241,36 @@ Rash:
 - false
 - true
 ReactiveAirwayDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ReactiveAirwayDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Remdesivir:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 RenalDisease:
 - false
 - true
 RespiratorySupportHNO3orFlolan:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 RespiratorySupportInvasiveVentilator:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 RespiratorySupportNIPPV:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 RespiratorySupportSupplementalO2:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 RoadwayAADT:
 - 0
 - 1
@@ -382113,17 +382313,21 @@ SPEED:
 - 9998
 - 9999
 Salmeterol:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 SalmeterolVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Sertraline:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 SertralineVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 SerumBicarbonate:
 - 0
 - 1
@@ -382211,8 +382415,9 @@ SexDILI:
 - Male
 - Female
 SmokingStatus:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 SpO2FiO2ratio:
 - 0
 - 1
@@ -392289,41 +392494,52 @@ TLR4_DIST_3X_qcut:
 - 4
 - 5
 Tamoxifen:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 TamoxifenVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 TesticularCancerDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 TesticularCancerDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 TesticularDysfunctionDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 TesticularDysfunctionDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Testosterone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 TestosteroneVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Theophylline:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 TheophyllineVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Thrombocytopenia:
 - false
 - true
 Tocilizumab:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 TotalEDInpatientVisits:
 - 0
 - 1
@@ -422328,17 +422544,21 @@ TotalInpatientVisits:
 - 9998
 - 9999
 Trazodone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 TrazodoneVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Triptorelin:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 TriptorelinVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Troponin:
 - 0
 - 1
@@ -422354,23 +422574,29 @@ UnexplainedAbnormalLiverTest:
 - false
 - true
 UterineCancerDx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 UterineCancerDxVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Vasopressin_gtt:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Venlafaxine:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 VenlafaxineVisit:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 Ventilator:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 VisitType: []
 WBCcount:
 - 0
@@ -432599,146 +432825,193 @@ ea_a012_current_home_type:
 - Mobile home/trailer
 - Other
 ea_a014_central_heat:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a017a_heat_natural_gas:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a017b_heat_gas:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a017c_heat_electricity:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a017d_heat_oil_kerosene:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a017e_heat_coal:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a017f_heat_wood:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a017g_heat_solar_energy:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a017h_heat_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a017i_heat_none:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a017j_heat_dk:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a018_fireplace:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a020a_fireplace_wood:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a020b_fireplace_coal:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a020c_fireplace_natural_gas:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a020d_fireplace_art_logs:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a021a_stove_electricity:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a021b_stove_natural_gas:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a021c_stove_woodfire:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a021d_stove_coal:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a021e_stove_propane:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a021f_stove_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a022_ac:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a023a_ac_central:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a023b_ac_window:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a023c_ac_portable:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a026_water_source_drink:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a027_water_filter:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a028_water_source_bath:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a036_mildew_odor_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a038_water_damage_repair:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a040_mold_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a059a_pet_dog:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a059b_pet_cat:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a059c_pet_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a060_pest_regularly:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a061a_pest_ants:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a061b_pest_cockroaches:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a061c_pest_bees_wasps:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a061d_pest_flies:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a061e_pest_spiders:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a061f_pest_mosquitos:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a061g_pest_flea_ticks:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a061h_pest_termite:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a061i_pest_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a065_traffic:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a066_traffic_heavy:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a067_animal_waste:
 - Live more than 2 miles away
 - Live within 2 miles but more than 1 mile
@@ -432866,791 +433139,1053 @@ ea_a087_nuclear_plant:
 - Live within 1/4 mile or less
 - Don't know
 ea_a088b_factory_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_a091_farm_active:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b092_solvent_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b092a_benzene:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b092b_chloroform:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b092c_chloroprene:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b092d_dichlorobenzene:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b092e_ethyl_benzene:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b092f_ethyl_dichloride:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b092g_perchloroethylene:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b092h_toluene:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b092i_trichloroethylene:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b092j_xylenes:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b092k_solvent_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b097a_solvent_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b098_lube_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b098a_brake_fluid:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b098b_transmission_fluid:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b098c_hydraulic_fluid:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b098d_motor_oil:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b098e_lube_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b103a_lube_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b104_cleaning_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b104a_bleach:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b104b_ammonia:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b104c_carbon_tetrachloride:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b104d_cleaning_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b109a_cleaning_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b110_metal_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b110a_arsenic:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b110b_beryllium:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b110c_cadmium:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b110d_chromates:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b110e_lead:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b110f_mercury:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b110g_nickel:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b110h_metal_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b115a_metal_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b116_alcohol_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b116a_isopropanol:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b116b_methanol:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b116c_ethanol:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b116d_butanol:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b116e_alcohol_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b121a_alcohol_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b122_pest_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b122a_ethyl_dibromide:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b122b_chlorinated_naph:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b122c_insecticides:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b122d_fungicides:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b122e_herbicides:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b122f_ethyl_fumigants:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b122g_rodenticides:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b122h_pest_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b127a_pest_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b128_plastic_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b128a_bpa:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b128b_vinyl_chloride:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b128c_styrene:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b128d_phosgene:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b128e_phenol:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b128f_tdi:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b128g_methylene_bis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b128h_plastic_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b134_dust_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b134a_coal_dust:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b134b_fiberglass:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b134c_rock_dust:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b134d_silica:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b134e_talc:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b134f_dust_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b139a_dust_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b140_emissions_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b140a_nitrous_oxide:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b140b_carbon_dioxide:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b140c_carbon_monoxide:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b140d_ozone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b140e_emissions_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b145a_emissions_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b146_carcinogens_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b146a_pbbs:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b146b_pcbs:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b146c_radiation:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b146d_xrays:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b146e_welding:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b146f_carcinogens_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b151a_carcinogens_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b152_acid_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b152a_hydrochloric_acid:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b152b_sulfuric_acid:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b152c_phosphoric_acid:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b152d_acetic_acid:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b152e_nitric_acid:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b152f_acid_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b157a_acid_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b158_alkalis_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b158a_sodium_oh:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b158b_calcium_oh:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b158c_potassium_oh:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b158d_magnesium_oh:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b158e_alkalis_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b163a_alkalis_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b164_stains_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b164a_shellac:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b164b_wood:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b164c_resin:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b164d_polyurethane:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b164e_lacquer:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b164f_acrylic:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b164g_stains_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b170_paint_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b170a_primer:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b170b_enamel:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b170c_oil_based:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b170d_acrylic:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b170e_luminescent:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b170f_acetone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b170g_turpentine:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b170h_naphtha:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b170i_ethyl_ket:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b170j_paint_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b175a_paint_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b176_anesthetic_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b176a_desflurane:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b176b_enflurane:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b176c_halothane:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b176d_isoflurane:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b176e_methoxyflurane:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b176f_nitrous:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b176g_sevoflurane:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b176h_anesthetic_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b181a_anesthetic_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b182_adhesives_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b182a_white_glue:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b182b_rubber_cement:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b182c_neoprene:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b182d_vinyl_a:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b182e_epoxy:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b182f_urethane:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b182g_polyimides:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b182h_cyanoacrylates:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b182i_wallpaper_paste:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b182j_adhesives_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b187a_adhesives_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b188_soldering_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b188a_eutectic:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b188b_tin_zinc:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b188c_lead_silver:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b188d_cadmium_silver:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b188e_flux:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b188f_solder_paste:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b188g_solder_wire:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b188h_rosin:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b188i_solder_fumes:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b188j_soldering_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b193a_soldering_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b194_ink_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b194a_hair_dye:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b194b_leather_dye:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b194c_textile_dye:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b194d_paper_dye:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b194e_india_ink:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b194f_inkjet:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b194g_gel_ink:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b194h_pen_ink:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b194i_toner:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b194j_soy_ink:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b194k_pharma_ink:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b194l_ink_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_b199a_ink_ongoing_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_e249_sunburn:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_e253_skin_rash:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_e257_tan_booth:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 ea_e261_sunlamp:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a001_multivitamin:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a002_vitamin_a:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a003_vitamin_b3:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a004_vitamin_b6:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a005_vitamin_b12:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a006_vitamin_b_comp:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a007_vitamin_c:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a008_vitamin_d:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a009_vitamin_e:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a010_calcium:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a011_chromium:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a012_iron:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a013_magnesium:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a014_potassium:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a015_selenium:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a016_zinc:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a017_blk_cohosh:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a018_coq10:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a019_fish_oil:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a020_flaxseed_oil:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a021_folic_acid:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a022_gingko_biloba:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a023_ginseng:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a024_glucosamine:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a025_melatonin:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a026_milk_thistle:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a027_omega3:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a028_probiotic:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a029_red_yeast_rice:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a030_resveratrol:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_a031_st_johns_wort:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b042_med_abn_hrt_rhythm:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b043_med_angina:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b044_med_blood_thinner:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b045_med_coronary_hrt_disease:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b046_med_hrt_failure:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b047_med_high_cholest:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b048_med_hbp:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b049_med_stroke:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b050_med_diabetes:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b051_med_thyroid:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b052_med_anxiety:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b053_med_depression:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b054_med_asthma:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b055_med_copd:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b056_med_reflux:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b057_med_chronic_pain:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b058_med_sleep_disorder:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b059_med_birth_control:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_b060_med_hormone_replace_ther:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f100_chicken_pox:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f101_chlamydia:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f102_cold_sores:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f103_crytpo:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f104_dysentery:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f105_flu:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f106_food_pois_bact:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f107_food_pois_vir:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f108_genital_herpes:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f109_genital_warts:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f110_german_measles:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f111_gonorrhea:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f113_hep_b:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f114_hep_c:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f115_hIV:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f116_legionnaires:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f117_lyme:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f118_malaria:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f119_measles:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f120_meningitis_bac:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f121_meningitis_vir:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f122_mono:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f123_mumps:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f124_pneumonia_bac:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f125_pneumonia_vir:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f126_rocky_mtn_spot:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f127_salmonella:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f128_shingles:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f129_staph:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f130_strep:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f131_syphilis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f132_TB:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f133_ulcers:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_f134_whooping_cough:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_g159_dx_sleep_disorder:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_g160a_sleep_apnea:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_g160b_insomnia:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_g160c_restless_legs:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k293_blood_type:
 - O Positive
 - O Negative
@@ -433662,155 +434197,202 @@ eb_k293_blood_type:
 - AB Negative
 - Don't know
 eb_k294a_color_blind_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k295a_cystic_fibrosis_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k296a_down_syn_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k297a_hemochromatosis_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k298a_hemophilia_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k299a_hyperlipidemia_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k300a_huntingtons_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k301a_clot_prob_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k302a_klinefelter_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k303a_muscular_dyst_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k304a_niemann_pick_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k305a_PKU_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k306a_PKD_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k307a_sickle_cell_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k308a_taysachs_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k309a_thalassemia_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_k310a_turner_syn_you:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_m313_ever_pregnant:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_m316_hypertension_preg:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_m316a_hypertension_preg_n:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_m317_preeclampsia_preg:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_m317a_preeclampsia_preg_n:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_m318_diabetes_preg:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_m318a_diabetes_preg_n:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_m319_placenta_prob_preg:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_m319a_placenta_prob_preg_n:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_m320_poor_growth_preg:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_m320a_poor_growth_preg_n:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_m321_other_comp_preg:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 eb_m322_babies_delivered_n:
 - '0'
 - '1'
 - '2'
 - '>2'
 he _b012_heart_attack:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_a004a_birth_low_bw:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_a004b_birth_preterm:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_a004c_birth_multi:
 - Twin
 - Triplet
 - Other Multiple
 he_b007_hypertension:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_b007a_hypertension_preg:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_b008_high_cholesterol:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_b009_atherosclerosis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_b010_cardiac_arrhythmia:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_b011_angina:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_b013_coronary_artery:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_b014_congestive_heart_failure:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_b015_poor_blood_flow:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_b016_raynauds:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_b017_blood_clots:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_b018_angioplasty:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_b019_stroke_mini:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_b020_stroke:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_b020a_stroke_type:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_bmi_cat_d:
 - 0
 - 1
@@ -433818,221 +434400,292 @@ he_bmi_cat_d:
 - 3
 - 4
 he_c021_pre_diabetes:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_c021a_pre_diabetes_a:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_c022_diabetes:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_c022a_diabetes_preg:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_c022b_diabetes_insulin:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_c022c_diabetes_insulin_first:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_c022d_diabetes_pills:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_c022e_diabetes_a:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_c023_thyroid_disease:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_c023a_hyperthyroidism:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_c023b_hypothyroidism:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_c023c_thyroid_enlarged:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_c023d_nodule_benign:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_d024_allergies:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_d025_copd:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_d026_ipf:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_d027_tb:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_d027a_tb_type:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_d028_cough_breathlessness:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_d029_chest_wheeze:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_d030_asthma:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_d030b_asthma_o:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_d030c_asthma_episode:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_d030d_asthma_er:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_d030e_asthma_med:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_e031_epilepsy:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_e032_migraine:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_e033_parkinsons:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_e034_ptsd:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_e035_alzheimers:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_e036_ms:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_f037_celiac:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_f038_lactose_intolerance:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_f039_crohns:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_f040_ulcerative_colitis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_f041_polyps:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_f042_gallbladder_disease:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_f043_stomach_ulcer:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_f044_cirrhosis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_f045_fatty_liver:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_f046_hepatitis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_f046a_hep_a:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_f046b_hep_b:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_f046c_hep_c:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_f046d_hep_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_f046e_hep_dk:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_g047_ckd:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_g048_esrd:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_g049_kidney_stones:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_g050_kidney_infection:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_g051_pkd:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_gender:
 - Male
 - Female
 he_h052_allergic_reactions:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_h053_scleroderma:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_h054_shingles:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_h055_fibromyalgia:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_h056_lupus:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_h057_sjogrens:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_i058_hemochromatosis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_i059_iron_anemia:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_i060_pernicious_anemia:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_i061_sickle_cell:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_j062_bone_loss:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_j063_osteoporosis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_j064_gout:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_j065_myositis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_j066_rheu_arthritis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_j067_osteoarthritis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_j068_arthritis_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_k069_psoriasis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_k070_eczema:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_k071_urticaria:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_k074_eye_color:
 - Blue
 - Hazel
@@ -434046,575 +434699,765 @@ he_k075_hair_color:
 - Auburn
 - Blonde
 he_l080_chronic_fatigue:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_m082_menstrual_periods_o:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_m083_hysterectomy:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_m084_ovaries:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_m086_pregnant:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_m087_birth_control:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_m088_hormone_replacement:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_m089_endometriosis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_m090_uterine_polyps:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_m091_uterine_tumors:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_m092_ovarian_cysts:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_n093_enlarged_prostate:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_n094_prostatitis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_n095_epididymitis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_n096_testicular_torsion:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_n097_testicle_location_abn:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_n098_sperm_abn:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_n099_varicocele:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_n100_cause_pregnancy:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_n101_trouble_having_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_n102_testicle_surgery:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o103_cancer:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o104_cancer_bladder:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o105_cancer_blood:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o106_cancer_bone:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o107_cancer_brain:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o108_cancer_breast:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o109_cancer_cervix:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o110_cancer_colon:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o111_cancer_esophagus:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o112_cancer_gallbladder:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o113_cancer_kidney:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o114_cancer_larynx:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o115_cancer_leukemia:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o116_cancer_liver:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o117_cancer_lung:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o118_cancer_lymphoma:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o119_cancer_nonhodgkins:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o120_cancer_melanoma:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o121_cancer_mouth:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o122_cancer_spinalcord:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o123_cancer_ovary:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o124_cancer_pancreas:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o125_cancer_prostate:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o126_cancer_rectum:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o127_cancer_skin_nonmel:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o128_cancer_skin_dk:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o129_cancer_soft_tissue:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o130_cancer_stomach:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o131_cancer_testis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o132_cancer_throat:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o133_cancer_thyroid:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o134_cancer_uterus:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_o135_cancer_other:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q140_asbestos:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q141_biohazards:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q142_chemicals:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q143_coal_dust:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q144_coal:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q145_diesel:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q146_dyes:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q147_formaldehyde:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q148_gasoline:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q149_heavy_metals:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q150_pesticide:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q151_sand:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q152_other_dust:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q153_textiles:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q154_wood_dust:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_q155_xrays:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r156a_breast_cancer_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r156b_breast_cancer_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r156c_breast_cancer_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r156d_breast_cancer_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r156e_breast_cancer_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r157a_colon_cancer_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r157b_colon_cancer_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r157c_colon_cancer_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r157d_colon_cancer_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r157e_colon_cancer_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r158a_leukemia_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r158b_leukemia_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r158c_leukemia_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r158d_leukemia_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r158e_leukemia_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r159a_lung_cancer_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r159b_lung_cancer_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r159c_lung_cancer_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r159d_lung_cancer_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r159e_lung_cancer_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r160a_lymphoma_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r160b_lymphoma_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r160c_lymphoma_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r160d_lymphoma_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r160e_lymphoma_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r161b_prostate_cancer_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r161c_prostate_cancer_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r161e_prostate_cancer_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r162a_ovarian_cancer_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r162d_ovarian_cancer_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r162e_ovarian_cancer_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r163a_melanoma_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r163b_melanoma_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r163c_melanoma_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r163d_melanoma_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r163e_melanoma_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r164a_skin_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r164b_skin_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r164c_skin_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r164d_skin_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r164e_skin_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r165a_cancer_other_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r165b_cancer_other_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r165c_cancer_other_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r165d_cancer_other_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r165e_cancer_other_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r166a_diabetes_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r166b_diabetes_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r166c_diabetes_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r166d_diabetes_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r166e_diabetes_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r167a_hbp_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r167b_hbp_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r167c_hbp_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r167d_hbp_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r167e_hbp_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r168a_stroke_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r168b_stroke_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r168c_stroke_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r168d_stroke_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r168e_stroke_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r169a_heart_attack_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r169b_heart_attack_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r169c_heart_attack_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r169d_heart_attack_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r169e_heart_attack_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r170a_coronary_artery_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r170b_coronary_artery_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r170c_coronary_artery_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r170d_coronary_artery_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r170e_coronary_artery_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r171a_sickle_cell_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r171b_sickle_cell_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r171c_sickle_cell_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r171d_sickle_cell_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r171e_sickle_cell_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r172a_rheu_arthritis_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r172b_rheu_arthritis_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r172c_rheu_arthritis_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r172d_rheu_arthritis_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r172e_rheu_arthritis_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r173a_alzheimers_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r173b_alzheimers_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r173c_alzheimers_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r173d_alzheimers_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r173e_alzheimers_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r174a_asthma_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r174b_asthma_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r174c_asthma_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r174d_asthma_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r174e_asthma_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r175a_autism_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r175b_autism_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r175c_autism_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r175d_autism_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r175e_autism_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r176a_hayfever_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r176b_hayfever_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r176c_hayfever_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r176d_hayfever_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r176e_hayfever_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r177a_emphysema_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r177b_emphysema_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r177c_emphysema_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r177d_emphysema_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r177e_emphysema_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r178a_parkinsons_mom:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r178b_parkinsons_dad:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r178c_parkinsons_bro:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r178d_parkinsons_sis:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_r178e_parkinsons_child:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_s179_100_cigarettes:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_s180_smoke:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_s183_tobacco_smokeless:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_s184_cigars_pipes:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_s185_smoke_indoors:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_s187_alcohol_life:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_s188_alcohol_mo:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_u213_bipolar_relatives:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 he_u214_bipolar:
-- 0
-- 1
+- '0'
+- '1'
+- '>1'
 pCO2Arterial:
 - 0
 - 1
