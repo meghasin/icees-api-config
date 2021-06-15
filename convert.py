@@ -30,6 +30,7 @@ for table, table_mappings in old_mappings.items():
             else:
                 raise TypeError(f"unsupported biolinkType {biolinkType}")
             if len(categories) == 0:
+                print("no biolinkType, default to NameThing")
                 categories = ["NamedThing"]
             ty = column_mapping["type"]
             mappings[column] = {
