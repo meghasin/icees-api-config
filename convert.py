@@ -24,7 +24,7 @@ for table, table_mappings in old_mappings.items():
             if biolinkType is None:
                 categories = []
             elif isinstance(biolinkType, str):
-                categories = biolinkType.split(",")
+                categories = [c.strip() for c in biolinkType.split(",")]
             elif isinstance(biolinkType, list):
                 categories = biolinkType
             else:

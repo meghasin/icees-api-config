@@ -1,4 +1,9 @@
 patient:
+  Active_In_Year:
+    type: integer
+    minimum: 0
+    maximum: 1
+    biolinkType: []
   AgeQualifyingLab:
     type: integer
     minimum: 1

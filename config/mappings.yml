@@ -9,8 +9,8 @@ A*02:01:
 A1AT_Deficiency:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0013282
   type: string
@@ -51,13 +51,13 @@ ALT:
 ALT_DILIOnset_ULN:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 ALT_Onset:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C2749273
   - UMLS:C1832768
@@ -75,19 +75,19 @@ ALT_Onset:
 ALT_Onset_ULN:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 ALT_Peak_DILIOnsetToMonth6:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 ALT_Peak_DILIOnsetToMonth6_ULN:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 ALT_flag_first:
@@ -103,7 +103,7 @@ ALT_flag_last:
 ANA:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - OMIM:114105
   - PUBCHEM.COMPOUND:44629965
@@ -413,8 +413,8 @@ ANA:
   type: string
 ASMA:
   categories:
-  - 'PhenotypicFeature '
-  - ' DiseaseOrPhenotypicFeature'
+  - PhenotypicFeature
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MESH:C519298
   - PUBCHEM.COMPOUND:14318164
@@ -602,13 +602,13 @@ AST:
 AST_DILIOnset_ULN:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 AST_Onset:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0264413
   - UMLS:C1844940
@@ -659,19 +659,19 @@ AST_Onset:
 AST_Onset_ULN:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 AST_Peak_DILIOnsetToMonth6:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 AST_Peak_DILIOnsetToMonth6_ULN:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 AST_flag_first:
@@ -687,7 +687,7 @@ AST_flag_last:
 AbdominalPain:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C143255
   - UMLS:C0423651
@@ -803,6 +803,10 @@ AbsoluteNeutrophilCount_flag_last:
   - PhenotypicFeature
   identifiers: []
   type: string
+Active_In_Year:
+  categories: []
+  identifiers: []
+  type: integer
 AgeInteger:
   categories:
   - PhenotypicFeature
@@ -811,7 +815,7 @@ AgeInteger:
 AgeQualifyingLab:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: &id001
   - NCIT:C25150
   - UMLSCUI:C0001779
@@ -860,8 +864,8 @@ Albumin_flag_last:
 Albuterol:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id002
   - SMILES:CC(C)(C)NCC(O)C1CCC(O)C(CO)C1
   - CAS:18559-94-9
@@ -989,14 +993,14 @@ Albuterol:
 AlbuterolVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id002
   type: integer
 AlcoholDependenceDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:66590003
   - SCTID:713583005
@@ -1014,19 +1018,19 @@ AlcoholDependenceDx:
 AlcoholDependenceDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 AlcoholRelatedLiverDisease:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: string
 AlcoholUse:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C81229
   - UMLS:C0085762
@@ -1096,13 +1100,13 @@ AlcoholUse:
 AlkalinePhosphatase_DILIOnset_ULN:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 AlkalinePhosphatase_Onset:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:88810008
   - SCTID:785821009
@@ -1117,25 +1121,25 @@ AlkalinePhosphatase_Onset:
 AlkalinePhosphatase_Onset_ULN:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 AlkalinePhosphatase_Peak_DILIOnsetToMonth6:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 AlkalinePhosphatase_Peak_DILIOnsetToMonth6_ULN:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 AlopeciaDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:56317004
   - SCTID:160409001
@@ -1202,14 +1206,14 @@ AlopeciaDx:
 AlopeciaDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 Amiodarone_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - PUBCHEM:2157
   - CHEBI:2663
@@ -1242,14 +1246,14 @@ Amiodarone_gtt:
 AmoxicillinDILIDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 Anakinra:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - NCIT:C38717
   - UMLSCUI:C0245109
@@ -1302,30 +1306,30 @@ Anakinra:
 Androstenedione:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id003
   - RXCUI:784
   type: integer
 AndrostenedioneVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id003
   type: integer
 AntiInfectivesAntibiotics:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 AntiInfectivesHydroxychloroquine:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - RxNorm:5521
   - RxNorm:1164628
@@ -1444,8 +1448,8 @@ AntiInfectivesHydroxychloroquine:
 AntiInfectivesRemdesivir:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - NCIT:C152185
   - UMLSCUI:CL553517
@@ -1467,7 +1471,7 @@ AntiInfectivesRemdesivir:
 Anti_HAV:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - OMIM:MTHU045723
   - UMLS:C0001676
@@ -1494,7 +1498,7 @@ Anti_HAV:
 Anti_HBc:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0948251
   - SCTID:82409003
@@ -1502,7 +1506,7 @@ Anti_HBc:
 Anti_HBc_IgM:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0948251
   - SCTID:143335009
@@ -1513,20 +1517,20 @@ Anti_HBc_IgM:
 Anti_HBe:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: string
 Anti_HBs:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0262505
   type: string
 Anti_HCV:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:64411004
   - SCTID:72165005
@@ -1536,8 +1540,8 @@ Anti_HCV:
 Antibiotics:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - PUBCHEM:102585999
   - PUBCHEM:101715062
@@ -1676,20 +1680,20 @@ Antibiotics:
 AnxietyDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 AnxietyDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 Arformoterol:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id004
   - SMILES:COC1CCC(C[C@@H](C)NC[C@H](O)C2CCC(O)C(NC:O)C2)CC1
   - CAS:208102-40-3
@@ -1710,14 +1714,14 @@ Arformoterol:
 ArformoterolVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id004
   type: integer
 AsthmaDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: &id005
   - MONDO:0004766
   - MONDO:0004979
@@ -1788,26 +1792,26 @@ AsthmaDx:
 AsthmaDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: *id005
   type: integer
 AutismDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 AutismDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 AutoimmuneHepatitis:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C4231138
   - MONDO:0016264
@@ -1818,19 +1822,19 @@ AutoimmuneHepatitis:
 Avg24hAcetaldehydeExposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 Avg24hAcetaldehydeExposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 Avg24hBenzeneExposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: &id006
   - CHEBI:16716
   - PUBCHEM:241
@@ -1839,13 +1843,13 @@ Avg24hBenzeneExposure_2:
 Avg24hBenzeneExposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id006
   type: integer
 Avg24hCOExposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: &id007
   - CHEBI:17245
   - PUBCHEM:281
@@ -1854,25 +1858,25 @@ Avg24hCOExposure_2:
 Avg24hCOExposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id007
   type: integer
 Avg24hFormaldehydeExposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 Avg24hFormaldehydeExposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 Avg24hNO2Exposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: &id008
   - CHEBI:33101
   - PUBCHEM:3032552
@@ -1881,13 +1885,13 @@ Avg24hNO2Exposure_2:
 Avg24hNO2Exposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id008
   type: integer
 Avg24hNOExposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: &id009
   - CHEBI:16480
   - PUBCHEM:145068
@@ -1896,26 +1900,26 @@ Avg24hNOExposure_2:
 Avg24hNOExposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id009
   type: integer
 Avg24hNOxExposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: &id010
   - CHEBI:35196
   type: integer
 Avg24hNOxExposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id010
   type: integer
 Avg24hOzoneExposure:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: &id011
   - MESH:D010126
   - PUBCHEM:24823
@@ -1926,37 +1930,37 @@ Avg24hOzoneExposure:
 Avg24hOzoneExposure_StudyAvg:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 Avg24hOzoneExposure_StudyAvg_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 Avg24hOzoneExposure_StudyMax:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 Avg24hOzoneExposure_StudyMax_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 Avg24hOzoneExposure_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 Avg24hPM2.5Exposure:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: &id012
   - MESH:D052638
   - NCIT:C29886
@@ -1967,49 +1971,49 @@ Avg24hPM2.5Exposure:
 Avg24hPM2.5Exposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 Avg24hPM2.5Exposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 Avg24hPM2.5Exposure_StudyAvg:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 Avg24hPM2.5Exposure_StudyAvg_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 Avg24hPM2.5Exposure_StudyMax:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 Avg24hPM2.5Exposure_StudyMax_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 Avg24hPM2.5Exposure_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 Avg24hSO2Exposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: &id013
   - CHEBI:18422
   - PUBCHEM:1119
@@ -2018,13 +2022,13 @@ Avg24hSO2Exposure_2:
 Avg24hSO2Exposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id013
   type: integer
 AvgDailyAcetaldehydeExposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: &id014
   - CHEBI:15343
   - PUBCHEM:177
@@ -2033,37 +2037,37 @@ AvgDailyAcetaldehydeExposure_2:
 AvgDailyAcetaldehydeExposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id014
   type: integer
 AvgDailyBenzeneExposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id006
   type: integer
 AvgDailyBenzeneExposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id006
   type: integer
 AvgDailyCOExposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id007
   type: integer
 AvgDailyCOExposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id007
   type: integer
 AvgDailyFormaldehydeExposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:16842
   - PUBCHEM:712
@@ -2072,7 +2076,7 @@ AvgDailyFormaldehydeExposure_2:
 AvgDailyFormaldehydeExposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:16842
   - PUBCHEM:712
@@ -2081,151 +2085,151 @@ AvgDailyFormaldehydeExposure_2_qcut:
 AvgDailyNO2Exposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id008
   type: integer
 AvgDailyNO2Exposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id008
   type: integer
 AvgDailyNOExposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id009
   type: integer
 AvgDailyNOExposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id009
   type: integer
 AvgDailyNOxExposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id010
   type: integer
 AvgDailyNOxExposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id010
   type: integer
 AvgDailyOzoneExposure:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 AvgDailyOzoneExposure_StudyAvg:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 AvgDailyOzoneExposure_StudyAvg_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 AvgDailyOzoneExposure_StudyMax:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 AvgDailyOzoneExposure_StudyMax_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 AvgDailyOzoneExposure_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 AvgDailyPM2.5Exposure:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 AvgDailyPM2.5Exposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 AvgDailyPM2.5Exposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 AvgDailyPM2.5Exposure_StudyAvg:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 AvgDailyPM2.5Exposure_StudyAvg_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 AvgDailyPM2.5Exposure_StudyMax:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 AvgDailyPM2.5Exposure_StudyMax_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 AvgDailyPM2.5Exposure_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 AvgDailySO2Exposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id013
   type: integer
 AvgDailySO2Exposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id013
   type: integer
 AvgailyAcetaldehydeExposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id014
   type: integer
 AvgailyAcetaldehydeExposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id014
   type: integer
 BMI:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C138901
   - NCIT:C16358
@@ -2315,7 +2319,7 @@ BMI_CATEGORY:
 BMI_Category:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: string
 BaseDeficit:
@@ -2360,8 +2364,8 @@ BaseDeficit_flag_last:
 Beclomethasone:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id015
   - SMILES:C[C@H]1C[C@H]2[C@@H]3CCC4:CC(:O)C:C[C@]4(C)[C@@]3(CL)[C@@H](O)C[C@]2(C)[C@@]1(O)C(:O)CO
   - CAS:4419-39-0
@@ -2474,38 +2478,38 @@ Beclomethasone:
 BeclomethasoneVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id015
   type: integer
 Bilirubin_DILIOnset_ULN:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 Bilirubin_Onset:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 Bilirubin_Onset_ULN:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 Bilirubin_Peak_DILIOnsetToMonth6:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 Bilirubin_Peak_DILIOnsetToMonth6_ULN:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 BloodType:
@@ -2724,7 +2728,7 @@ BrainNatriureticPeptide_flag_last:
 Bronchiectasis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCITD:12295008
   - SCITD:77593006
@@ -2740,8 +2744,8 @@ Bronchiectasis:
 Budesonide:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id016
   - SMILES:CCCC1O[C@@H]2C[C@H]3[C@@H]4CCC5:CC(:O)C:C[C@]5(C)[C@H]4[C@@H](O)C[C@]3(C)[C@@]2(O1)C(:O)CO
   - CAS:51333-22-3
@@ -2863,8 +2867,8 @@ Budesonide:
 BudesonideVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id016
   type: integer
 C-reactiveProtein:
@@ -2951,8 +2955,8 @@ CK_flag_last:
 CRRT_HD:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - MONDO:000153
   - MONDO:0019440
@@ -2985,7 +2989,7 @@ CURRENT_AGE2:
 CancerDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0005070
   - MONDO:0004992
@@ -3113,8 +3117,8 @@ CancerDx:
 CardiovascularSupportAmiodarone_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - PUBCHEM:2157
   - CHEBI:2663
@@ -3147,8 +3151,8 @@ CardiovascularSupportAmiodarone_gtt:
 CardiovascularSupportDobutamine_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:4670
   - CHEBI:4671
@@ -3180,15 +3184,15 @@ CardiovascularSupportDobutamine_gtt:
 CardiovascularSupportDopamine_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 CardiovascularSupportEpinephrine_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:28918
   - CHEBI:40751
@@ -3262,8 +3266,8 @@ CardiovascularSupportEpinephrine_gtt:
 CardiovascularSupportEsmolol_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:88206
   - CHEBI:4857
@@ -3322,8 +3326,8 @@ CardiovascularSupportEsmolol_gtt:
 CardiovascularSupportIsoproterenol_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:64317
   - CHEBI:6257
@@ -3371,8 +3375,8 @@ CardiovascularSupportIsoproterenol_gtt:
 CardiovascularSupportLevosimendan_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:50567
   - PUBCHEM:3033825
@@ -3393,8 +3397,8 @@ CardiovascularSupportLevosimendan_gtt:
 CardiovascularSupportMilrinone_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:50693
   - CHEBI:34850
@@ -3444,8 +3448,8 @@ CardiovascularSupportMilrinone_gtt:
 CardiovascularSupportNorepinephrine_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:18357
   - CHEBI:33569
@@ -3539,8 +3543,8 @@ CardiovascularSupportNorepinephrine_gtt:
 CardiovascularSupportPhenylephrine_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - PUBCHEM:6102
   - CHEBI:8093
@@ -3583,8 +3587,8 @@ CardiovascularSupportPhenylephrine_gtt:
 CardiovascularSupportVasopressin_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:9937
   - CHEBI:34543
@@ -3652,8 +3656,8 @@ CardiovascularSupportVasopressin_gtt:
 CardiovascularSupporyECLS:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - SCTID:78823007
   - SCTID:243185007
@@ -3674,7 +3678,7 @@ CardiovascularSupporyECLS:
 CervicalCancerDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:363354003
   - SCTID:423973006
@@ -3713,14 +3717,14 @@ CervicalCancerDx:
 CervicalCancerDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 Cetirizine:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id017
   - SMILES:OC(:O)COCCN1CCN(CC1)C(C2CCCCC2)C3CCC(CL)CC3
   - CAS:83881-51-0
@@ -3797,8 +3801,8 @@ Cetirizine:
 CetirizineVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id017
   type: integer
 CharlsonComorbidityIndex:
@@ -3813,7 +3817,7 @@ CharlsonComorbidityIndex:
 ChronicArteryDiseaseDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C12372
   - UMLSCUI:C0003842
@@ -3823,22 +3827,22 @@ ChronicArteryDiseaseDx:
 ChronicDILI:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: string
 ChronicHepatitisB_Screening:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: string
 ChronicHepatitisC_Screening:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:128302006
   - SCTID:708198006
@@ -3848,7 +3852,7 @@ ChronicHepatitisC_Screening:
 ChronicKidneyDiseaseDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0005240
   - MONDO:0001343
@@ -3897,7 +3901,7 @@ ChronicKidneyDiseaseDx:
 ChronicNasalCongestion:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C78500
   - UMLSCUI:C0027424
@@ -3912,7 +3916,7 @@ ChronicNasalCongestion:
 ChronicObstructivePulmonaryDiseaseDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0011751
   - MONDO:0009937
@@ -3928,8 +3932,8 @@ ChronicObstructivePulmonaryDiseaseDx:
 Ciclesonide:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - SMILES:CC(C)C(:O)OCC(:O)[C@@]12O[C@@H](O[C@@H]1C[C@H]3[C@@H]4CCC5:CC(:O)C:C[C@]5(C)[C@H]4[C@@H](O)C[C@]23C)C6CCCCC6
   - CAS:126544-47-6
@@ -3963,15 +3967,15 @@ Ciclesonide:
 CiclesonideVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 Cirrhosis:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C3044
   - UMLS:C4049169
@@ -4095,8 +4099,8 @@ Cirrhosis:
 Citalopram:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id018
   - RXCUI:221078
   - RXCUI:2556
@@ -4105,8 +4109,8 @@ Citalopram:
 CitalopramVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id018
   type: integer
 CodeBlueVisit:
@@ -4117,7 +4121,7 @@ CodeBlueVisit:
 ConcomitantDrugs:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C1536016
   - LOINC:81950-8
@@ -4167,7 +4171,7 @@ ConcomitantDrugs:
 CongestiveHeartFailure:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - OMIM:MTHU048033
   - UMLS:C0264719
@@ -4231,8 +4235,8 @@ CongestiveHeartFailure:
 ConvalescentPlasma:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - NCIT:C171633
   - NCIT:C173750
@@ -4246,7 +4250,7 @@ ConvalescentPlasma:
 CoronaryArteryDisease:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C12372
   - UMLSCUI:C0003842
@@ -4256,7 +4260,7 @@ CoronaryArteryDisease:
 CoughDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: &id019
   - MONDO:000149
   - SCTID:11641008
@@ -4280,13 +4284,13 @@ CoughDx:
 CoughDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: *id019
   type: integer
 CroupDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: &id020
   - MONDO:0005722
   - MONDO:0018597
@@ -4304,13 +4308,13 @@ CroupDx:
 CroupDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: *id020
   type: integer
 CysticFibrosis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C2975
   - UMLSCUI:C0010674
@@ -4407,7 +4411,7 @@ D28_ASTHMA:
 DILIDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C84427
   - UMLSCUI:C0860207
@@ -4419,8 +4423,8 @@ DILIDx:
 DILIN_SeverityScore:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: string
 DISTANCE:
@@ -4442,7 +4446,7 @@ DRB1*15:01:
 DailyWetCough:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C78569
   - UMLSCUI:C0451597
@@ -4454,25 +4458,25 @@ DailyWetCough:
 Days_ALT_DILIOnsetToPeak:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: number
 Days_AST_DILIOnsetToPeak:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: number
 Days_AlkalinePhosphatase_DILIOnsetToPeak:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: number
 Days_Bilirubin_DILIOnsetToPeak:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: number
 Days_DILIOnsetToInitialVisit:
@@ -4503,7 +4507,7 @@ Days_EarliestSignToDrugStop:
 Death:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C1306577
   - NCIT:C53787
@@ -4654,20 +4658,20 @@ Death:
 DepressionDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 DepressionDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 Dexamethasone:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - LOINC:77665-8
   - LOINC:46948-6
@@ -5439,7 +5443,7 @@ Dexamethasone:
 DiabetesDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:405751000
   - SCTID:11530004
@@ -5514,21 +5518,21 @@ DiabetesDx:
 DiabetesDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 DiabetesEndocrineDisorder:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0342271
   type: string
 Diphenhydramine:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id021
   - SMILES:CN(C)CCOC(C1CCCCC1)C2CCCCC2
   - CAS:58-73-1
@@ -5943,14 +5947,14 @@ Diphenhydramine:
 DiphenhydramineVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id021
   type: integer
 DischargeStatus:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - LOINC:LP74745-8
   - LOINC:LA162-0
@@ -5963,8 +5967,8 @@ DischargeStatus:
 Dobutamine_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:4670
   - CHEBI:4671
@@ -5996,14 +6000,14 @@ Dobutamine_gtt:
 Dopamine_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 DrugAllergy:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0455589
   - UMLS:C0571705
@@ -6044,7 +6048,7 @@ DrugAllergy:
 DrugDependenceDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:191816009
   - SCTID:231482005
@@ -6083,14 +6087,14 @@ DrugDependenceDx:
 DrugDependenceDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 Duloxetine:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id022
   - RXCUI:476250
   - RXCUI:72625
@@ -6098,15 +6102,15 @@ Duloxetine:
 DuloxetineVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id022
   type: integer
 ECLS:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - SCTID:78823007
   - SCTID:243185007
@@ -6197,7 +6201,7 @@ ETHNICITY:
 EndometriosisDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:396224008
   - SCTID:129103003
@@ -6249,13 +6253,13 @@ EndometriosisDx:
 EndometriosisDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 EosinophilCount:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C3015
   - UMLS:C0427396
@@ -6280,14 +6284,14 @@ EosinophilCount:
 Eosinophil_GreaterThan500:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: string
 Epinephrine_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:28918
   - CHEBI:40751
@@ -6376,8 +6380,8 @@ ErythrocyteSedimentationRate_flag_last:
 Escitalopram:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id023
   - RXCUI:353108
   - RXCUI:321988
@@ -6385,15 +6389,15 @@ Escitalopram:
 EscitalopramVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id023
   type: integer
 Esmolol_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Dru'
+  - ChemicalExposure
+  - Dru
   identifiers:
   - CHEBI:88206
   - CHEBI:4857
@@ -6528,8 +6532,8 @@ EstimatedGFR:
 Estradiol:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id024
   - RXCUI:4083
   - RXCUI:24395
@@ -6539,38 +6543,38 @@ Estradiol:
 EstradiolVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id024
   type: integer
 Estrogen:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id025
   - RXCUI:4100
   type: integer
 EstrogenVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id025
   type: integer
 Estropipate:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id026
   - RXCUI:33747
   type: integer
 EstropipateVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id026
   type: integer
 Ethnicity:
@@ -6588,13 +6592,13 @@ Ethnicity:
 EthnicityDILI:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: *id027
   type: string
 FamilyHistoryLiverDisease:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0455417
   - SCTID:266902008
@@ -6602,8 +6606,8 @@ FamilyHistoryLiverDisease:
 FentanylVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 Ferritin:
@@ -6634,7 +6638,7 @@ Ferritin_flag_last:
 Fever:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0424755
   - NCIT:C143485
@@ -6990,7 +6994,7 @@ Fever:
 FeverDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0015137
   - MONDO:0005324
@@ -7232,8 +7236,8 @@ FeverDx:
 Fexofenadine:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id028
   - SMILES:CC(C)(C(O):O)C1CCC(CC1)C(O)CCCN2CCC(CC2)C(O)(C3CCCCC3)C4CCCCC4
   - CAS:159389-12-5
@@ -7301,14 +7305,14 @@ Fexofenadine:
 FexofenadineVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id028
   type: integer
 FibromyalgiaDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:203082005
   - SCTID:95417003
@@ -7316,21 +7320,21 @@ FibromyalgiaDx:
 FibromyalgiaDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 FinalCausalityScore:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: string
 Flunisolide:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id029
   - SMILES:O.CC1(C)O[C@@H]2CC3[C@@H]4C[C@H](F)C5:CC(:O)C:CC5(C)[C@H]4[C@@H](O)C[C@]3(C)[C@@]2(O1)C(:O)CO.CC6(C)O[C@@H]7CC8[C@@H]9C[C@H](F)C%10:CC(:O)C:CC%10(C)[C@H]9[C@@H](O)C[C@]8(C)[C@@]7(O6)C(:O)CO
   - CAS:77326-96-6
@@ -7360,15 +7364,15 @@ Flunisolide:
 FlunisolideVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id029
   type: integer
 Fluoxetine:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id030
   - RXCUI:227224
   - RXCUI:4493
@@ -7376,15 +7380,15 @@ Fluoxetine:
 FluoxetineVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id030
   type: integer
 Fluticasone:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id031
   - SMILES:C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4:CC(:O)C:C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(:O)SCF)O)C)O)F)C)F
   - CAS:90566-53-3
@@ -7633,15 +7637,15 @@ Fluticasone:
 FluticasoneVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id031
   type: integer
 Formoterol:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id032
   - SMILES:COC1CCC(CC(C)NCC(O)C2CCC(O)C(NC:O)C2)CC1
   - CAS:73573-87-2
@@ -7716,8 +7720,8 @@ Formoterol:
 FormoterolVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id032
   type: integer
 GENDER:
@@ -7728,7 +7732,7 @@ GENDER:
 GastrointestinalDisease:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0455420
   - UMLS:C0455553
@@ -7760,8 +7764,8 @@ GastrointestinalDisease:
 GilbertsSyndrome:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - OMIM:MTHU031877
   - MESH:D005878
@@ -7770,8 +7774,8 @@ GilbertsSyndrome:
 Goserelin:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id033
   - RXCUI:50610
   - RXCUI:203146
@@ -7779,21 +7783,21 @@ Goserelin:
 GoserelinVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id033
   type: integer
 HBV_Positive:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - LOINC:55275-2
   type: integer
 HBeAg:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCITD:143472004
   - SCITD:166104006
@@ -7810,7 +7814,7 @@ HBeAg:
 HBsAg:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0149709
   - PUBCHEM.COMPOUND:10422635
@@ -7840,7 +7844,7 @@ HBsAg:
 HCV_Positive:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCITD:406104003
   - LOINC:55276-0
@@ -7848,7 +7852,7 @@ HCV_Positive:
 HCV_RNA:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C4049267
   - LOINC:75888-8
@@ -7861,13 +7865,13 @@ HCV_RNA:
 HIVInfection:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 HIVInfectionDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0005109
   - LOINC:LP74932-2
@@ -7877,7 +7881,7 @@ HIVInfectionDx:
 HIV_Positive:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C15175
   - UMLS:C0855843
@@ -7895,7 +7899,7 @@ HLA-B*15:18:
 HeartDisease:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0686716
   - UMLS:C0543946
@@ -8105,7 +8109,7 @@ HeartDisease:
 HeartFailureDiseaseDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0005009
   - MONDO:0001899
@@ -8121,8 +8125,8 @@ HeartFailureDiseaseDx:
 Hemochromatosis:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0018995
   - UMLS:C3544221
@@ -8228,8 +8232,8 @@ Hemoglobin_flag_last:
 HepatitisA:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: string
 HgbA1C:
@@ -8271,8 +8275,8 @@ HgbA1C_flag_last:
 HighFlowNasalCannula:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - SCTID:426854004
   - SCTID:701101003
@@ -8291,8 +8295,8 @@ HighFlowNasalCannula:
 Histrelin:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id034
   - RXCUI:50975
   - RXCUI:1294622
@@ -8300,29 +8304,29 @@ Histrelin:
 HistrelinVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id034
   type: integer
 HospitalLOS:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - LOINC:LP128529-7
   type: integer
 Hospitalization_NewProlonged:
   categories:
   - ActivityAndBehavior
-  - ' PhenotypicFeature'
-  - ' DiseaseOrPhenotypicFeature'
+  - PhenotypicFeature
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: string
 Hydroxychloroquine:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - RxNorm:5521
   - RxNorm:1164628
@@ -8441,8 +8445,8 @@ Hydroxychloroquine:
 Hydroxyzine:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id035
   - RXCUI:5553
   - RXCUI:154987
@@ -8451,14 +8455,14 @@ Hydroxyzine:
 HydroxyzineVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id035
   type: integer
 HypertensionDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0005044
   - MONDO:0001134
@@ -8532,7 +8536,7 @@ HypertensionDx:
 ICU:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C53511
   - UMLSCUI:C0021708
@@ -8559,7 +8563,7 @@ IL-6_flag_last:
 INR_Onset:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCITD:1951000175101
   - SCITD:165581004
@@ -8570,19 +8574,19 @@ INR_Onset:
 INR_Onset_ULN:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 INR_Peak_DILIOnsetToMonth6:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 INR_Peak_DILIOnsetToMonth6_ULN:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 IN_EPR:
@@ -8603,8 +8607,8 @@ IN_ICEES:
 ImmunodulationAnakinra:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - NCIT:C38717
   - UMLSCUI:C0245109
@@ -8657,8 +8661,8 @@ ImmunodulationAnakinra:
 ImmunodulationConvalescentPlasma:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - NCIT:C171633
   - NCIT:C173750
@@ -8672,8 +8676,8 @@ ImmunodulationConvalescentPlasma:
 ImmunodulationDexamethaone:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - LOINC:77665-8
   - LOINC:46948-6
@@ -9445,8 +9449,8 @@ ImmunodulationDexamethaone:
 ImmunodulationIVIG:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - PUBCHEM:135312669
   - PUBCHEM:135331634
@@ -9537,15 +9541,15 @@ ImmunodulationIVIG:
 ImmunodulationPredinoseOrMethylpredinose:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 ImmunodulationTocilizumab:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - RxNorm:2106072
   - RxNorm:2106074
@@ -9615,29 +9619,29 @@ ImmunodulationTocilizumab:
 Implicated_Drug1_Assessment:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: string
 Implicated_Drug2_Assessment:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: string
 Implicated_Drug3_Assessment:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: string
 Indacaterol:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id036
   - SMILES:CCC1CC2CC(CC2CC1CC)NCC(O)C3CCC(O)C4NC(:O)C:CC34
   - CAS:312753-06-3
@@ -9664,8 +9668,8 @@ Indacaterol:
 IndacaterolVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id036
   type: integer
 Inflluenza7pointClinicalStatusScore:
@@ -9679,15 +9683,15 @@ Influenza7pointClinicalStatusScore:
 Initial_RUCAM:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: string
 IntravenousImmunoglobulin:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - PUBCHEM:135312669
   - PUBCHEM:135331634
@@ -9778,8 +9782,8 @@ IntravenousImmunoglobulin:
 InvasiveVentilation:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - LOINC:LA28889-6
   - LOINC:LP263712-4
@@ -9789,8 +9793,8 @@ InvasiveVentilation:
 Ipratropium:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id037
   - SMILES:CC(C)[N+]1(C2CCC1CC(C2)OC(:O)C(CO)C3CCCCC3)C.[BR-]
   - CAS:66985-17-9
@@ -9872,15 +9876,15 @@ Ipratropium:
 IpratropiumVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id037
   type: integer
 IschemicHepatitis:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0473117
   - SCTID:235877000
@@ -9892,8 +9896,8 @@ IsolationFlag:
 Isoproterenol_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:64317
   - CHEBI:6257
@@ -9941,7 +9945,7 @@ Isoproterenol_gtt:
 Itching:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0231530
   - UMLS:C1276050
@@ -10013,8 +10017,8 @@ Itching:
 Jaundice:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0455551
   - UMLS:C4746972
@@ -10135,7 +10139,7 @@ Jaundice:
 KidneyCancerDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:363518003
   - SCTID:315270004
@@ -10148,7 +10152,7 @@ KidneyCancerDx:
 KidneyCancerDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 LDH:
@@ -10312,7 +10316,7 @@ Latency:
 LateralityDefect_SitusInversusOrHeterotaxy:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0010029
   - MONDO:0022968
@@ -10337,8 +10341,8 @@ LateralityDefect_SitusInversusOrHeterotaxy:
 Leuprolide:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id038
   - RXCUI:42375
   - RXCUI:203217
@@ -10346,15 +10350,15 @@ Leuprolide:
 LeuprolideVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id038
   type: integer
 Levosimendan_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:50567
   - PUBCHEM:3033825
@@ -10375,7 +10379,7 @@ Levosimendan_gtt:
 LiverBiopsy_Screen:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCITD:86259008
   - SCITD:309203003
@@ -10392,7 +10396,7 @@ LiverBiopsy_Screen:
 LiverDiseaseDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:000515
   - MONDO:0009220
@@ -10420,7 +10424,7 @@ LiverDiseaseDx:
 LiverRelatedDeath:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C1306577
   - NCIT:C53787
@@ -10571,7 +10575,7 @@ LiverRelatedDeath:
 LiverTransplant:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C26991
   - UMLS:C0948032
@@ -10631,7 +10635,7 @@ MajorRoadwayHighwayExposure2:
 MaleInfertilityDueToSpermDysfunction:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MeSH:D013081
   - SCITD:414643008
@@ -10639,13 +10643,13 @@ MaleInfertilityDueToSpermDysfunction:
 MaleInfertilityDueToSpermDysfunctoon:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 Malignancy:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - OMIM:MTHU057544
   - UMLS:C0455471
@@ -10825,176 +10829,176 @@ Malignancy:
 Max24hOzoneExposure:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 Max24hOzoneExposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 Max24hOzoneExposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 Max24hOzoneExposure_StudyAvg:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 Max24hOzoneExposure_StudyAvg_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 Max24hOzoneExposure_StudyMax:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 Max24hOzoneExposure_StudyMax_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 Max24hOzoneExposure_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 Max24hPM2.5Exposure:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 Max24hPM2.5Exposure_StudyAvg:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 Max24hPM2.5Exposure_StudyAvg_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 Max24hPM2.5Exposure_StudyMax:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 Max24hPM2.5Exposure_StudyMax_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 Max24hPM2.5Exposure_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 MaxDailyOzoneExposure:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 MaxDailyOzoneExposure_2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 MaxDailyOzoneExposure_2_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 MaxDailyOzoneExposure_StudyAvg:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 MaxDailyOzoneExposure_StudyAvg_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 MaxDailyOzoneExposure_StudyMax:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 MaxDailyOzoneExposure_StudyMax_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 MaxDailyOzoneExposure_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id011
   type: integer
 MaxDailyPM2.5Exposure:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 MaxDailyPM2.5Exposure_StudyAvg:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 MaxDailyPM2.5Exposure_StudyAvg_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 MaxDailyPM2.5Exposure_StudyMax:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 MaxDailyPM2.5Exposure_StudyMax_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 MaxDailyPM2.5Exposure_qcut:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: *id012
   type: integer
 Medroxyprogresterone:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id039
   - RXCUI:6691
   - RXCUI:1000112
@@ -11002,8 +11006,8 @@ Medroxyprogresterone:
 MedroxyprogresteroneVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id039
   type: integer
 MenopauseDx:
@@ -11056,8 +11060,8 @@ MenopauseDxVisit:
 Mepolizumab:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id040
   - SMILES:NA
   - CAS:196078-29-2
@@ -11079,15 +11083,15 @@ Mepolizumab:
 MepolizumabVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id040
   type: integer
 Metaproterenol:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id041
   - SMILES:CC(C)NCC(O)C1CC(O)CC(O)C1
   - CAS:586-06-1
@@ -11126,15 +11130,15 @@ Metaproterenol:
 MetaproterenolVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id041
   type: integer
 Metformin:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id042
   - 'SMILES:
 
@@ -11330,14 +11334,14 @@ Metformin:
 MetforminVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id042
   type: integer
 MiddleEarDisease:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0003276
   - MONDO:0001234
@@ -11356,8 +11360,8 @@ MiddleEarDisease:
 Milrinone_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:50693
   - CHEBI:34850
@@ -11407,8 +11411,8 @@ Milrinone_gtt:
 Mometasone:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id043
   - SMILES:C[C@@H]1C[C@H]2[C@@H]3CCC4:CC(:O)C:C[C@]4(C)[C@@]3(CL)[C@@H](O)C[C@]2(C)[C@@]1(O)C(:O)CCL
   - CAS:105102-22-5
@@ -11515,21 +11519,21 @@ Mometasone:
 MometasoneVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id043
   type: integer
 MorphineVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 NAFLD:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - OMIM:MTHU033358
   - UMLS:C4722044
@@ -11548,15 +11552,15 @@ NAFLD:
 NaloxoneVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 Nandrolone:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id044
   - RXCUI:7244
   - RXCUI:31494
@@ -11564,14 +11568,14 @@ Nandrolone:
 NandroloneVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id044
   type: integer
 Nausea:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C57839
   - NCIT:C146764
@@ -11646,7 +11650,7 @@ Nausea:
 NeonatalRespiratoryDistress:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0009971
   - MONDO:0012593
@@ -11662,7 +11666,7 @@ NeonatalRespiratoryDistress:
 NeurologicalDisease:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0519036
   - UMLS:C1319811
@@ -11696,8 +11700,8 @@ NeurologicalDisease:
 Neutropenia:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0746883
   - UMLS:C0272182
@@ -11852,8 +11856,8 @@ Neutropenia:
 NitricOxideOrFolan:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - NCIT:C47514
   - UMLSCUI:C0354594
@@ -11890,8 +11894,8 @@ NitricOxideOrFolan:
 NonInvasivePositivePressureVentilation:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - SCTID:428311008
   - SCTID:447837008
@@ -11900,8 +11904,8 @@ NonInvasivePositivePressureVentilation:
 Norepinephrine_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:18357
   - CHEBI:33569
@@ -12080,13 +12084,13 @@ ObesityBMI:
 ObesityBMIVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: *id045
   type: integer
 ObesityDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: &id046
   - MONDO:0008300
   - MONDO:0009763
@@ -12152,14 +12156,14 @@ ObesityDx:
 ObesityDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: *id046
   type: integer
 Omalizumab:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id047
   - SMILES:NA
   - CAS:242138-07-4
@@ -12185,14 +12189,14 @@ Omalizumab:
 OmalizumabVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id047
   type: integer
 OvarianCancerDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:363443007
   - SCTID:424600001
@@ -12228,13 +12232,13 @@ OvarianCancerDx:
 OvarianCancerDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 OvarianDysfunctionDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:37102008
   - SCTID:699275001
@@ -12243,19 +12247,19 @@ OvarianDysfunctionDx:
 OvarianDysfunctionDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 PCA_Race:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: string
 PCDDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0016575
   - MONDO:0033204
@@ -12333,8 +12337,8 @@ PM25_N_OBS:
 Paroxetine:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id048
   - RXCUI:32937
   - RXCUI:235830
@@ -12343,21 +12347,21 @@ Paroxetine:
 ParoxetineVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id048
   type: integer
 PatternLiverInjury_Onset:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: string
 Phenylephrine_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - PUBCHEM:6102
   - CHEBI:8093
@@ -12440,7 +12444,7 @@ PlateletCount_flag_last:
 PneumoniaDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: &id049
   - MONDO:0000265
   - MONDO:0004649
@@ -12554,29 +12558,29 @@ PneumoniaDx:
 PneumoniaDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: *id049
   type: integer
 Prasterone:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id050
   - RXCUI:3143
   type: integer
 PrasteroneVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id050
   type: integer
 Prednisone:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id051
   - SMILES:C[C@]12CC(:O)[C@H]3[C@@H](CCC4:CC(:O)C:C[C@]34C)[C@@H]1CC[C@]2(O)C(:O)CO
   - CAS:68-59-7
@@ -12646,8 +12650,8 @@ Prednisone:
 PrednisoneOrCorticosteroids_Tx:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:50858
   - NCIT:C142385
@@ -12678,8 +12682,8 @@ PrednisoneOrCorticosteroids_Tx:
 PrednisoneOrMethylprednisone:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:8382
   - CHEBI:34655
@@ -14303,8 +14307,8 @@ PrednisoneOrMethylprednisone:
 PrednisoneVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id051
   type: integer
 PregnancyDx:
@@ -14406,8 +14410,8 @@ PregnancyDxVisit:
 PrimaryBiliaryCirrhosis:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C2931878
   - MESH:C069356
@@ -14430,8 +14434,8 @@ PrimaryBiliaryCirrhosis:
 PrimarySclerosingCholangitis:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0566602
   - UMLS:C4543944
@@ -14486,23 +14490,23 @@ Procalcitonin_flag_last:
 Progesterone:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id052
   - RXCUI:8727
   type: integer
 ProgesteroneVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id052
   type: integer
 Propranolol:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id053
   - RXCUI:8787
   - RXCUI:82084
@@ -14510,14 +14514,14 @@ Propranolol:
 PropranololVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id053
   type: integer
 ProstateCancerDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:254900004
   - SCTID:399068003
@@ -14546,13 +14550,13 @@ ProstateCancerDx:
 ProstateCancerDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 PulmonaryDisease:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0455540
   - UMLS:C0034087
@@ -14663,7 +14667,7 @@ ROADTYPE:
 RValue_Onset:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 Race:
@@ -14836,13 +14840,13 @@ Race:
 RaceDILI:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: *id054
   type: string
 Rash:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhentoypicFeature'
+  - DiseaseOrPhentoypicFeature
   identifiers:
   - UMLS:C0302295
   - NCIT:C27171
@@ -15022,7 +15026,7 @@ Rash:
 ReactiveAirwayDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: &id055
   - SCTID:991000119106
   - SCTID:371088008
@@ -15037,14 +15041,14 @@ ReactiveAirwayDx:
 ReactiveAirwayDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: *id055
   type: integer
 Remdesivir:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - NCIT:C152185
   - UMLSCUI:CL553517
@@ -15066,7 +15070,7 @@ Remdesivir:
 RenalDisease:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C1857414
   - UMLS:C0155601
@@ -15257,8 +15261,8 @@ RenalDisease:
 RespiratorySupportHNO3orFlolan:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - NCIT:C47514
   - UMLSCUI:C0354594
@@ -15295,8 +15299,8 @@ RespiratorySupportHNO3orFlolan:
 RespiratorySupportInvasiveVentilator:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - LOINC:LA28889-6
   - LOINC:LP263712-4
@@ -15306,8 +15310,8 @@ RespiratorySupportInvasiveVentilator:
 RespiratorySupportNIPPV:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - SCTID:428311008
   - SCTID:447837008
@@ -15316,8 +15320,8 @@ RespiratorySupportNIPPV:
 RespiratorySupportSupplementalO2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - LOINC:LA17976-4
   - LOINC:LA20142-8
@@ -15400,8 +15404,8 @@ SPEED:
 Salmeterol:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id056
   - SMILES:OCC1CC(CCC1O)C(O)CNCCCCCCOCCCCC2CCCCC2
   - CAS:89365-50-4
@@ -15498,15 +15502,15 @@ Salmeterol:
 SalmeterolVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id056
   type: integer
 Sertraline:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id057
   - RXCUI:155137
   - RXCUI:36437
@@ -15514,8 +15518,8 @@ Sertraline:
 SertralineVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id057
   type: integer
 SerumBicarbonate:
@@ -15736,7 +15740,7 @@ SerumSodium_flag_last:
 Serum_IgA:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C3276783
   - UMLS:C3278891
@@ -15762,7 +15766,7 @@ Serum_IgA:
 Serum_IgG:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C3278891
   - UMLS:C1864582
@@ -15775,7 +15779,7 @@ Serum_IgG:
 Serum_IgM:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C2674487
   - UMLS:C3278892
@@ -15916,13 +15920,13 @@ Sex2:
 SexDILI:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: *id058
   type: string
 SmokingStatus:
   categories:
   - ChemicalExposure
-  - ' ChemicalSubstance'
+  - ChemicalSubstance
   identifiers:
   - NCIT:C1519386
   - UMLSCUI:C1519386
@@ -15956,7 +15960,7 @@ SpO2FiO2ratio_flag_last:
 StevensJohnsonSyndrome:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C143859
   - NCIT:C145642
@@ -16041,8 +16045,8 @@ TLR4_DIST_3X_qcut:
 Tamoxifen:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id059
   - RXCUI:10324
   - RXCUI:40137
@@ -16050,14 +16054,14 @@ Tamoxifen:
 TamoxifenVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id059
   type: integer
 TesticularCancerDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:315272007
   - SCTID:717041008
@@ -16065,13 +16069,13 @@ TesticularCancerDx:
 TesticularCancerDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 TesticularDysfunctionDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:73820008
   - SCTID:442782008
@@ -16080,14 +16084,14 @@ TesticularDysfunctionDx:
 TesticularDysfunctionDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 Testosterone:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id060
   - RXCUI:10379
   - RXCUI:10382
@@ -16096,15 +16100,15 @@ Testosterone:
 TestosteroneVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id060
   type: integer
 Theophylline:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id061
   - SMILES:CN1C(:O)N(C)C2NC[NH]C2C1:O
   - CAS:58-55-9
@@ -16292,15 +16296,15 @@ Theophylline:
 TheophyllineVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id061
   type: integer
 Thrombocytopenia:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C1856453
   - UMLS:C0919932
@@ -16485,8 +16489,8 @@ Thrombocytopenia:
 Tocilizumab:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - RxNorm:2106072
   - RxNorm:2106074
@@ -16583,8 +16587,8 @@ TotalInpatientVisits:
 Trazodone:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id062
   - RXCUI:82112
   - RXCUI:10737
@@ -16592,15 +16596,15 @@ Trazodone:
 TrazodoneVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id062
   type: integer
 Triptorelin:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id063
   - RXCUI:38782
   - RXCUI:236538
@@ -16609,8 +16613,8 @@ Triptorelin:
 TriptorelinVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id063
   type: integer
 Troponin:
@@ -16644,8 +16648,8 @@ Troponin_flag_last:
 UnexplainedAbnormalLiverTest:
   categories:
   - PhenotypicFeature
-  - ' Disease'
-  - ' DiseaseOrPhenotypicFeature'
+  - Disease
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:207471009
   - SCTID:166603001
@@ -16653,7 +16657,7 @@ UnexplainedAbnormalLiverTest:
 UterineCancerDx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCTID:371973000
   - SCTID:363354003
@@ -16674,14 +16678,14 @@ UterineCancerDx:
 UterineCancerDxVisit:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 Vasopressin_gtt:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:9937
   - CHEBI:34543
@@ -16749,8 +16753,8 @@ Vasopressin_gtt:
 Venlafaxine:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: &id064
   - RXCUI:39786
   - RXCUI:39786
@@ -16758,8 +16762,8 @@ Venlafaxine:
 VenlafaxineVisit:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: *id064
   type: integer
 Ventilator:
@@ -16814,22 +16818,22 @@ WBCcount_flag_last:
 WHONAME_Implicated_Drug1:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: string
 WHONAME_Implicated_Drug2:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: string
 WHONAME_Implicated_Drug3:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: string
 WHOSeverityScore:
@@ -16872,7 +16876,7 @@ Weeks_DrugStartToDILI:
 Weeks_DurationOfSickness:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: string
 Weeks_EarliestSignToDILI:
@@ -16883,7 +16887,7 @@ Weeks_EarliestSignToDILI:
 Weight:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - UMLS:C0424653
   - NCIT:C3445
@@ -17087,7 +17091,7 @@ Weight:
 WilsonsDisease:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0010200
   - MONDO:0043233
@@ -17101,7 +17105,7 @@ WilsonsDisease:
 Year_DILI_Onset:
   categories:
   - PhenotypicFeature
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 ea_a012_current_home_type:
@@ -17112,13 +17116,13 @@ ea_a012_current_home_type:
 ea_a014_central_heat:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a017a_heat_natural_gas:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:01000556
   - ENVO:01000559
@@ -17128,7 +17132,7 @@ ea_a017a_heat_natural_gas:
 ea_a017b_heat_gas:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:01001740
   - ENVO_2000012
@@ -17136,21 +17140,21 @@ ea_a017b_heat_gas:
 ea_a017c_heat_electricity:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_2000012
   type: integer
 ea_a017d_heat_oil_kerosene:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:01001608
   type: integer
 ea_a017e_heat_coal:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_2000038
   - ENVO_2000013
@@ -17160,7 +17164,7 @@ ea_a017e_heat_coal:
 ea_a017f_heat_wood:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:01001292
   - ENVO:03000131
@@ -17168,39 +17172,39 @@ ea_a017f_heat_wood:
 ea_a017g_heat_solar_energy:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_2000041
   type: integer
 ea_a017h_heat_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a017i_heat_none:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a017j_heat_dk:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a018_fireplace:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:03000122
   type: integer
 ea_a020a_fireplace_wood:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - NCIT:C164056
   - NCIT:C157711
@@ -17208,7 +17212,7 @@ ea_a020a_fireplace_wood:
 ea_a020b_fireplace_coal:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - NCIT:C164056
   - NCIT:C157711
@@ -17216,44 +17220,44 @@ ea_a020b_fireplace_coal:
 ea_a020c_fireplace_natural_gas:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a020d_fireplace_art_logs:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a021a_stove_electricity:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a021b_stove_natural_gas:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a021c_stove_woodfire:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a021d_stove_coal:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:2000013
   type: integer
 ea_a021e_stove_propane:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:01000553
   - CHEBI:32879
@@ -17261,7 +17265,7 @@ ea_a021e_stove_propane:
 ea_a021f_stove_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a022_ac:
@@ -17273,21 +17277,21 @@ ea_a022_ac:
 ea_a023a_ac_central:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:00002874
   type: integer
 ea_a023b_ac_window:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:00002874
   type: integer
 ea_a023c_ac_portable:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:00002874
   type: integer
@@ -17313,7 +17317,7 @@ ea_a028_water_source_bath:
 ea_a036_mildew_odor_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a038_water_damage_repair:
@@ -17324,7 +17328,7 @@ ea_a038_water_damage_repair:
 ea_a040_mold_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a059a_pet_dog:
@@ -17345,63 +17349,63 @@ ea_a059c_pet_other:
 ea_a060_pest_regularly:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a061a_pest_ants:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:00005804
   type: integer
 ea_a061b_pest_cockroaches:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a061c_pest_bees_wasps:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a061d_pest_flies:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a061e_pest_spiders:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a061f_pest_mosquitos:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a061g_pest_flea_ticks:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a061h_pest_termite:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:2000006
   type: integer
 ea_a061i_pest_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_a065_traffic:
@@ -17542,34 +17546,34 @@ ea_a087_nuclear_plant:
 ea_a088b_factory_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_01000536
   type: integer
 ea_a091_farm_active:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:01001170
   type: integer
 ea_b092_solvent_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b092a_benzene:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI_27798
   type: integer
 ea_b092b_chloroform:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:35255
   - CHEBI:85365
@@ -17584,7 +17588,7 @@ ea_b092b_chloroform:
 ea_b092c_chloroprene:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - PUBCHEM:31369
   - CHEBI:39481
@@ -17595,14 +17599,14 @@ ea_b092c_chloroprene:
 ea_b092d_dichlorobenzene:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:23697
   type: integer
 ea_b092e_ethyl_benzene:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - NCIT:C63923
   - NCIT:C116977
@@ -17613,28 +17617,28 @@ ea_b092e_ethyl_benzene:
 ea_b092f_ethyl_dichloride:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:27789
   type: integer
 ea_b092g_perchloroethylene:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:17300
   type: integer
 ea_b092h_toluene:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:17578
   type: integer
 ea_b092i_trichloroethylene:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:16602
   - CHEBI:28888
@@ -17644,89 +17648,89 @@ ea_b092i_trichloroethylene:
 ea_b092j_xylenes:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:27338
   type: integer
 ea_b092k_solvent_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b097a_solvent_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b098_lube_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b098a_brake_fluid:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b098b_transmission_fluid:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b098c_hydraulic_fluid:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b098d_motor_oil:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:00002984
   type: integer
 ea_b098e_lube_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b103a_lube_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b104_cleaning_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b104a_bleach:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:132717
   type: integer
 ea_b104b_ammonia:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI_16134
   type: integer
 ea_b104c_carbon_tetrachloride:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:27385
   - NCIT:C63923
@@ -17735,25 +17739,25 @@ ea_b104c_carbon_tetrachloride:
 ea_b104d_cleaning_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b109a_cleaning_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b110_metal_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b110a_arsenic:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - NCIT:C133964
   - CHEBI_27563
@@ -17761,7 +17765,7 @@ ea_b110a_arsenic:
 ea_b110b_beryllium:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - NCIT:C133964
   - CHEBI:33783
@@ -17794,7 +17798,7 @@ ea_b110b_beryllium:
 ea_b110c_cadmium:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - NCIT:C133964
   - CHEBI:22977
@@ -17817,7 +17821,7 @@ ea_b110c_cadmium:
 ea_b110d_chromates:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - NCIT:C133964
   - CHEBI:35404
@@ -17854,7 +17858,7 @@ ea_b110d_chromates:
 ea_b110e_lead:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - NCIT:C133964
   - CHEBI:27889
@@ -17891,7 +17895,7 @@ ea_b110e_lead:
 ea_b110f_mercury:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - NCIT:C133964
   - CHEBI:16170
@@ -17951,7 +17955,7 @@ ea_b110f_mercury:
 ea_b110g_nickel:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - NCIT:C133964
   - CHEBI_28112
@@ -18012,25 +18016,25 @@ ea_b110g_nickel:
 ea_b110h_metal_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b115a_metal_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b116_alcohol_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b116a_isopropanol:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:17824
   - CHEBI:84894
@@ -18048,13 +18052,13 @@ ea_b116a_isopropanol:
 ea_b116b_methanol:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b116c_ethanol:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI_16236
   - CHEBI:17790
@@ -18238,7 +18242,7 @@ ea_b116c_ethanol:
 ea_b116d_butanol:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:35687
   - CHEBI:45475
@@ -18285,32 +18289,32 @@ ea_b116d_butanol:
 ea_b116e_alcohol_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b121a_alcohol_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b122_pest_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b122a_ethyl_dibromide:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:28534
   type: integer
 ea_b122b_chlorinated_naph:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI_23116
   - CHEBI:16482
@@ -18320,14 +18324,14 @@ ea_b122b_chlorinated_naph:
 ea_b122c_insecticides:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:24852
   type: integer
 ea_b122d_fungicides:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_01001041
   - ENVO_01001058
@@ -18335,100 +18339,100 @@ ea_b122d_fungicides:
 ea_b122e_herbicides:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:24527
   type: integer
 ea_b122f_ethyl_fumigants:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b122g_rodenticides:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI_33288
   type: integer
 ea_b122h_pest_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b127a_pest_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b128_plastic_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b128a_bpa:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:02500040
   type: integer
 ea_b128b_vinyl_chloride:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:02500040
   type: integer
 ea_b128c_styrene:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:02500040
   type: integer
 ea_b128d_phosgene:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:02500040
   type: integer
 ea_b128e_phenol:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:02500040
   type: integer
 ea_b128f_tdi:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:02500040
   type: integer
 ea_b128g_methylene_bis:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:02500040
   type: integer
 ea_b128h_plastic_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b134_dust_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b134a_coal_dust:
@@ -18466,19 +18470,19 @@ ea_b134e_talc:
 ea_b134f_dust_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b139a_dust_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b140_emissions_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b140a_nitrous_oxide:
@@ -18507,25 +18511,25 @@ ea_b140d_ozone:
 ea_b140e_emissions_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b145a_emissions_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b146_carcinogens_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b146a_pbbs:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - UMLSCUI:C0032441
   - NCIT:C44436
@@ -18533,14 +18537,14 @@ ea_b146a_pbbs:
 ea_b146b_pcbs:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:35446
   type: integer
 ea_b146c_radiation:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_21001218
   - ENVO:01001857
@@ -18550,39 +18554,39 @@ ea_b146c_radiation:
 ea_b146d_xrays:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_21001217
   type: integer
 ea_b146e_welding:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_02000113
   type: integer
 ea_b146f_carcinogens_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b151a_carcinogens_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b152_acid_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b152a_hydrochloric_acid:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:37527
   - ENVO:03000127
@@ -18591,7 +18595,7 @@ ea_b152a_hydrochloric_acid:
 ea_b152b_sulfuric_acid:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:03000127
   - ENVO:03000128
@@ -18599,20 +18603,20 @@ ea_b152b_sulfuric_acid:
 ea_b152c_phosphoric_acid:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:26079
   type: integer
 ea_b152d_acetic_acid:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b152e_nitric_acid:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:48107
   - ENVO:03000123
@@ -18620,19 +18624,19 @@ ea_b152e_nitric_acid:
 ea_b152f_acid_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b157a_acid_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b158_alkalis_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI_22313
   - CHEBI_22314
@@ -18640,35 +18644,35 @@ ea_b158_alkalis_d:
 ea_b158a_sodium_oh:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:32145
   type: integer
 ea_b158b_calcium_oh:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI_3311
   type: integer
 ea_b158c_potassium_oh:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:32035
   type: integer
 ea_b158d_magnesium_oh:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:35149
   type: integer
 ea_b158e_alkalis_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI_22313
   - CHEBI_22314
@@ -18676,19 +18680,19 @@ ea_b158e_alkalis_other:
 ea_b163a_alkalis_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b164_stains_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b164a_shellac:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - UMLSCUI:C0074445
   - NCIT:C66001
@@ -18696,50 +18700,50 @@ ea_b164a_shellac:
 ea_b164b_wood:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:02000126
   type: integer
 ea_b164c_resin:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b164d_polyurethane:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b164e_lacquer:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b164f_acrylic:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b164g_stains_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b170_paint_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b170a_primer:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:02000123
   - NCIT:C122420
@@ -18750,368 +18754,368 @@ ea_b170a_primer:
 ea_b170b_enamel:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b170c_oil_based:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b170d_acrylic:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:18308
   type: integer
 ea_b170e_luminescent:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b170f_acetone:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:15347
   type: integer
 ea_b170g_turpentine:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - NCIT:C63923
   type: integer
 ea_b170h_naphtha:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:00002983
   type: integer
 ea_b170i_ethyl_ket:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b170j_paint_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b175a_paint_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b176_anesthetic_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b176a_desflurane:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:4445
   type: integer
 ea_b176b_enflurane:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:4792
   type: integer
 ea_b176c_halothane:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:5615
   type: integer
 ea_b176d_isoflurane:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:6015
   type: integer
 ea_b176e_methoxyflurane:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:6843
   type: integer
 ea_b176f_nitrous:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b176g_sevoflurane:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:9130
   type: integer
 ea_b176h_anesthetic_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b181a_anesthetic_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b182_adhesives_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b182a_white_glue:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_00003076
   type: integer
 ea_b182b_rubber_cement:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_00003076
   type: integer
 ea_b182c_neoprene:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_00003076
   type: integer
 ea_b182d_vinyl_a:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_00003076
   type: integer
 ea_b182e_epoxy:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_00003076
   type: integer
 ea_b182f_urethane:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_00003076
   type: integer
 ea_b182g_polyimides:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_00003076
   type: integer
 ea_b182h_cyanoacrylates:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_00003076
   type: integer
 ea_b182i_wallpaper_paste:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_00003076
   type: integer
 ea_b182j_adhesives_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b187a_adhesives_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b188_soldering_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b188a_eutectic:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b188b_tin_zinc:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b188c_lead_silver:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b188d_cadmium_silver:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b188e_flux:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b188f_solder_paste:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b188g_solder_wire:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b188h_rosin:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b188i_solder_fumes:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b188j_soldering_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b193a_soldering_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b194_ink_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b194a_hair_dye:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b194b_leather_dye:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b194c_textile_dye:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b194d_paper_dye:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b194e_india_ink:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b194f_inkjet:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b194g_gel_ink:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b194h_pen_ink:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b194i_toner:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b194j_soy_ink:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b194k_pharma_ink:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b194l_ink_other:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_b199a_ink_ongoing_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 ea_e249_sunburn:
@@ -19149,8 +19153,8 @@ ea_e261_sunlamp:
 eb_a001_multivitamin:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - LOINC:81950-8
   - NCIT:C1654
@@ -19159,8 +19163,8 @@ eb_a001_multivitamin:
 eb_a002_vitamin_a:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:17336
   - CHEBI:12777
@@ -19175,16 +19179,16 @@ eb_a002_vitamin_a:
 eb_a003_vitamin_b3:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:15940
   type: integer
 eb_a004_vitamin_b6:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - MeSH:D025101
   - LOINC:LP102725-1
@@ -19193,8 +19197,8 @@ eb_a004_vitamin_b6:
 eb_a005_vitamin_b12:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - MeSH:D014805
   - LOINC:LP102723-6
@@ -19205,16 +19209,16 @@ eb_a005_vitamin_b12:
 eb_a006_vitamin_b_comp:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - CHEBI:17439
   type: integer
 eb_a007_vitamin_c:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - LOINC:LP102727-7
   - CHEBI:29073
@@ -19222,8 +19226,8 @@ eb_a007_vitamin_c:
 eb_a008_vitamin_d:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - MeSH:D014807
   - LOINC:LP102730-1
@@ -19233,8 +19237,8 @@ eb_a008_vitamin_d:
 eb_a009_vitamin_e:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - MeSH:D014810
   - LOINC:LP102732-7
@@ -19244,8 +19248,8 @@ eb_a009_vitamin_e:
 eb_a010_calcium:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - LOINC:LP72204-8
   - LOINC:LP102624-6
@@ -19266,8 +19270,8 @@ eb_a010_calcium:
 eb_a011_chromium:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - LOINC:LP203246-6
   - LOINC:81024-2
@@ -19277,8 +19281,8 @@ eb_a011_chromium:
 eb_a012_iron:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - MeSH:D007501
   - LOINC:LP203272-2
@@ -19289,8 +19293,8 @@ eb_a012_iron:
 eb_a013_magnesium:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - SCTID:230122008
   - SCTID:390070000
@@ -19304,8 +19308,8 @@ eb_a013_magnesium:
 eb_a014_potassium:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - SCTID:788479004
   - SCTID:282029009
@@ -19320,8 +19324,8 @@ eb_a014_potassium:
 eb_a015_selenium:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - MeSH:D012643
   - SCTID:286616008
@@ -19335,8 +19339,8 @@ eb_a015_selenium:
 eb_a016_zinc:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - LOINC:8LP203296-1
   - LOINC:881088-7
@@ -19348,8 +19352,8 @@ eb_a016_zinc:
 eb_a017_blk_cohosh:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers:
   - SCTID:7404711000001103
   - SCTID:7404811000001106
@@ -19358,460 +19362,460 @@ eb_a017_blk_cohosh:
 eb_a018_coq10:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_a019_fish_oil:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_a020_flaxseed_oil:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_a021_folic_acid:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_a022_gingko_biloba:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_a023_ginseng:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_a024_glucosamine:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_a025_melatonin:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_a026_milk_thistle:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_a027_omega3:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_a028_probiotic:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_a029_red_yeast_rice:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_a030_resveratrol:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_a031_st_johns_wort:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b042_med_abn_hrt_rhythm:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b043_med_angina:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b044_med_blood_thinner:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b045_med_coronary_hrt_disease:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b046_med_hrt_failure:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b047_med_high_cholest:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b048_med_hbp:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b049_med_stroke:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b050_med_diabetes:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b051_med_thyroid:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b052_med_anxiety:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b053_med_depression:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b054_med_asthma:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b055_med_copd:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b056_med_reflux:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b057_med_chronic_pain:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b058_med_sleep_disorder:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b059_med_birth_control:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_b060_med_hormone_replace_ther:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 eb_f100_chicken_pox:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f101_chlamydia:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f102_cold_sores:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f103_crytpo:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f104_dysentery:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f105_flu:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f106_food_pois_bact:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f107_food_pois_vir:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f108_genital_herpes:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f109_genital_warts:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f110_german_measles:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f111_gonorrhea:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f113_hep_b:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f114_hep_c:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f115_hIV:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f116_legionnaires:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f117_lyme:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f118_malaria:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f119_measles:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f120_meningitis_bac:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f121_meningitis_vir:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f122_mono:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f123_mumps:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f124_pneumonia_bac:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f125_pneumonia_vir:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f126_rocky_mtn_spot:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f127_salmonella:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f128_shingles:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f129_staph:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f130_strep:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f131_syphilis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f132_TB:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f133_ulcers:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_f134_whooping_cough:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_g159_dx_sleep_disorder:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_g160a_sleep_apnea:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_g160b_insomnia:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_g160c_restless_legs:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k293_blood_type:
@@ -19822,103 +19826,103 @@ eb_k293_blood_type:
 eb_k294a_color_blind_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k295a_cystic_fibrosis_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k296a_down_syn_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k297a_hemochromatosis_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k298a_hemophilia_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k299a_hyperlipidemia_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k300a_huntingtons_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k301a_clot_prob_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k302a_klinefelter_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k303a_muscular_dyst_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k304a_niemann_pick_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k305a_PKU_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k306a_PKD_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k307a_sickle_cell_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k308a_taysachs_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k309a_thalassemia_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_k310a_turner_syn_you:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_m313_ever_pregnant:
@@ -19928,67 +19932,67 @@ eb_m313_ever_pregnant:
 eb_m316_hypertension_preg:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_m316a_hypertension_preg_n:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_m317_preeclampsia_preg:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_m317a_preeclampsia_preg_n:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_m318_diabetes_preg:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_m318a_diabetes_preg_n:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_m319_placenta_prob_preg:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_m319a_placenta_prob_preg_n:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_m320_poor_growth_preg:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_m320a_poor_growth_preg_n:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_m321_other_comp_preg:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 eb_m322_babies_delivered_n:
@@ -19998,7 +20002,7 @@ eb_m322_babies_delivered_n:
 he _b012_heart_attack:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0005068
   - NCIT:C27996
@@ -20080,7 +20084,7 @@ he_a004c_birth_multi:
 he_b007_hypertension:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0005044
   - MONDO:0001134
@@ -20186,7 +20190,7 @@ he_b007_hypertension:
 he_b007a_hypertension_preg:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0005081
   - MONDO:0024664
@@ -20211,7 +20215,7 @@ he_b007a_hypertension_preg:
 he_b008_high_cholesterol:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0018328
   - MONDO:0017773
@@ -20235,7 +20239,7 @@ he_b008_high_cholesterol:
 he_b009_atherosclerosis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - PUBCHEM:72941823
   - PUBCHEM:11607970
@@ -20296,7 +20300,7 @@ he_b009_atherosclerosis:
 he_b010_cardiac_arrhythmia:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0012061
   - MONDO:0020745
@@ -20335,7 +20339,7 @@ he_b010_cardiac_arrhythmia:
 he_b011_angina:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0006576
   - MONDO:0006021
@@ -20380,7 +20384,7 @@ he_b011_angina:
 he_b013_coronary_artery:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - LOINC:LP207937-6
   - LOINC:LA25636-4
@@ -20413,7 +20417,7 @@ he_b013_coronary_artery:
 he_b014_congestive_heart_failure:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0005009
   - MONDO:0001899
@@ -20442,13 +20446,13 @@ he_b014_congestive_heart_failure:
 he_b015_poor_blood_flow:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_b016_raynauds:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MeSH:D011928
   - SCITD:22954002
@@ -20462,7 +20466,7 @@ he_b016_raynauds:
 he_b017_blood_clots:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCITD:194883006
   - SCITD:386280004
@@ -20481,7 +20485,7 @@ he_b017_blood_clots:
 he_b018_angioplasty:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - LOINC:LP268887-9
   - LOINC:LA22097-2
@@ -20504,7 +20508,7 @@ he_b018_angioplasty:
 he_b019_stroke_mini:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0005264
   - NCIT:C50781
@@ -20536,7 +20540,7 @@ he_b019_stroke_mini:
 he_b020_stroke:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0005098
   - LOINC:LA22099-8
@@ -20553,7 +20557,7 @@ he_b020_stroke:
 he_b020a_stroke_type:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C119579
   - UMLSCUI:C3897486
@@ -20601,7 +20605,7 @@ he_bmi_cat_d:
 he_c021_pre_diabetes:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0006920
   - SCITD:714628002
@@ -20611,14 +20615,14 @@ he_c021_pre_diabetes:
 he_c021a_pre_diabetes_a:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0005147
   type: integer
 he_c022_diabetes:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C2985
   - UMLSCUI:C0011849
@@ -20758,14 +20762,14 @@ he_c022_diabetes:
 he_c022a_diabetes_preg:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0005406
   type: integer
 he_c022b_diabetes_insulin:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCITD:147980003
   - SCITD:170747006
@@ -20780,13 +20784,13 @@ he_c022b_diabetes_insulin:
 he_c022c_diabetes_insulin_first:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_c022d_diabetes_pills:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - LOINC:LP124918-6
   - LOINC:66176-9
@@ -20796,13 +20800,13 @@ he_c022d_diabetes_pills:
 he_c022e_diabetes_a:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_c023_thyroid_disease:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MeSH:D013959
   - LOINC:LA15157-3
@@ -20812,7 +20816,7 @@ he_c023_thyroid_disease:
 he_c023a_hyperthyroidism:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - SCITD:34486009
   - SCITD:722942005
@@ -20847,7 +20851,7 @@ he_c023a_hyperthyroidism:
 he_c023b_hypothyroidism:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - LOINC:LA14303-4
   - LOINC:LP74946-2
@@ -20922,7 +20926,7 @@ he_c023b_hypothyroidism:
 he_c023c_thyroid_enlarged:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0006354
   - MONDO:0005397
@@ -20946,7 +20950,7 @@ he_c023c_thyroid_enlarged:
 he_c023d_nodule_benign:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - LOINC:LA14304-2
   - MeSH:D016606
@@ -20955,7 +20959,7 @@ he_c023d_nodule_benign:
 he_d024_allergies:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0005659
   - MONDO:0005709
@@ -20973,7 +20977,7 @@ he_d024_allergies:
 he_d025_copd:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0011751
   - MONDO:0005002
@@ -20998,7 +21002,7 @@ he_d025_copd:
 he_d026_ipf:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C35716
   - UMLSCUI:C1800706
@@ -21021,7 +21025,7 @@ he_d026_ipf:
 he_d027_tb:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - NCIT:C3423
   - UMLSCUI:C0041296
@@ -21038,7 +21042,7 @@ he_d027_tb:
 he_d027a_tb_type:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0021948
   - MONDO:0006052
@@ -21140,199 +21144,199 @@ he_d027a_tb_type:
 he_d028_cough_breathlessness:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_d029_chest_wheeze:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_d030_asthma:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_d030b_asthma_o:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_d030c_asthma_episode:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_d030d_asthma_er:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_d030e_asthma_med:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_e031_epilepsy:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_e032_migraine:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_e033_parkinsons:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_e034_ptsd:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_e035_alzheimers:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_e036_ms:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_f037_celiac:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_f038_lactose_intolerance:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_f039_crohns:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_f040_ulcerative_colitis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_f041_polyps:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_f042_gallbladder_disease:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_f043_stomach_ulcer:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_f044_cirrhosis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_f045_fatty_liver:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_f046_hepatitis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_f046a_hep_a:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_f046b_hep_b:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_f046c_hep_c:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_f046d_hep_other:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_f046e_hep_dk:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_g047_ckd:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_g048_esrd:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_g049_kidney_stones:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_g050_kidney_infection:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_g051_pkd:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_gender:
@@ -21343,121 +21347,121 @@ he_gender:
 he_h052_allergic_reactions:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_h053_scleroderma:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_h054_shingles:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_h055_fibromyalgia:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_h056_lupus:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_h057_sjogrens:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_i058_hemochromatosis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_i059_iron_anemia:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_i060_pernicious_anemia:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_i061_sickle_cell:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_j062_bone_loss:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_j063_osteoporosis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_j064_gout:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_j065_myositis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_j066_rheu_arthritis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_j067_osteoarthritis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_j068_arthritis_other:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_k069_psoriasis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_k070_eczema:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_k071_urticaria:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_k074_eye_color:
@@ -21473,346 +21477,346 @@ he_k075_hair_color:
 he_l080_chronic_fatigue:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_m082_menstrual_periods_o:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_m083_hysterectomy:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_m084_ovaries:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_m086_pregnant:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_m087_birth_control:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
-  - ' Drug'
+  - ChemicalExposure
+  - Drug
   identifiers: []
   type: integer
 he_m088_hormone_replacement:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_m089_endometriosis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_m090_uterine_polyps:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_m091_uterine_tumors:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_m092_ovarian_cysts:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_n093_enlarged_prostate:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_n094_prostatitis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_n095_epididymitis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_n096_testicular_torsion:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_n097_testicle_location_abn:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_n098_sperm_abn:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_n099_varicocele:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_n100_cause_pregnancy:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_n101_trouble_having_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_n102_testicle_surgery:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o103_cancer:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o104_cancer_bladder:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o105_cancer_blood:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o106_cancer_bone:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o107_cancer_brain:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o108_cancer_breast:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o109_cancer_cervix:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o110_cancer_colon:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o111_cancer_esophagus:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o112_cancer_gallbladder:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o113_cancer_kidney:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o114_cancer_larynx:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o115_cancer_leukemia:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o116_cancer_liver:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o117_cancer_lung:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o118_cancer_lymphoma:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o119_cancer_nonhodgkins:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o120_cancer_melanoma:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o121_cancer_mouth:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o122_cancer_spinalcord:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o123_cancer_ovary:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o124_cancer_pancreas:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o125_cancer_prostate:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o126_cancer_rectum:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o127_cancer_skin_nonmel:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o128_cancer_skin_dk:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o129_cancer_soft_tissue:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o130_cancer_stomach:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o131_cancer_testis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o132_cancer_throat:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o133_cancer_thyroid:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o134_cancer_uterus:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_o135_cancer_other:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_q140_asbestos:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_2000026
   type: integer
 he_q141_biohazards:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_2000012
   type: integer
 he_q142_chemicals:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI_33286
   - ENVO_2000012
@@ -21821,14 +21825,14 @@ he_q142_chemicals:
 he_q143_coal_dust:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:02000099
   type: integer
 he_q144_coal:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_01001440
   - ENVO_2000013
@@ -21837,7 +21841,7 @@ he_q144_coal:
 he_q145_diesel:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_2000037
   - ENVO_2000012
@@ -21845,13 +21849,13 @@ he_q145_diesel:
 he_q146_dyes:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 he_q147_formaldehyde:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI:16842
   - PUBCHEM:712
@@ -21860,7 +21864,7 @@ he_q147_formaldehyde:
 he_q148_gasoline:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_2000037
   - ENVO_2000012
@@ -21868,7 +21872,7 @@ he_q148_gasoline:
 he_q149_heavy_metals:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_2000012
   - ENVO_2000012
@@ -21876,20 +21880,20 @@ he_q149_heavy_metals:
 he_q150_pesticide:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - CHEBI_33287
   type: integer
 he_q151_sand:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 he_q152_other_dust:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:02000127
   - ENVO:02000128
@@ -21898,693 +21902,693 @@ he_q152_other_dust:
 he_q153_textiles:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers: []
   type: integer
 he_q154_wood_dust:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO:02000126
   type: integer
 he_q155_xrays:
   categories:
   - ChemicalSubstance
-  - ' ChemicalExposure'
+  - ChemicalExposure
   identifiers:
   - ENVO_2000023
   type: integer
 he_r156a_breast_cancer_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r156b_breast_cancer_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r156c_breast_cancer_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r156d_breast_cancer_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r156e_breast_cancer_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r157a_colon_cancer_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r157b_colon_cancer_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r157c_colon_cancer_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r157d_colon_cancer_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r157e_colon_cancer_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r158a_leukemia_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r158b_leukemia_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r158c_leukemia_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r158d_leukemia_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r158e_leukemia_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r159a_lung_cancer_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r159b_lung_cancer_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r159c_lung_cancer_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r159d_lung_cancer_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r159e_lung_cancer_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r160a_lymphoma_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r160b_lymphoma_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r160c_lymphoma_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r160d_lymphoma_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r160e_lymphoma_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r161b_prostate_cancer_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r161c_prostate_cancer_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r161e_prostate_cancer_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r162a_ovarian_cancer_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r162d_ovarian_cancer_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r162e_ovarian_cancer_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r163a_melanoma_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r163b_melanoma_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r163c_melanoma_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r163d_melanoma_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r163e_melanoma_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r164a_skin_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r164b_skin_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r164c_skin_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r164d_skin_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r164e_skin_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r165a_cancer_other_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r165b_cancer_other_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r165c_cancer_other_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r165d_cancer_other_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r165e_cancer_other_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r166a_diabetes_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r166b_diabetes_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r166c_diabetes_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r166d_diabetes_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r166e_diabetes_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r167a_hbp_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r167b_hbp_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r167c_hbp_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r167d_hbp_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r167e_hbp_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r168a_stroke_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r168b_stroke_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r168c_stroke_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r168d_stroke_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r168e_stroke_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r169a_heart_attack_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r169b_heart_attack_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r169c_heart_attack_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r169d_heart_attack_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r169e_heart_attack_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r170a_coronary_artery_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r170b_coronary_artery_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r170c_coronary_artery_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r170d_coronary_artery_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r170e_coronary_artery_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r171a_sickle_cell_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r171b_sickle_cell_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r171c_sickle_cell_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r171d_sickle_cell_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r171e_sickle_cell_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r172a_rheu_arthritis_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r172b_rheu_arthritis_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r172c_rheu_arthritis_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r172d_rheu_arthritis_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r172e_rheu_arthritis_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r173a_alzheimers_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r173b_alzheimers_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r173c_alzheimers_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r173d_alzheimers_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r173e_alzheimers_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r174a_asthma_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r174b_asthma_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r174c_asthma_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r174d_asthma_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r174e_asthma_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r175a_autism_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r175b_autism_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r175c_autism_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r175d_autism_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r175e_autism_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r176a_hayfever_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r176b_hayfever_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r176c_hayfever_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r176d_hayfever_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r176e_hayfever_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r177a_emphysema_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r177b_emphysema_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r177c_emphysema_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r177d_emphysema_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r177e_emphysema_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r178a_parkinsons_mom:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r178b_parkinsons_dad:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r178c_parkinsons_bro:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r178d_parkinsons_sis:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_r178e_parkinsons_child:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_s179_100_cigarettes:
   categories:
   - ChemicalExposure
-  - ' ChemicalSubstance'
+  - ChemicalSubstance
   identifiers:
   - NCIT:C127059
   - NCIT:C1519386
@@ -22603,7 +22607,7 @@ he_s179_100_cigarettes:
 he_s180_smoke:
   categories:
   - ChemicalExposure
-  - ' ChemicalSubstance'
+  - ChemicalSubstance
   identifiers:
   - NCIT:C172730
   - NCIT:C70989,
@@ -22615,7 +22619,7 @@ he_s180_smoke:
 he_s183_tobacco_smokeless:
   categories:
   - ChemicalExposure
-  - ' ChemicalSubstance'
+  - ChemicalSubstance
   identifiers:
   - NCIT:C105050
   - UMLSCUI:C3641918
@@ -22623,13 +22627,13 @@ he_s183_tobacco_smokeless:
 he_s184_cigars_pipes:
   categories:
   - ChemicalExposure
-  - ' ChemicalSubstance'
+  - ChemicalSubstance
   identifiers: []
   type: integer
 he_s185_smoke_indoors:
   categories:
   - ChemicalExposure
-  - ' ChemicalSubstance'
+  - ChemicalSubstance
   identifiers:
   - NCIT:C127108
   - NCIT:C127106
@@ -22637,25 +22641,25 @@ he_s185_smoke_indoors:
 he_s187_alcohol_life:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_s188_alcohol_mo:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_u213_bipolar_relatives:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers: []
   type: integer
 he_u214_bipolar:
   categories:
   - Disease
-  - ' DiseaseOrPhenotypicFeature'
+  - DiseaseOrPhenotypicFeature
   identifiers:
   - MONDO:0004985
   - MONDO:0024613

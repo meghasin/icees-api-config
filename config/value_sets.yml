@@ -50096,6 +50096,9 @@ AbsoluteNeutrophilCount_flag_last:
 - low
 - normal
 - high
+Active_In_Year:
+- 0
+- 1
 AgeInteger:
 - 0
 - 1
