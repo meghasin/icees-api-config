@@ -804,7 +804,8 @@ AbsoluteNeutrophilCount_flag_last:
   identifiers: []
   type: string
 Active_In_Year:
-  categories: []
+  categories:
+  - NamedThing
   identifiers: []
   type: integer
 AgeInteger:
@@ -9673,11 +9674,13 @@ IndacaterolVisit:
   identifiers: *id036
   type: integer
 Inflluenza7pointClinicalStatusScore:
-  categories: []
+  categories:
+  - NamedThing
   identifiers: []
   type: integer
 Influenza7pointClinicalStatusScore:
-  categories: []
+  categories:
+  - NamedThing
   identifiers: []
   type: integer
 Initial_RUCAM:
@@ -9890,7 +9893,8 @@ IschemicHepatitis:
   - SCTID:235877000
   type: string
 IsolationFlag:
-  categories: []
+  categories:
+  - NamedThing
   identifiers: []
   type: integer
 Isoproterenol_gtt:
@@ -16837,7 +16841,8 @@ WHONAME_Implicated_Drug3:
   identifiers: []
   type: string
 WHOSeverityScore:
-  categories: []
+  categories:
+  - NamedThing
   identifiers:
   - SCITD:278305009
   - SCITD:273533008
@@ -19926,7 +19931,8 @@ eb_k310a_turner_syn_you:
   identifiers: []
   type: integer
 eb_m313_ever_pregnant:
-  categories: []
+  categories:
+  - NamedThing
   identifiers: []
   type: integer
 eb_m316_hypertension_preg:
@@ -19996,7 +20002,8 @@ eb_m321_other_comp_preg:
   identifiers: []
   type: integer
 eb_m322_babies_delivered_n:
-  categories: []
+  categories:
+  - NamedThing
   identifiers: []
   type: string
 he _b012_heart_attack:
@@ -20021,7 +20028,8 @@ he _b012_heart_attack:
   - LOINC:LA15807-3
   type: integer
 he_a004a_birth_low_bw:
-  categories: []
+  categories:
+  - NamedThing
   identifiers:
   - NCIT:C34724
   - UMLSCUI:C0024032
@@ -20045,7 +20053,8 @@ he_a004a_birth_low_bw:
   - SCITD:462211000000101
   type: integer
 he_a004b_birth_preterm:
-  categories: []
+  categories:
+  - NamedThing
   identifiers:
   - NCIT:C159087
   - SCITD:367494004
@@ -20069,7 +20078,8 @@ he_a004b_birth_preterm:
   - MeSH:D007234
   type: integer
 he_a004c_birth_multi:
-  categories: []
+  categories:
+  - NamedThing
   identifiers:
   - NCIT:C81271
   - UMLSCUI:C2015861

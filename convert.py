@@ -29,6 +29,8 @@ for table, table_mappings in old_mappings.items():
                 categories = biolinkType
             else:
                 raise TypeError(f"unsupported biolinkType {biolinkType}")
+            if len(categories) == 0:
+                categories = ["NamedThing"]
             ty = column_mapping["type"]
             mappings[column] = {
                 "categories": categories,
