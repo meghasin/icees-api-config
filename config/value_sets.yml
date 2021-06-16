@@ -110733,6 +110733,10 @@ Bronchiectasis:
 - '0'
 - '1'
 - '>1'
+BronchiectasisDx:
+- '0'
+- '1'
+- '>1'
 Budesonide:
 - '0'
 - '1'
@@ -110915,6 +110919,10 @@ ChronicNasalCongestion:
 - '0'
 - '1'
 - '>1'
+ChronicNasalCongestionDx:
+- '0'
+- '1'
+- '>1'
 ChronicObstructivePulmonaryDiseaseDx:
 - '0'
 - '1'
@@ -110974,6 +110982,10 @@ CroupDxVisit:
 - '1'
 - '>1'
 CysticFibrosis:
+- '0'
+- '1'
+- '>1'
+CysticFibrosisDx:
 - '0'
 - '1'
 - '>1'
@@ -141048,6 +141060,10 @@ DRB1*15:01:
 - OneCopy
 - TwoCopies
 DailyWetCough:
+- '0'
+- '1'
+- '>1'
+DailyWetCoughDx:
 - '0'
 - '1'
 - '>1'
@@ -251301,6 +251317,10 @@ Ethnicity:
 EthnicityDILI:
 - false
 - true
+ExtracorporealVentilationORSystemicAssistance:
+- '0'
+- '1'
+- '>1'
 FamilyHistoryLiverDisease:
 - false
 - true
@@ -311676,6 +311696,10 @@ LateralityDefect_SitusInversusOrHeterotaxy:
 - '0'
 - '1'
 - '>1'
+LateralityDefect_SitusInversusOrHeterotaxyDx:
+- '0'
+- '1'
+- '>1'
 Leuprolide:
 - '0'
 - '1'
@@ -311725,7 +311749,7 @@ MajorRoadwayHighwayExposure2:
 - 4
 - 5
 - 6
-MaleInfertilityDueToSpermDysfunction:
+MaleInfertilityDueToSpermDysfunctionDx:
 - '0'
 - '1'
 - '>1'
@@ -311948,6 +311972,10 @@ MiddleEarDisease:
 - '0'
 - '1'
 - '>1'
+MiddleEarDiseaseDx:
+- '0'
+- '1'
+- '>1'
 Milrinone_gtt:
 - '0'
 - '1'
@@ -311983,6 +312011,10 @@ Nausea:
 - false
 - true
 NeonatalRespiratoryDistress:
+- '0'
+- '1'
+- '>1'
+NeonatalRespiratoryDistressDx:
 - '0'
 - '1'
 - '>1'
@@ -422590,6 +422622,10 @@ Venlafaxine:
 - '1'
 - '>1'
 VenlafaxineVisit:
+- '0'
+- '1'
+- '>1'
+Ventilation:
 - '0'
 - '1'
 - '>1'

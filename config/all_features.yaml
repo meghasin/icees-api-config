@@ -1207,7 +1207,7 @@ patient:
     - normal
     - high
     type: string
-  Bronchiectasis:
+  BronchiectasisDx:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -1423,7 +1423,7 @@ patient:
     - "0"
     - "1"
     - ">1"
-  ChronicNasalCongestion:
+  ChronicNasalCongestionDx:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -1465,7 +1465,7 @@ patient:
     - "0"
     - "1"
     - ">1"
-  CysticFibrosis:
+  CysticFibrosisDx:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -1574,7 +1574,7 @@ patient:
     maximum: 6
     minimum: 1
     type: integer
-  DailyWetCough:
+  DailyWetCoughDx:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -2132,7 +2132,7 @@ patient:
     maximum: 6
     minimum: 1
     type: integer
-  LateralityDefect_SitusInversusOrHeterotaxy:
+  LateralityDefect_SitusInversusOrHeterotaxyDx:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -2173,7 +2173,7 @@ patient:
     maximum: 6
     minimum: 1
     type: integer
-  MaleInfertilityDueToSpermDysfunction:
+  MaleInfertilityDueToSpermDysfunctionDx:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -2278,7 +2278,7 @@ patient:
     - "0"
     - "1"
     - ">1"
-  MiddleEarDisease:
+  MiddleEarDiseaseDx:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -2299,7 +2299,7 @@ patient:
     - "0"
     - "1"
     - ">1"
-  NeonatalRespiratoryDistress:
+  NeonatalRespiratoryDistressDx:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -2562,6 +2562,20 @@ patient:
     - "1"
     - ">1"
   NonInvasivePositivePressureVentilation:
+    biolinkType: ChemicalSubstance, ChemicalExposure, Drug
+    type: string
+    enum:
+    - "0"
+    - "1"
+    - ">1"
+  Ventilation:
+    biolinkType: ChemicalSubstance, ChemicalExposure, Drug
+    type: string
+    enum:
+    - "0"
+    - "1"
+    - ">1"
+  ExtracorporealVentilationORSystemicAssistance:
     biolinkType: ChemicalSubstance, ChemicalExposure, Drug
     type: string
     enum:

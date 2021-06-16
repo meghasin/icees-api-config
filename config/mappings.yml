@@ -2730,17 +2730,13 @@ Bronchiectasis:
   categories:
   - Disease
   - DiseaseOrPhenotypicFeature
-  identifiers:
-  - SCITD:12295008
-  - SCITD:77593006
-  - SCITD:195985008
-  - SCITD:23022004
-  - SCITD:233628009
-  - SCITD:51068008
-  - SCITD:12310001
-  - SCITD:233630006
-  - LOINC:LA25633-1
-  - MeSH:D001987
+  identifiers: []
+  type: string
+BronchiectasisDx:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
   type: string
 Budesonide:
   categories:
@@ -3914,6 +3910,12 @@ ChronicNasalCongestion:
   - SCITD:68235000
   - LOINC:LA9263-0
   type: string
+ChronicNasalCongestionDx:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
+  type: string
 ChronicObstructivePulmonaryDiseaseDx:
   categories:
   - Disease
@@ -4337,6 +4339,12 @@ CysticFibrosis:
   - SCITD:762269004
   - SCITD:762271004
   type: string
+CysticFibrosisDx:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
+  type: string
 D-dimer:
   categories:
   - PhenotypicFeature
@@ -4455,6 +4463,12 @@ DailyWetCough:
   - SCITD:267034005
   - SCITD:161926007
   - MeSH:D003371
+  type: string
+DailyWetCoughDx:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
   type: string
 Days_ALT_DILIOnsetToPeak:
   categories:
@@ -6595,6 +6609,13 @@ EthnicityDILI:
   - PhenotypicFeature
   - DiseaseOrPhenotypicFeature
   identifiers: *id027
+  type: string
+ExtracorporealVentilationORSystemicAssistance:
+  categories:
+  - ChemicalSubstance
+  - ChemicalExposure
+  - Drug
+  identifiers: []
   type: string
 FamilyHistoryLiverDisease:
   categories:
@@ -10342,6 +10363,12 @@ LateralityDefect_SitusInversusOrHeterotaxy:
   - NCIT:C87121
   - UMLSCUI:C0037221
   type: string
+LateralityDefect_SitusInversusOrHeterotaxyDx:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
+  type: string
 Leuprolide:
   categories:
   - ChemicalSubstance
@@ -10636,13 +10663,11 @@ MajorRoadwayHighwayExposure2:
   - EnvironmentalExposure
   identifiers: []
   type: integer
-MaleInfertilityDueToSpermDysfunction:
+MaleInfertilityDueToSpermDysfunctionDx:
   categories:
   - Disease
   - DiseaseOrPhenotypicFeature
-  identifiers:
-  - MeSH:D013081
-  - SCITD:414643008
+  identifiers: []
   type: string
 MaleInfertilityDueToSpermDysfunctoon:
   categories:
@@ -11361,6 +11386,12 @@ MiddleEarDisease:
   - SCITD:68996008
   - SCITD:155260002
   type: string
+MiddleEarDiseaseDx:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
+  type: string
 Milrinone_gtt:
   categories:
   - ChemicalSubstance
@@ -11666,6 +11697,12 @@ NeonatalRespiratoryDistress:
   - NCIT:C154950
   - NCIT:C128768
   - NCIT:C128769
+  type: string
+NeonatalRespiratoryDistressDx:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
   type: string
 NeurologicalDisease:
   categories:
@@ -16769,6 +16806,13 @@ VenlafaxineVisit:
   - ChemicalExposure
   - Drug
   identifiers: *id064
+  type: string
+Ventilation:
+  categories:
+  - ChemicalSubstance
+  - ChemicalExposure
+  - Drug
+  identifiers: []
   type: string
 Ventilator:
   categories:
