@@ -1476,18 +1476,14 @@ patient:
     type: string
   DILIDx:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
-    type: string
-    enum:
-    - "0"
-    - "1"
-    - ">1"
+    type: integer
+    minimum: 0
+    maximum: 1
   AmoxicillinDILIDx:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
-    type: string
-    enum:
-    - "0"
-    - "1"
-    - ">1"
+    type: integer
+    minimum: 0
+    maximum: 1
   DISTANCE:
     biolinkType: EnvironmentalExposure
     maximum: 6

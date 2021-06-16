@@ -139,9 +139,8 @@ Amiodarone_gtt:
 - '1'
 - '>1'
 AmoxicillinDILIDx:
-- '0'
-- '1'
-- '>1'
+- 0
+- 1
 Anakinra:
 - '0'
 - '1'
@@ -626,7 +625,7 @@ BeclomethasoneVisit:
 - '1'
 - '>1'
 BloodType:
-- 'A+ '
+- A+
 - A-
 - B+
 - B-
@@ -968,9 +967,8 @@ D28_ASTHMA:
 - 'True'
 - 'False'
 DILIDx:
-- '0'
-- '1'
-- '>1'
+- 0
+- 1
 DILIDxVisit:
 - '0'
 - '1'

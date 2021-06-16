@@ -24,9 +24,9 @@ for table, table_mappings in old_mappings.items():
             if biolinkType is None:
                 categories = []
             elif isinstance(biolinkType, str):
-                categories = [c.strip() for c in biolinkType.split(",")]
+                categories = [f"biolink:{c.strip()}" for c in biolinkType.split(",")]
             elif isinstance(biolinkType, list):
-                categories = biolinkType
+                categories = f"biolink:{biolinkType}"
             else:
                 raise TypeError(f"unsupported biolinkType {biolinkType}")
             if len(categories) == 0:
@@ -44,7 +44,7 @@ for table, table_mappings in old_mappings.items():
             if maximum is not None and minimum is not None:
                 value_sets[column] = list(range(minimum, maximum+1))
             elif enum is not None:
-                value_sets[column] = enum
+                value_sets[column] = [item.strip() if isinstance(item, str) else item for item in enum]
 
 with open(new_mappings_file_path, "w") as new_mappings_file:
     yaml.dump(mappings, new_mappings_file)
