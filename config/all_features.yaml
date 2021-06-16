@@ -5,9 +5,7 @@ patient:
     maximum: 1
     biolinkType: []
   AgeQualifyingLab:
-    type: integer
-    minimum: 1
-    maximum: 9999
+    type: number
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   SexDILI:
     type: string
@@ -40,13 +38,9 @@ patient:
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   Weight:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   BMI:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   BMI_Category:
     type: string
@@ -124,14 +118,16 @@ patient:
     - "Yes"
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   HCV_Positive:
-    type: integer
-    minimum: 1
-    maximum: 9999
+    type: string
+    enum:
+    - "No"
+    - "Yes"    
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   HBV_Positive:
     type: integer
-    minimum: 1
-    maximum: 9999
+    enum:
+    - "No"
+    - "Yes"
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   AlcoholRelatedLiverDisease:
     type: string
@@ -231,18 +227,12 @@ patient:
     biolinkType: PhenotypicFeature, Disease, DiseaseOrPhenotypicFeature
   Days_DrugStartToEarliestSign:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature
   Days_EarliestSignToDrugStop:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature
   Latency:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature
   Weeks_DrugStartToDILI:
     type: string
@@ -254,13 +244,9 @@ patient:
     biolinkType: PhenotypicFeature
   Days_DrugStartToEarliestSignOrDILI:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature
   Days_EarliestSignToDILI:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature
   Weeks_EarliestSignToDILI:
     type: string
@@ -271,8 +257,6 @@ patient:
     biolinkType: PhenotypicFeature
   Days_DILIOnsetToInitialVisit:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature
   Jaundice:
     type: string
@@ -433,8 +417,6 @@ patient:
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   EosinophilCount:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   Eosinophil_GreaterThan500:
     type: string
@@ -444,53 +426,33 @@ patient:
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   ALT_Onset:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   ALT_Onset_ULN:
     type: integer
-    minimum: 1
-    maximum: 5
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   AST_Onset:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   AST_Onset_ULN:
     type: integer
-    minimum: 1
-    maximum: 5
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   AlkalinePhosphatase_Onset:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   AlkalinePhosphatase_Onset_ULN:
     type: integer
-    minimum: 1
-    maximum: 5
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   Bilirubin_Onset:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   Bilirubin_Onset_ULN:
     type: integer
-    minimum: 1
-    maximum: 5
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   INR_Onset:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   INR_Onset_ULN:
     type: integer
-    minimum: 1
-    maximum: 5
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   PatternLiverInjury_Onset:
     type: string
@@ -501,98 +463,60 @@ patient:
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   RValue_Onset:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   ALT_Peak_DILIOnsetToMonth6:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   ALT_DILIOnset_ULN:
     type: integer
-    minimum: 1
-    maximum: 5
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   ALT_Peak_DILIOnsetToMonth6_ULN:
     type: integer
-    minimum: 1
-    maximum: 5
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   AST_Peak_DILIOnsetToMonth6:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   AST_DILIOnset_ULN:
     type: integer
-    minimum: 1
-    maximum: 5
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   AST_Peak_DILIOnsetToMonth6_ULN:
     type: integer
-    minimum: 1
-    maximum: 5
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   AlkalinePhosphatase_Peak_DILIOnsetToMonth6:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   AlkalinePhosphatase_DILIOnset_ULN:
     type: integer
-    minimum: 1
-    maximum: 5
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   AlkalinePhosphatase_Peak_DILIOnsetToMonth6_ULN:
     type: integer
-    minimum: 1
-    maximum: 5
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   Bilirubin_Peak_DILIOnsetToMonth6:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   Bilirubin_DILIOnset_ULN:
     type: integer
-    minimum: 1
-    maximum: 5
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   Bilirubin_Peak_DILIOnsetToMonth6_ULN:
     type: integer
-    minimum: 1
-    maximum: 5
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   INR_Peak_DILIOnsetToMonth6:
     type: integer
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   INR_Peak_DILIOnsetToMonth6_ULN:
     type: integer
-    minimum: 1
-    maximum: 5
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   Days_Bilirubin_DILIOnsetToPeak:
     type: number
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   Days_ALT_DILIOnsetToPeak:
     type: number
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   Days_AST_DILIOnsetToPeak:
     type: number
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   Days_AlkalinePhosphatase_DILIOnsetToPeak:
     type: number
-    minimum: 1
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   Hospitalization_NewProlonged:
     type: string
@@ -1949,8 +1873,6 @@ patient:
     - ">1"
   HospitalLOS:
     type: integer
-    minimum: 0
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   Hydroxyzine:
     biolinkType: ChemicalSubstance, ChemicalExposure, Drug
@@ -15704,8 +15626,6 @@ visit:
     - ">1"
   HospitalLOS:
     type: integer
-    minimum: 0
-    maximum: 9999
     biolinkType: PhenotypicFeature, DiseaseOrPhenotypicFeature
   HydroxyzineVisit:
     biolinkType: ChemicalSubstance, ChemicalExposure, Drug

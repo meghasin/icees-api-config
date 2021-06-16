@@ -832,7 +832,7 @@ AgeQualifyingLab:
   - UMLSCUI:C1510829
   - SCTID:424144002
   - SCTID:397669002
-  type: integer
+  type: number
 AgeStudyStart:
   categories:
   - PhenotypicFeature
@@ -7910,7 +7910,7 @@ HCV_Positive:
   identifiers:
   - SCITD:406104003
   - LOINC:55276-0
-  type: integer
+  type: string
 HCV_RNA:
   categories:
   - PhenotypicFeature

@@ -45,13 +45,6 @@ for table, table_mappings in old_mappings.items():
                 value_sets[column] = list(range(minimum, maximum+1))
             elif enum is not None:
                 value_sets[column] = enum
-            elif ty == "integer":
-                print(f"no value set for {table}>{column}, default to 0 to 9999")
-                value_sets[column] = list(range(10000))
-            else:
-                print(f"no value set for {table}>{column}, default to []")
-                value_sets[column] = []
-                
 
 with open(new_mappings_file_path, "w") as new_mappings_file:
     yaml.dump(mappings, new_mappings_file)
