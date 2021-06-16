@@ -726,35 +726,35 @@ patient:
   rs2476601_a:
     type: string
     enum:
-    - TwoCopies
+    - NoCopies
     - OneCopy
     - TwoCopies
     biolinkType: SequenceVariant
   A*02:01:
     type: string
     enum:
-    - TwoCopies
+    - NoCopies
     - OneCopy
     - TwoCopies
     biolinkType: SequenceVariant
   DRB1*15:01:
     type: string
     enum:
-    - TwoCopies
+    - NoCopies
     - OneCopy
     - TwoCopies
     biolinkType: SequenceVariant
   rs1363907_a:
     type: string
     enum:
-    - TwoCopies
+    - NoCopies
     - OneCopy
     - TwoCopies
     biolinkType: SequenceVariant
   HLA-B*15:18:
     type: string
     enum:
-    - TwoCopies
+    - NoCopies
     - OneCopy
     - TwoCopies
     biolinkType: SequenceVariant

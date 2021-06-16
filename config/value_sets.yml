@@ -1,5 +1,5 @@
 A*02:01:
-- TwoCopies
+- NoCopies
 - OneCopy
 - TwoCopies
 A1AT_Deficiency:
@@ -141072,7 +141072,7 @@ DISTANCE2:
 - 5
 - 6
 DRB1*15:01:
-- TwoCopies
+- NoCopies
 - OneCopy
 - TwoCopies
 DailyWetCough:
@@ -271458,7 +271458,7 @@ HIV_Positive:
 - false
 - true
 HLA-B*15:18:
-- TwoCopies
+- NoCopies
 - OneCopy
 - TwoCopies
 HeartDisease:
@@ -436294,7 +436294,7 @@ rs1348369-T:
 - OneCopy
 - TwoCopies
 rs1363907_a:
-- TwoCopies
+- NoCopies
 - OneCopy
 - TwoCopies
 rs1363933-A:
@@ -437214,7 +437214,7 @@ rs2476601-G:
 - OneCopy
 - TwoCopies
 rs2476601_a:
-- TwoCopies
+- NoCopies
 - OneCopy
 - TwoCopies
 rs2488457-A:
