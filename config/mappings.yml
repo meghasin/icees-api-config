@@ -10702,6 +10702,18 @@ LiverTransplant:
   - LOINC:44762-3
   - LOINC:44773-0
   - LOINC:44775-5
+  - ICD10:T86.%
+  - ICD10:Y83.%
+  - ICD10:Z48.%
+  - ICD10:Z76.%
+  - ICD10:Z94.%
+  - CPT:00796
+  - CPT:47143
+  - CPT:47144
+  - CPT:47145
+  - CPT:47147
+  - ICD9:V42.%
+  - ICD9:996.%
   type: string
 MEDIANHOUSEHOLDINCOME_cut:
   categories:
@@ -11798,6 +11810,8 @@ NeurologicalDisease:
   - SCITD:100041000000105
   - SCITD:95161000000107
   - SCITD:240672009
+  - IC10:G93.%
+  - IC10:Z82.%
   type: string
 Neutropenia:
   categories:
@@ -11954,6 +11968,18 @@ Neutropenia:
   - MESH:D056889
   - MESH:D044504
   - MESH:C538171
+  - ICD9:279.%
+  - ICD9:288.%
+  - ICD9:289.%
+  - ICD9:577.%
+  - ICD9:756.%
+  - ICD9:776.%
+  - ICD9:780.%
+  - ICD10:D70.%
+  - ICD10:M05.%
+  - ICD10:P61.%
+  - ICD10:R50.%
+  - ICD10:Z86.%
   type: string
 NitricOxideOrFolan:
   categories:
@@ -12815,6 +12841,38 @@ PrednisoneOrCorticosteroids_Tx:
   - UMLS:C0569139
   - UMLS:C0569140
   - UMLS:C0569141
+  - CPT:4193F
+  - CPT:4194F
+  - ICD10:T45.%
+  - ICD10:E09.%
+  - ICD10:T38.%
+  - ICD9:962.%
+  - ICD9:E858.%
+  - ICD9:E932.%
+  - ICD9:E950.%
+  - ICD9:E962.%
+  - ICD9:E980.%
+  - ICD9:V58.%
+  - CPT:0018U
+  - CPT:0218U
+  - CPT:0220U
+  - CPT:3750F
+  - CPT:4015F
+  - CPT:4135F
+  - CPT:4136F
+  - CPT:4140F
+  - CPT:62273
+  - CPT:64416
+  - CPT:83491
+  - ICD9:255.%
+  - ICD9:962.%
+  - ICD9:976.%
+  - ICD9:E858.%
+  - ICD9:E932.%
+  - ICD9:E946.%
+  - ICD9:E950.%
+  - ICD9:E962.%
+  - ICD9:E980.%
   type: string
 PrednisoneOrMethylprednisone:
   categories:
@@ -14567,6 +14625,8 @@ PrimaryBiliaryCirrhosis:
   - SCITD:155815006
   - SCITD:266540000
   - SCITD:1761006
+  - ICD10:K74.%
+  - ICD9:571.%
   type: string
 PrimarySclerosingCholangitis:
   categories:
@@ -14599,6 +14659,7 @@ PrimarySclerosingCholangitis:
   - MESH:D013344
   - MESH:D018219
   - MESH:C562824
+  - ICD10:K83.%
   type: string
 Procalcitonin:
   categories:
@@ -14775,6 +14836,22 @@ PulmonaryDisease:
   - LOINC:LA28200-6
   - LOINC:LA27422-7
   - LOINC:LA27872-3
+  - CPT:1015F
+  - CPT:1026F
+  - CPT:3023F
+  - CPT:4025F
+  - CPT:81554
+  - CPT:82103
+  - CPT:82104
+  - CPT:94010
+  - ICD9:466.%
+  - ICD9:491.%
+  - ICD9:493.%
+  - ICD10:I21.%
+  - ICD10:I27.%
+  - ICD10:J44.%
+  - ICD10:J84.%
+  - ICD10:J98.%
   type: string
 QXAGE:
   categories:
@@ -15159,6 +15236,61 @@ Rash:
   - SCTID:400991008
   - SCTID:284078000
   - SCTID:213323001
+  - CPT:87140
+  - CPT:87253
+  - CPT:87531
+  - CPT:87532
+  - CPT:87533
+  - ICD9:034.%
+  - ICD9:050.%
+  - ICD9:056.%
+  - ICD9:057.%
+  - ICD9:058.%
+  - ICD9:078.%
+  - ICD9:091.%
+  - ICD9:529.%
+  - ICD9:691.%
+  - ICD9:692.%
+  - ICD9:693.%
+  - ICD9:695.%
+  - ICD9:704.%
+  - ICD9:705.%
+  - ICD9:708.%
+  - ICD9:778.%
+  - ICD9:782.%
+  - ICD9:999.%
+  - ICD10:A92.%
+  - ICD10:B94.%
+  - ICD10:C86.%
+  - ICD10:D72.%
+  - ICD10:K14.%
+  - ICD10:L11.%
+  - ICD10:L13.%
+  - ICD10:L20.%
+  - ICD10:L21.%
+  - ICD10:L22.%
+  - ICD10:L25.%
+  - ICD10:L27.%
+  - ICD10:L30.%
+  - ICD10:L40.%
+  - ICD10:L41.%
+  - ICD10:L42.%
+  - ICD10:L43.%
+  - ICD10:L44.%
+  - ICD10:L50.%
+  - ICD10:L51.%
+  - ICD10:L52.%
+  - ICD10:L53.%
+  - ICD10:L55.%
+  - ICD10:L56.%
+  - ICD10:L59.%
+  - ICD10:L71.%
+  - ICD10:L74.%
+  - ICD10:L93.%
+  - ICD10:L94.%
+  - ICD10:O26.%
+  - ICD10:R21.%
+  - ICD10:R23.%
   type: string
 ReactiveAirwayDx:
   categories:
@@ -15394,6 +15526,221 @@ RenalDisease:
   - SCTID:234348004
   - SCTID:275906001
   - SCTID:662181000000100
+  - CPT:0505F
+  - CPT:0602T
+  - CPT:0603T
+  - CPT:1026F
+  - CPT:3066F
+  - CPT:3082F
+  - CPT:3083F
+  - CPT:3084F
+  - CPT:4268F
+  - CPT:4269F
+  - CPT:4270F
+  - CPT:4271F
+  - CPT:4274F
+  - CPT:4276F
+  - CPT:4279F
+  - CPT:4280F
+  - CPT:4290F
+  - CPT:4293F
+  - CPT:4300F
+  - CPT:4301F
+  - CPT:4305F
+  - CPT:4306F
+  - CPT:4320F
+  - CPT:4322F
+  - CPT:4324F
+  - CPT:4325F
+  - CPT:4326F
+  - CPT:4328F
+  - CPT:4330F
+  - CPT:4340F
+  - CPT:4350F
+  - CPT:4400F
+  - CPT:4450F
+  - CPT:4470F
+  - CPT:4480F
+  - CPT:4481F
+  - CPT:4500F
+  - CPT:4510F
+  - CPT:4525F
+  - CPT:4526F
+  - CPT:4540F
+  - CPT:4541F
+  - CPT:4550F
+  - CPT:4551F
+  - CPT:4552F
+  - CPT:4553F
+  - CPT:4554F
+  - CPT:4555F
+  - CPT:4556F
+  - CPT:4557F
+  - CPT:4558F
+  - CPT:4559F
+  - CPT:4560F
+  - CPT:4561F
+  - CPT:4562F
+  - CPT:4563F
+  - CPT:5005F
+  - CPT:5010F
+  - CPT:5015F
+  - CPT:81000
+  - CPT:82190
+  - CPT:82232
+  - CPT:82355
+  - CPT:82360
+  - CPT:82634
+  - CPT:82638
+  - CPT:82642
+  - CPT:82951
+  - CPT:82952
+  - CPT:82955
+  - CPT:82960
+  - CPT:82962
+  - CPT:84202
+  - CPT:84203
+  - CPT:84206
+  - CPT:84207
+  - CPT:84210
+  - CPT:84220
+  - CPT:84228
+  - CPT:84233
+  - CPT:84234
+  - CPT:84235
+  - CPT:84238
+  - CPT:84244
+  - CPT:84252
+  - CPT:84255
+  - CPT:84260
+  - CPT:84270
+  - CPT:84275
+  - CPT:84285
+  - CPT:84295
+  - CPT:84300
+  - CPT:84450
+  - CPT:84830
+  - CPT:85293
+  - CPT:85300
+  - CPT:85301
+  - CPT:86960
+  - CPT:90951
+  - CPT:90952
+  - CPT:90953
+  - CPT:90954
+  - CPT:90955
+  - CPT:90956
+  - CPT:90957
+  - CPT:90958
+  - CPT:90959
+  - CPT:90960
+  - CPT:90961
+  - CPT:90962
+  - CPT:90963
+  - CPT:90964
+  - CPT:90965
+  - CPT:90966
+  - CPT:90967
+  - CPT:90968
+  - CPT:90969
+  - CPT:90970
+  - ICD9:285.%
+  - ICD9:403.%
+  - ICD9:404.%
+  - ICD9:446.%
+  - ICD9:581.%
+  - ICD9:583.%
+  - ICD9:585.%
+  - ICD9:593.%
+  - ICD9:642.%
+  - ICD9:646.%
+  - ICD9:760.%
+  - ICD9:V81.%
+  - ICD10:D63.%
+  - ICD10:E11.%
+  - ICD10:I12.%
+  - ICD10:I13.%
+  - ICD10:I27.%
+  - ICD10:M10.%
+  - ICD10:M1A.%
+  - ICD10:M32.%
+  - CPT:82955
+  - CPT:82960
+  - CPT:82962
+  - CPT:84202
+  - CPT:84203
+  - CPT:84206
+  - CPT:84207
+  - CPT:84210
+  - CPT:84220
+  - CPT:84228
+  - CPT:84233
+  - CPT:84234
+  - CPT:84235
+  - CPT:84238
+  - CPT:84244
+  - CPT:84252
+  - CPT:84255
+  - CPT:84260
+  - CPT:84270
+  - CPT:84275
+  - CPT:84285
+  - CPT:84295
+  - CPT:84300
+  - CPT:84450
+  - CPT:84830
+  - CPT:85293
+  - CPT:85300
+  - CPT:85301
+  - CPT:86960
+  - CPT:90951
+  - CPT:90952
+  - CPT:90953
+  - CPT:90954
+  - CPT:90955
+  - CPT:90956
+  - CPT:90957
+  - CPT:90958
+  - CPT:90959
+  - CPT:90960
+  - CPT:90961
+  - CPT:90962
+  - CPT:90963
+  - CPT:90964
+  - CPT:90965
+  - CPT:90966
+  - CPT:90967
+  - CPT:90968
+  - CPT:90969
+  - CPT:90970
+  - ICD9:285.%
+  - ICD9:403.%
+  - ICD9:404.%
+  - ICD9:446.%
+  - ICD9:581.%
+  - ICD9:583.%
+  - ICD9:585.%
+  - ICD9:593.%
+  - ICD9:642.%
+  - ICD9:646.%
+  - ICD9:760.%
+  - ICD9:V81.%
+  - ICD10:D63.%
+  - ICD10:E11.%
+  - ICD10:I12.%
+  - ICD10:I13.%
+  - ICD10:I27.%
+  - ICD10:M10.%
+  - ICD10:M1A.%
+  - ICD10:M32.%
+  - ICD10:N05.%
+  - ICD10:N17.%
+  - ICD10:N18.%
+  - ICD10:N28.%
+  - ICD10:O26.%
+  - ICD10:P00.%
+  - ICD10:R80.%
+  - ICD10:Z49.%
   type: string
 RespiratorySupportHNO3orFlolan:
   categories:
@@ -15899,6 +16246,7 @@ Serum_IgA:
   - LOINC:LP377467-8
   - LOINC:LP394673-0
   - LOINC:LP394360-4
+  - CPT:82784
   type: string
 Serum_IgG:
   categories:
@@ -15912,6 +16260,22 @@ Serum_IgG:
   - UMLS:C4013570
   - UMLS:C2750138
   - SCTID:165868003
+  - CPT:0062U
+  - CPT:0224U
+  - CPT:82784
+  - CPT:82787
+  - CPT:86003
+  - CPT:86631
+  - CPT:86677
+  - CPT:86695
+  - CPT:86704
+  - CPT:86708
+  - CPT:86762
+  - CPT:86765
+  - CPT:86777
+  - CPT:86784
+  - CPT:86787
+  - CPT:86790
   type: string
 Serum_IgM:
   categories:
@@ -15928,6 +16292,24 @@ Serum_IgM:
   - LOINC:LP377049-4
   - LOINC:LP395419-7
   - LOINC:LP377091-6
+  - CPT:0062U
+  - CPT:82784
+  - CPT:82787
+  - CPT:86310
+  - CPT:86632
+  - CPT:86704
+  - CPT:86705
+  - CPT:86708
+  - CPT:86709
+  - CPT:86762
+  - CPT:86765
+  - CPT:86777
+  - CPT:86778
+  - CPT:86787
+  - CPT:86788
+  - CPT:86789
+  - CPT:86790
+  - CPT:86794
   type: string
 Sex:
   categories:
@@ -16118,6 +16500,7 @@ StevensJohnsonSyndrome:
   - MONDO:0019810
   - MESH:D013262
   - SCTID:73442001
+  - ICD9:695.%
   type: string
 SvO2:
   categories:
@@ -16622,6 +17005,53 @@ Thrombocytopenia:
   - SCTID:37492005
   - SCTID:10386005
   - LOINC:LA15308-2
+  - CPT:3155F
+  - CPT:81105
+  - CPT:81106
+  - CPT:81107
+  - CPT:81108
+  - CPT:81109
+  - CPT:81110
+  - CPT:81111
+  - CPT:81112
+  - CPT:81338
+  - CPT:81339
+  - ICD9:279.%
+  - ICD9:286.%
+  - ICD9:287.%
+  - ICD9:289.%
+  - ICD9:446.%
+  - ICD9:666.%
+  - ICD9:678.%
+  - ICD9:759.%
+  - ICD9:776.%
+  - ICD10:C91.%
+  - ICD10:C92.%
+  - ICD10:C93.%
+  - ICD10:C94.%
+  - ICD10:C95.%
+  - ICD10:D46.%
+  - ICD10:D47.%
+  - ICD10:D50.%
+  - ICD10:D51.%
+  - ICD10:D52.%
+  - ICD10:D53.%
+  - ICD10:D55.%
+  - ICD10:D58.%
+  - ICD10:D59.%
+  - ICD10:D61.%
+  - ICD10:D62.%
+  - ICD10:D63.%
+  - ICD10:D64.%
+  - ICD10:D69.%
+  - ICD10:D75.%
+  - ICD10:D82.%
+  - ICD10:O36.%
+  - ICD10:O90.%
+  - ICD10:O99.%
+  - ICD10:P61.%
+  - ICD10:Q87.%
+  - ICD10:Z86.%
   type: string
 Tocilizumab:
   categories:
@@ -17232,6 +17662,131 @@ Weight:
   - LOINC:29463-7
   - LOINC:LP29703-3
   - LOINC:LP65139-5
+  - CPT:0001F
+  - CPT:0358T
+  - CPT:0501F
+  - CPT:1070F
+  - CPT:1071F
+  - CPT:2001F
+  - CPT:27447
+  - CPT:27457
+  - CPT:27598
+  - CPT:27704
+  - CPT:27824
+  - CPT:27825
+  - CPT:27826
+  - CPT:27827
+  - CPT:27828
+  - CPT:29355
+  - CPT:29358
+  - CPT:29425
+  - CPT:3572F
+  - CPT:3573F
+  - CPT:3759F
+  - CPT:3760F
+  - CPT:3761F
+  - CPT:4014F
+  - CPT:43848
+  - CPT:43886
+  - CPT:58140
+  - CPT:58145
+  - CPT:58146
+  - CPT:58545
+  - CPT:58546
+  - CPT:64653
+  - CPT:67912
+  - CPT:81287
+  - CPT:84585
+  - CPT:84586
+  - CPT:84600
+  - CPT:84620
+  - CPT:84630
+  - CPT:85293
+  - CPT:97012
+  - CPT:99450
+  - CPT:99453
+  - CPT:99454
+  - CPT:99468
+  - CPT:99469
+  - CPT:99478
+  - CPT:99479
+  - CPT:99480
+  - ICD10:E66.%
+  - ICD10:E86.%
+  - ICD10:F50.%
+  - ICD10:O26.%
+  - ICD10:O99.%
+  - ICD10:P05.%
+  - ICD10:P07.%
+  - ICD10:P08.%
+  - ICD10:Q86.%
+  - ICD10:R62.%
+  - ICD10:R63.%
+  - ICD10:R64.%
+  - ICD10:Y93.%
+  - ICD10:Z00.%
+  - ICD10:Z68.%
+  - ICD10:Z71.%
+  - ICD9:263.%
+  - ICD9:278.%
+  - ICD9:500.%
+  - ICD9:646.%
+  - CPT:85293
+  - CPT:97012
+  - CPT:99450
+  - CPT:99453
+  - CPT:99454
+  - CPT:99468
+  - CPT:99469
+  - CPT:99478
+  - CPT:99479
+  - CPT:99480
+  - ICD10:E66.%
+  - ICD10:E86.%
+  - ICD10:F50.%
+  - ICD10:O26.%
+  - ICD10:O99.%
+  - ICD10:P05.%
+  - ICD10:P07.%
+  - ICD10:P08.%
+  - ICD10:Q86.%
+  - ICD10:R62.%
+  - ICD10:R63.%
+  - ICD10:R64.%
+  - ICD10:Y93.%
+  - ICD10:Z00.%
+  - ICD10:Z68.%
+  - ICD10:Z71.%
+  - ICD9:263.%
+  - ICD9:278.%
+  - ICD9:500.%
+  - ICD9:646.%
+  - ICD9:653.%
+  - ICD9:656.%
+  - ICD9:660.%
+  - ICD9:724.%
+  - ICD9:763.%
+  - ICD9:764.%
+  - ICD9:765.%
+  - ICD9:766.%
+  - ICD9:767.%
+  - ICD9:768.%
+  - ICD9:769.%
+  - ICD9:770.%
+  - ICD9:771.%
+  - ICD9:772.%
+  - ICD9:773.%
+  - ICD9:774.%
+  - ICD9:775.%
+  - ICD9:776.%
+  - ICD9:777.%
+  - ICD9:778.%
+  - ICD9:779.%
+  - ICD9:783.%
+  - ICD9:E010.%
+  - ICD9:V13.%
+  - ICD9:V20.%
+  - ICD9:V21.%
   type: integer
 WilsonsDisease:
   categories:
@@ -17246,6 +17801,9 @@ WilsonsDisease:
   - UMLS:C3665549
   - UMLS:C4551303
   - MESH:C093154
+  - ICD9:275.%
+  - ICD10:E83.%
+  - ICD10:H18.%
   type: string
 Year_DILI_Onset:
   categories:
