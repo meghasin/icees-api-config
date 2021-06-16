@@ -52,7 +52,8 @@ ALT_DILIOnset_ULN:
   categories:
   - PhenotypicFeature
   - DiseaseOrPhenotypicFeature
-  identifiers: []
+  identifiers:
+  - HP:0031964
   type: integer
 ALT_Onset:
   categories:
@@ -82,13 +83,15 @@ ALT_Peak_DILIOnsetToMonth6:
   categories:
   - PhenotypicFeature
   - DiseaseOrPhenotypicFeature
-  identifiers: []
+  identifiers:
+  - HP:0031964
   type: integer
 ALT_Peak_DILIOnsetToMonth6_ULN:
   categories:
   - PhenotypicFeature
   - DiseaseOrPhenotypicFeature
-  identifiers: []
+  identifiers:
+  - HP:0031964
   type: integer
 ALT_flag_first:
   categories:
@@ -603,7 +606,8 @@ AST_DILIOnset_ULN:
   categories:
   - PhenotypicFeature
   - DiseaseOrPhenotypicFeature
-  identifiers: []
+  identifiers:
+  - HP:0031956
   type: integer
 AST_Onset:
   categories:
@@ -666,13 +670,15 @@ AST_Peak_DILIOnsetToMonth6:
   categories:
   - PhenotypicFeature
   - DiseaseOrPhenotypicFeature
-  identifiers: []
+  identifiers:
+  - HP:0031956
   type: integer
 AST_Peak_DILIOnsetToMonth6_ULN:
   categories:
   - PhenotypicFeature
   - DiseaseOrPhenotypicFeature
-  identifiers: []
+  identifiers:
+  - HP:0031956
   type: integer
 AST_flag_first:
   categories:
@@ -1026,7 +1032,9 @@ AlcoholRelatedLiverDisease:
   categories:
   - Disease
   - DiseaseOrPhenotypicFeature
-  identifiers: []
+  identifiers:
+  - MES:D008108
+  - UMLS:C0023896
   type: string
 AlcoholUse:
   categories:
@@ -1102,7 +1110,8 @@ AlkalinePhosphatase_DILIOnset_ULN:
   categories:
   - PhenotypicFeature
   - DiseaseOrPhenotypicFeature
-  identifiers: []
+  identifiers:
+  - HP:0003155
   type: integer
 AlkalinePhosphatase_Onset:
   categories:
@@ -1129,13 +1138,15 @@ AlkalinePhosphatase_Peak_DILIOnsetToMonth6:
   categories:
   - PhenotypicFeature
   - DiseaseOrPhenotypicFeature
-  identifiers: []
+  identifiers:
+  - HP:0003155
   type: integer
 AlkalinePhosphatase_Peak_DILIOnsetToMonth6_ULN:
   categories:
   - PhenotypicFeature
   - DiseaseOrPhenotypicFeature
-  identifiers: []
+  identifiers:
+  - HP:0003155
   type: integer
 AlopeciaDx:
   categories:
@@ -3836,7 +3847,8 @@ ChronicHepatitisB_Screening:
   - PhenotypicFeature
   - Disease
   - DiseaseOrPhenotypicFeature
-  identifiers: []
+  identifiers:
+  - MESH:D019694
   type: string
 ChronicHepatitisC_Screening:
   categories:
@@ -4455,7 +4467,8 @@ DILIN_SeverityScore:
   - PhenotypicFeature
   - Disease
   - DiseaseOrPhenotypicFeature
-  identifiers: []
+  identifiers:
+  - MESH:D056486
   type: string
 DISTANCE:
   categories:
@@ -8289,7 +8302,9 @@ HepatitisA:
   - PhenotypicFeature
   - Disease
   - DiseaseOrPhenotypicFeature
-  identifiers: []
+  identifiers:
+  - MESH:D006506
+  - UMLS:C0019159
   type: string
 HgbA1C:
   categories:
@@ -8375,7 +8390,8 @@ Hospitalization_NewProlonged:
   - ActivityAndBehavior
   - PhenotypicFeature
   - DiseaseOrPhenotypicFeature
-  identifiers: []
+  identifiers:
+  - MESH:D006760
   type: string
 Hydroxychloroquine:
   categories:
@@ -12340,7 +12356,36 @@ PCA_Race:
   categories:
   - PhenotypicFeature
   - DiseaseOrPhenotypicFeature
-  identifiers: []
+  identifiers: &id054
+  - NCIT:C17049
+  - UMLSCUI:C0034510
+  - NCIT:C93992
+  - UMLSCUI:C2986190
+  - SCTID:103579009
+  - MESH:C115528
+  - NCIT:C104495
+  - MESH:C103644
+  - MESH:C478659
+  - MESH:C060300
+  - MESH:C025011
+  - MESH:C539302
+  - UMLS:C0920122
+  - MESH:D000873
+  - MESH:C000632147
+  - MESH:C000588642
+  - MESH:C019594
+  - MESH:C574050
+  - MESH:C070231
+  - MESH:C102552
+  - MESH:D031642
+  - MESH:C000626300
+  - MESH:C062165
+  - MESH:C000626301
+  - MESH:C118554
+  - MESH:C000589006
+  - MESH:C435015
+  - MESH:C000597211
+  - NCIT:C37932
   type: string
 PCDDx:
   categories:
@@ -14765,7 +14810,7 @@ RValue_Onset:
 Race:
   categories:
   - PhenotypicFeature
-  identifiers: &id054
+  identifiers:
   - NCIT:C17049
   - UMLSCUI:C0034510
   - NCIT:C93992
