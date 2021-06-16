@@ -11183,7 +11183,8 @@ patient:
   Bilirubin_Onset: []
   Bilirubin_Peak_DILIOnsetToMonth6: []
   Bilirubin_Peak_DILIOnsetToMonth6_ULN: []
-  ChronicDILI: []
+  ChronicDILI:
+  - MESH:D056487
   ChronicHepatitisC_Screening:
   - SCTID:128302006
   - SCTID:708198006
@@ -22210,7 +22211,8 @@ visit:
   BilirubinOnset: []
   BilirubinPeakDILIOnsetToMonth6: []
   BilirubinPeakDILIOnsetToMonth6ULN: []
-  ChronicDILI: []
+  ChronicDILI:
+  - MESH:D056487
   ChronicHepatitisCScreening:
   - SCTID:128302006
   - SCTID:708198006

@@ -3,8 +3,8 @@ A*02:01:
 - OneCopy
 - TwoCopies
 A1AT_Deficiency:
-- false
-- true
+- 'No'
+- 'Yes'
 AADT:
 - 0
 - 1
@@ -30037,11 +30037,11 @@ ALT_flag_last:
 - normal
 - high
 ANA:
-- false
-- true
+- 'No'
+- 'Yes'
 ASMA:
-- false
-- true
+- 'No'
+- 'Yes'
 AST:
 - 0
 - 1
@@ -50072,8 +50072,8 @@ AST_flag_last:
 - normal
 - high
 AbdominalPain:
-- false
-- true
+- 'No'
+- 'Yes'
 AbsoluteLymphocyteCount:
 - 0
 - 1
@@ -60158,11 +60158,11 @@ AlcoholDependenceDxVisit:
 - '1'
 - '>1'
 AlcoholRelatedLiverDisease:
-- false
-- true
+- 'No'
+- 'Yes'
 AlcoholUse:
-- false
-- true
+- 'No'
+- 'Yes'
 AlkalinePhosphatase_DILIOnset_ULN:
 - 1
 - 2
@@ -80222,23 +80222,23 @@ AntiInfectivesRemdesivir:
 - '1'
 - '>1'
 Anti_HAV:
-- false
-- true
+- 'No'
+- 'Yes'
 Anti_HBc:
-- false
-- true
+- 'No'
+- 'Yes'
 Anti_HBc_IgM:
-- false
-- true
+- 'No'
+- 'Yes'
 Anti_HBe:
-- false
-- true
+- 'No'
+- 'Yes'
 Anti_HBs:
-- false
-- true
+- 'No'
+- 'Yes'
 Anti_HCV:
-- false
-- true
+- 'No'
+- 'Yes'
 Antibiotics:
 - '0'
 - '1'
@@ -80276,8 +80276,8 @@ AutismDxVisit:
 - '1'
 - '>1'
 AutoimmuneHepatitis:
-- false
-- true
+- 'No'
+- 'Yes'
 Avg24hAcetaldehydeExposure_2:
 - 1
 - 2
@@ -110907,14 +110907,14 @@ ChronicArteryDiseaseDxVisit:
 - '1'
 - '>1'
 ChronicDILI:
-- false
-- true
+- 'No'
+- 'Yes'
 ChronicHepatitisB_Screening:
-- false
-- true
+- 'No'
+- 'Yes'
 ChronicHepatitisC_Screening:
-- false
-- true
+- 'No'
+- 'Yes'
 ChronicKidneyDiseaseDx:
 - '0'
 - '1'
@@ -110948,8 +110948,8 @@ CiclesonideVisit:
 - '1'
 - '>1'
 Cirrhosis:
-- false
-- true
+- 'No'
+- 'Yes'
 Citalopram:
 - '0'
 - '1'
@@ -110967,8 +110967,8 @@ ConcomitantDrugs:
 - 3-4
 - '>5'
 CongestiveHeartFailure:
-- false
-- true
+- 'No'
+- 'Yes'
 ConvalescentPlasma:
 - '0'
 - '1'
@@ -231084,8 +231084,8 @@ Days_EarliestSignToDrugStop:
 - 9998
 - 9999
 Death:
-- false
-- true
+- 'No'
+- 'Yes'
 DepressionDx:
 - '0'
 - '1'
@@ -231107,8 +231107,8 @@ DiabetesDxVisit:
 - '1'
 - '>1'
 DiabetesEndocrineDisorder:
-- false
-- true
+- 'No'
+- 'Yes'
 Diphenhydramine:
 - '0'
 - '1'
@@ -231127,8 +231127,8 @@ Dopamine_gtt:
 - '1'
 - '>1'
 DrugAllergy:
-- false
-- true
+- 'No'
+- 'Yes'
 DrugDependenceDx:
 - '0'
 - '1'
@@ -251223,8 +251223,8 @@ EosinophilCount:
 - 9998
 - 9999
 Eosinophil_GreaterThan500:
-- false
-- true
+- 'No'
+- 'Yes'
 Epinephrine_gtt:
 - '0'
 - '1'
@@ -251331,15 +251331,15 @@ Ethnicity:
 - Unknown
 - Hispanic
 EthnicityDILI:
-- false
-- true
+- 'No'
+- 'Yes'
 ExtracorporealVentilationORSystemicAssistance:
 - '0'
 - '1'
 - '>1'
 FamilyHistoryLiverDisease:
-- false
-- true
+- 'No'
+- 'Yes'
 FentanylVisit:
 - '0'
 - '1'
@@ -251356,8 +251356,8 @@ Ferritin_flag_last:
 - normal
 - high
 Fever:
-- false
-- true
+- 'No'
+- 'Yes'
 FeverDx:
 - '0'
 - '1'
@@ -251424,11 +251424,11 @@ GENDER:
 - Female
 - Male
 GastrointestinalDisease:
-- false
-- true
+- 'No'
+- 'Yes'
 GilbertsSyndrome:
-- false
-- true
+- 'No'
+- 'Yes'
 Goserelin:
 - '0'
 - '1'
@@ -261438,11 +261438,11 @@ HBV_Positive:
 - 9998
 - 9999
 HBeAg:
-- false
-- true
+- 'No'
+- 'Yes'
 HBsAg:
-- false
-- true
+- 'No'
+- 'Yes'
 HCV_Positive:
 - 1
 - 2
@@ -271444,8 +271444,8 @@ HCV_Positive:
 - 9998
 - 9999
 HCV_RNA:
-- false
-- true
+- 'No'
+- 'Yes'
 HIVInfection:
 - '0'
 - '1'
@@ -271455,15 +271455,15 @@ HIVInfectionDx:
 - '1'
 - '>1'
 HIV_Positive:
-- false
-- true
+- 'No'
+- 'Yes'
 HLA-B*15:18:
 - NoCopies
 - OneCopy
 - TwoCopies
 HeartDisease:
-- false
-- true
+- 'No'
+- 'Yes'
 HeartFailureDiseaseDx:
 - '0'
 - '1'
@@ -271473,8 +271473,8 @@ HeartFailureDiseaseDxVisit:
 - '1'
 - '>1'
 Hemochromatosis:
-- false
-- true
+- 'No'
+- 'Yes'
 Hemoglobin:
 - 0
 - 1
@@ -271487,8 +271487,8 @@ Hemoglobin_flag_last:
 - normal
 - high
 HepatitisA:
-- false
-- true
+- 'No'
+- 'Yes'
 HgbA1C:
 - 0
 - 1
@@ -281514,8 +281514,8 @@ HospitalLOS:
 - 9998
 - 9999
 Hospitalization_NewProlonged:
-- false
-- true
+- 'No'
+- 'Yes'
 Hydroxychloroquine:
 - '0'
 - '1'
@@ -281537,8 +281537,8 @@ HypertensionDxVisit:
 - '1'
 - '>1'
 ICU:
-- false
-- true
+- 'No'
+- 'Yes'
 IL-6:
 - 0
 - 1
@@ -301667,8 +301667,8 @@ IpratropiumVisit:
 - '1'
 - '>1'
 IschemicHepatitis:
-- false
-- true
+- 'No'
+- 'Yes'
 IsolationFlag:
 - '0'
 - '1'
@@ -301678,11 +301678,11 @@ Isoproterenol_gtt:
 - '1'
 - '>1'
 Itching:
-- false
-- true
+- 'No'
+- 'Yes'
 Jaundice:
-- false
-- true
+- 'No'
+- 'Yes'
 KidneyCancerDx:
 - '0'
 - '1'
@@ -311741,8 +311741,8 @@ Levosimendan_gtt:
 - '1'
 - '>1'
 LiverBiopsy_Screen:
-- false
-- true
+- 'No'
+- 'Yes'
 LiverDiseaseDx:
 - '0'
 - '1'
@@ -311752,11 +311752,11 @@ LiverDiseaseDxVisit:
 - '1'
 - '>1'
 LiverRelatedDeath:
-- false
-- true
+- 'No'
+- 'Yes'
 LiverTransplant:
-- false
-- true
+- 'No'
+- 'Yes'
 MEDIANHOUSEHOLDINCOME_cut:
 - 1
 - 2
@@ -311790,8 +311790,8 @@ MaleInfertilityDueToSpermDysfunctoon:
 - '1'
 - '>1'
 Malignancy:
-- false
-- true
+- 'No'
+- 'Yes'
 Max24hOzoneExposure:
 - 1
 - 2
@@ -312025,8 +312025,8 @@ MorphineVisit:
 - '1'
 - '>1'
 NAFLD:
-- false
-- true
+- 'No'
+- 'Yes'
 NaloxoneVisit:
 - '0'
 - '1'
@@ -312040,8 +312040,8 @@ NandroloneVisit:
 - '1'
 - '>1'
 Nausea:
-- false
-- true
+- 'No'
+- 'Yes'
 NeonatalRespiratoryDistress:
 - '0'
 - '1'
@@ -312051,11 +312051,11 @@ NeonatalRespiratoryDistressDx:
 - '1'
 - '>1'
 NeurologicalDisease:
-- false
-- true
+- 'No'
+- 'Yes'
 Neutropenia:
-- false
-- true
+- 'No'
+- 'Yes'
 NitricOxideOrFolan:
 - '0'
 - '1'
@@ -332199,8 +332199,8 @@ Prednisone:
 - '1'
 - '>1'
 PrednisoneOrCorticosteroids_Tx:
-- false
-- true
+- 'No'
+- 'Yes'
 PrednisoneOrMethylprednisone:
 - '0'
 - '1'
@@ -332218,11 +332218,11 @@ PregnancyDxVisit:
 - '1'
 - '>1'
 PrimaryBiliaryCirrhosis:
-- false
-- true
+- 'No'
+- 'Yes'
 PrimarySclerosingCholangitis:
-- false
-- true
+- 'No'
+- 'Yes'
 Procalcitonin:
 - 0
 - 1
@@ -332259,8 +332259,8 @@ ProstateCancerDxVisit:
 - '1'
 - '>1'
 PulmonaryDisease:
-- false
-- true
+- 'No'
+- 'Yes'
 QXAGE:
 - 0-2
 - 3-17
@@ -342306,8 +342306,8 @@ RaceDILI:
 - Asian
 - Other/Multiracial
 Rash:
-- false
-- true
+- 'No'
+- 'Yes'
 ReactiveAirwayDx:
 - '0'
 - '1'
@@ -342321,8 +342321,8 @@ Remdesivir:
 - '1'
 - '>1'
 RenalDisease:
-- false
-- true
+- 'No'
+- 'Yes'
 RespiratorySupportHNO3orFlolan:
 - '0'
 - '1'
@@ -382463,14 +382463,14 @@ SerumSodium_flag_last:
 - normal
 - high
 Serum_IgA:
-- false
-- true
+- 'No'
+- 'Yes'
 Serum_IgG:
-- false
-- true
+- 'No'
+- 'Yes'
 Serum_IgM:
-- false
-- true
+- 'No'
+- 'Yes'
 Sex:
 - Male
 - Female
@@ -382498,8 +382498,8 @@ SpO2FiO2ratio_flag_last:
 - normal
 - high
 StevensJohnsonSyndrome:
-- false
-- true
+- 'No'
+- 'Yes'
 SvO2:
 - 0
 - 1
@@ -392602,8 +392602,8 @@ TheophyllineVisit:
 - '1'
 - '>1'
 Thrombocytopenia:
-- false
-- true
+- 'No'
+- 'Yes'
 Tocilizumab:
 - '0'
 - '1'
@@ -422639,8 +422639,8 @@ Troponin_flag_last:
 - normal
 - high
 UnexplainedAbnormalLiverTest:
-- false
-- true
+- 'No'
+- 'Yes'
 UterineCancerDx:
 - '0'
 - '1'
@@ -432734,8 +432734,8 @@ Weight:
 - 9998
 - 9999
 WilsonsDisease:
-- false
-- true
+- 'No'
+- 'Yes'
 Year_DILI_Onset:
 - 1900
 - 1901
