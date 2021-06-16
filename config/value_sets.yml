@@ -110795,6 +110795,10 @@ CancerDx:
 - '0'
 - '1'
 - '>1'
+CancerDxVisit:
+- '0'
+- '1'
+- '>1'
 CardiovascularSupportAmiodarone_gtt:
 - '0'
 - '1'
@@ -110898,7 +110902,7 @@ CharlsonComorbidityIndex:
 - 35
 - 36
 - 37
-ChronicArteryDiseaseDx:
+ChronicArteryDiseaseDxVisit:
 - '0'
 - '1'
 - '>1'
@@ -110915,6 +110919,10 @@ ChronicKidneyDiseaseDx:
 - '0'
 - '1'
 - '>1'
+ChronicKidneyDiseaseDxVisit:
+- '0'
+- '1'
+- '>1'
 ChronicNasalCongestion:
 - '0'
 - '1'
@@ -110924,6 +110932,10 @@ ChronicNasalCongestionDx:
 - '1'
 - '>1'
 ChronicObstructivePulmonaryDiseaseDx:
+- '0'
+- '1'
+- '>1'
+ChronicObstructivePulmonaryDiseaseDxVisit:
 - '0'
 - '1'
 - '>1'
@@ -141032,6 +141044,10 @@ D28_ASTHMA:
 - 'True'
 - 'False'
 DILIDx:
+- '0'
+- '1'
+- '>1'
+DILIDxVisit:
 - '0'
 - '1'
 - '>1'
@@ -251346,6 +251362,10 @@ FeverDx:
 - '0'
 - '1'
 - '>1'
+FeverDxVisit:
+- '0'
+- '1'
+- '>1'
 Fexofenadine:
 - '0'
 - '1'
@@ -271448,6 +271468,10 @@ HeartFailureDiseaseDx:
 - '0'
 - '1'
 - '>1'
+HeartFailureDiseaseDxVisit:
+- '0'
+- '1'
+- '>1'
 Hemochromatosis:
 - false
 - true
@@ -281505,6 +281529,10 @@ HydroxyzineVisit:
 - '1'
 - '>1'
 HypertensionDx:
+- '0'
+- '1'
+- '>1'
+HypertensionDxVisit:
 - '0'
 - '1'
 - '>1'
@@ -311719,6 +311747,10 @@ LiverDiseaseDx:
 - '0'
 - '1'
 - '>1'
+LiverDiseaseDxVisit:
+- '0'
+- '1'
+- '>1'
 LiverRelatedDeath:
 - false
 - true
@@ -322099,6 +322131,10 @@ PCA_Race:
 - Hispanic
 - Other/Multiracial
 PCDDx:
+- '0'
+- '1'
+- '>1'
+PCDDxVisit:
 - '0'
 - '1'
 - '>1'

@@ -15041,7 +15041,7 @@ visit:
     - 45-64
     - 65-89
     type: string
-  CancerDx:
+  CancerDxVisit:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -15158,14 +15158,14 @@ visit:
     maximum: 37
     minimum: 0
     type: integer
-  ChronicArteryDiseaseDx:
+  ChronicArteryDiseaseDxVisit:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
     - "0"
     - "1"
     - ">1"
-  ChronicKidneyDiseaseDx:
+  ChronicKidneyDiseaseDxVisit:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -15179,7 +15179,7 @@ visit:
     - "0"
     - "1"
     - ">1"
-  ChronicObstructivePulmonaryDiseaseDx:
+  ChronicObstructivePulmonaryDiseaseDxVisit:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -15305,7 +15305,7 @@ visit:
     - 'True'
     - 'False'
     type: string
-  DILIDx:
+  DILIDxVisit:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -15579,7 +15579,7 @@ visit:
     - normal
     - high
     type: string
-  FeverDx:
+  FeverDxVisit:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -15648,7 +15648,7 @@ visit:
     - "0"
     - "1"
     - ">1"
-  HeartFailureDiseaseDx:
+  HeartFailureDiseaseDxVisit:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -15714,7 +15714,7 @@ visit:
     - "0"
     - "1"
     - ">1"
-  HypertensionDx:
+  HypertensionDxVisit:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -15902,7 +15902,7 @@ visit:
     - "0"
     - "1"
     - ">1"
-  LiverDiseaseDx:
+  LiverDiseaseDxVisit:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:
@@ -16130,7 +16130,7 @@ visit:
     - "0"
     - "1"
     - ">1"
-  PCDDx:
+  PCDDxVisit:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     type: string
     enum:

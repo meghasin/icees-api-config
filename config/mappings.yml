@@ -3111,6 +3111,12 @@ CancerDx:
   - LOINC:LA15690-3
   - LOINC:LA10544-7
   type: string
+CancerDxVisit:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
+  type: string
 CardiovascularSupportAmiodarone_gtt:
   categories:
   - ChemicalSubstance
@@ -3811,15 +3817,11 @@ CharlsonComorbidityIndex:
   - SCTID:446619003
   - SCTID:446363004
   type: integer
-ChronicArteryDiseaseDx:
+ChronicArteryDiseaseDxVisit:
   categories:
   - Disease
   - DiseaseOrPhenotypicFeature
-  identifiers:
-  - NCIT:C12372
-  - UMLSCUI:C0003842
-  - MONDO:0000473
-  - SCTID:27624003
+  identifiers: []
   type: string
 ChronicDILI:
   categories:
@@ -3895,6 +3897,12 @@ ChronicKidneyDiseaseDx:
   - NCIT:C80078
   - UMLSCUI:C1561643
   type: string
+ChronicKidneyDiseaseDxVisit:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
+  type: string
 ChronicNasalCongestion:
   categories:
   - Disease
@@ -3931,6 +3939,12 @@ ChronicObstructivePulmonaryDiseaseDx:
   - SCTID:702839006
   - LOINC:LA28200-6
   - LOINC:LA27422-7
+  type: string
+ChronicObstructivePulmonaryDiseaseDxVisit:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
   type: string
 Ciclesonide:
   categories:
@@ -4428,6 +4442,12 @@ DILIDx:
   - MONDO:0043693
   - MONDO:0001505
   - MONDO:0021105
+  type: string
+DILIDxVisit:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
   type: string
 DILIN_SeverityScore:
   categories:
@@ -7255,6 +7275,12 @@ FeverDx:
   - SCITD:17658005
   - SCITD:19065005
   type: string
+FeverDxVisit:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
+  type: string
 Fexofenadine:
   categories:
   - ChemicalSubstance
@@ -8144,6 +8170,12 @@ HeartFailureDiseaseDx:
   - LOINC:LP269421-6
   - SCTID:84114007
   type: string
+HeartFailureDiseaseDxVisit:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
+  type: string
 Hemochromatosis:
   categories:
   - PhenotypicFeature
@@ -8554,6 +8586,12 @@ HypertensionDx:
   - MONDO:0008169
   - NCIT:C3117
   - UMLSCUI:C0020538
+  type: string
+HypertensionDxVisit:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
   type: string
 ICU:
   categories:
@@ -10451,6 +10489,12 @@ LiverDiseaseDx:
   - LOINC:LA25810-5
   - SCTID:235890007
   - SCTID:328383001
+  type: string
+LiverDiseaseDxVisit:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
   type: string
 LiverRelatedDeath:
   categories:
@@ -12359,6 +12403,12 @@ PCDDx:
   - SCITD:197432008
   - SCITD:47333004
   - SCITD:102448004
+  type: string
+PCDDxVisit:
+  categories:
+  - Disease
+  - DiseaseOrPhenotypicFeature
+  identifiers: []
   type: string
 PM25_ANNUAL_AVERAGE_cut:
   categories:
