@@ -14553,6 +14553,7 @@ visit:
   AlbuterolVisit: *id037
   AlcoholDependenceDx: *id038
   AlcoholDependenceDxVisit: *id038
+  AlcoholDependenceVisit: *id038
   AlcoholRelatedLiverDisease: *id039
   AlcoholRelatedLiverDiseaseVisit: *id039
   AlcoholUse: *id040
@@ -14569,10 +14570,12 @@ visit:
   AlkalinePhosphatase_Peak_DILIOnsetToMonth6_ULNVisit: *id045
   AlopeciaDx: *id046
   AlopeciaDxVisit: *id046
+  AlopeciaVisit: *id046
   Amiodarone_gtt: *id047
   Amiodarone_gttVisit: *id047
   AmoxicillinDILIDx: *id048
   AmoxicillinDILIDxVisit: *id048
+  AmoxicillinDILIVisit: *id048
   Anakinra: *id049
   AnakinraVisit: *id049
   Androstenedione: *id050
@@ -14614,12 +14617,15 @@ visit:
   AntibioticsVisit: *id057
   AnxietyDx: *id058
   AnxietyDxVisit: *id058
+  AnxietyVisit: *id058
   Arformoterol: *id059
   ArformoterolVisit: *id059
   AsthmaDx: *id060
   AsthmaDxVisit: *id060
+  AsthmaVisit: *id060
   AutismDx: *id061
   AutismDxVisit: *id061
+  AutismVisit: *id061
   AutoimmuneHepatitis: *id062
   AutoimmuneHepatitisVisit: *id062
   Avg24hAcetaldehydeExposure_2: *id063
@@ -14886,6 +14892,7 @@ visit:
     type: string
   BronchiectasisDx: *id113
   BronchiectasisDxVisit: *id113
+  BronchiectasisVisit: *id113
   Budesonide: *id114
   BudesonideVisit: *id114
   C-reactiveProtein: *id115
@@ -14910,6 +14917,7 @@ visit:
   CURRENT_AGEVisit: *id123
   CancerDx: *id125
   CancerDxVisit: *id125
+  CancerVisit: *id125
   CardiovascularSupportAmiodarone_gtt:
     biolinkType: ChemicalSubstance, ChemicalExposure, Drug
     enum:
@@ -14996,6 +15004,7 @@ visit:
     type: string
   CervicalCancerDx: *id126
   CervicalCancerDxVisit: *id126
+  CervicalCancerVisit: *id126
   Cetirizine: *id127
   CetirizineVisit: *id127
   CharlsonComorbidityIndex: *id128
@@ -15015,6 +15024,7 @@ visit:
   ChronicHepatitisC_ScreeningVisit: *id131
   ChronicKidneyDiseaseDx: *id132
   ChronicKidneyDiseaseDxVisit: *id132
+  ChronicKidneyDiseaseVisit: *id132
   ChronicNasalCongestion:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     enum:
@@ -15024,8 +15034,10 @@ visit:
     type: string
   ChronicNasalCongestionDx: *id133
   ChronicNasalCongestionDxVisit: *id133
+  ChronicNasalCongestionVisit: *id133
   ChronicObstructivePulmonaryDiseaseDx: *id134
   ChronicObstructivePulmonaryDiseaseDxVisit: *id134
+  ChronicObstructivePulmonaryDiseaseVisit: *id134
   Ciclesonide: *id135
   CiclesonideVisit: *id135
   Cirrhosis: *id136
@@ -15049,8 +15061,10 @@ visit:
   CoronaryArteryDiseaseVisit: *id141
   CoughDx: *id142
   CoughDxVisit: *id142
+  CoughVisit: *id142
   CroupDx: *id143
   CroupDxVisit: *id143
+  CroupVisit: *id143
   CysticFibrosis:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     enum:
@@ -15060,6 +15074,7 @@ visit:
     type: string
   CysticFibrosisDx: *id144
   CysticFibrosisDxVisit: *id144
+  CysticFibrosisVisit: *id144
   D-dimer: *id145
   D-dimerVisit: *id145
   D-dimer_flag_first: *id146
@@ -15090,6 +15105,7 @@ visit:
   DILIDxVisit: *id158
   DILIN_SeverityScore: *id159
   DILIN_SeverityScoreVisit: *id159
+  DILIVisit: *id158
   DISTANCE: *id160
   DISTANCE2: *id161
   DISTANCE2Visit: *id161
@@ -15105,6 +15121,7 @@ visit:
     type: string
   DailyWetCoughDx: *id163
   DailyWetCoughDxVisit: *id163
+  DailyWetCoughVisit: *id163
   Days_ALT_DILIOnsetToPeak: *id164
   Days_ALT_DILIOnsetToPeakVisit: *id164
   Days_AST_DILIOnsetToPeak: *id165
@@ -15126,12 +15143,14 @@ visit:
   DeathVisit: *id173
   DepressionDx: *id174
   DepressionDxVisit: *id174
+  DepressionVisit: *id174
   Dexamethasone: *id175
   DexamethasoneVisit: *id175
   DiabetesDx: *id176
   DiabetesDxVisit: *id176
   DiabetesEndocrineDisorder: *id177
   DiabetesEndocrineDisorderVisit: *id177
+  DiabetesVisit: *id176
   Diphenhydramine: *id178
   DiphenhydramineVisit: *id178
   DischargeStatus: *id179
@@ -15144,6 +15163,7 @@ visit:
   DrugAllergyVisit: *id182
   DrugDependenceDx: *id183
   DrugDependenceDxVisit: *id183
+  DrugDependenceVisit: *id183
   Duloxetine: *id184
   DuloxetineVisit: *id184
   ECLS: *id185
@@ -15178,6 +15198,7 @@ visit:
   ETHNICITYVisit: *id199
   EndometriosisDx: *id200
   EndometriosisDxVisit: *id200
+  EndometriosisVisit: *id200
   EosinophilCount: *id201
   EosinophilCountVisit: *id201
   Eosinophil_GreaterThan500: *id202
@@ -15244,11 +15265,12 @@ visit:
   Fever: *id229
   FeverDx: *id230
   FeverDxVisit: *id230
-  FeverVisit: *id229
+  FeverVisit: *id230
   Fexofenadine: *id231
   FexofenadineVisit: *id231
   FibromyalgiaDx: *id232
   FibromyalgiaDxVisit: *id232
+  FibromyalgiaVisit: *id232
   FinalCausalityScore: *id233
   FinalCausalityScoreVisit: *id233
   Flunisolide: *id234
@@ -15286,6 +15308,7 @@ visit:
     type: string
   HIVInfectionDx: *id247
   HIVInfectionDxVisit: *id247
+  HIVInfectionVisit: *id247
   HIV_Positive: *id248
   HIV_PositiveVisit: *id248
   HLA-B*15:18: *id249
@@ -15294,6 +15317,7 @@ visit:
   HeartDiseaseVisit: *id250
   HeartFailureDiseaseDx: *id251
   HeartFailureDiseaseDxVisit: *id251
+  HeartFailureDiseaseVisit: *id251
   Hemochromatosis: *id252
   HemochromatosisVisit: *id252
   Hemoglobin: *id253
@@ -15324,6 +15348,7 @@ visit:
   HydroxyzineVisit: *id265
   HypertensionDx: *id266
   HypertensionDxVisit: *id266
+  HypertensionVisit: *id266
   ICU: *id267
   ICUVisit: *id267
   IL-6: *id268
@@ -15423,6 +15448,7 @@ visit:
   JaundiceVisit: *id291
   KidneyCancerDx: *id292
   KidneyCancerDxVisit: *id292
+  KidneyCancerVisit: *id292
   LDH: *id293
   LDHVisit: *id293
   LDH_flag_first: *id294
@@ -15448,6 +15474,7 @@ visit:
     type: string
   LateralityDefect_SitusInversusOrHeterotaxyDx: *id301
   LateralityDefect_SitusInversusOrHeterotaxyDxVisit: *id301
+  LateralityDefect_SitusInversusOrHeterotaxyVisit: *id301
   Leuprolide: *id302
   LeuprolideVisit: *id302
   Levosimendan_gtt: *id303
@@ -15456,6 +15483,7 @@ visit:
   LiverBiopsy_ScreenVisit: *id304
   LiverDiseaseDx: *id305
   LiverDiseaseDxVisit: *id305
+  LiverDiseaseVisit: *id305
   LiverRelatedDeath: *id306
   LiverRelatedDeathVisit: *id306
   LiverTransplant: *id307
@@ -15468,9 +15496,9 @@ visit:
   MajorRoadwayHighwayExposure2: *id311
   MajorRoadwayHighwayExposure2Visit: *id311
   MajorRoadwayHighwayExposureVisit: *id310
+  MaleInfertilityDueToSpermDysfunction: *id312
   MaleInfertilityDueToSpermDysfunctionDx: *id312
   MaleInfertilityDueToSpermDysfunctionDxVisit: *id312
-  MaleInfertilityDueToSpermDysfunction: *id312
   MaleInfertilityDueToSpermDysfunctionVisit: *id312
   Malignancy: *id313
   MalignancyVisit: *id313
@@ -15576,6 +15604,7 @@ visit:
   MedroxyprogresteroneVisit: *id328
   MenopauseDx: *id329
   MenopauseDxVisit: *id329
+  MenopauseVisit: *id329
   Mepolizumab: *id330
   MepolizumabVisit: *id330
   Metaproterenol: *id331
@@ -15591,6 +15620,7 @@ visit:
     type: string
   MiddleEarDiseaseDx: *id333
   MiddleEarDiseaseDxVisit: *id333
+  MiddleEarDiseaseVisit: *id333
   Milrinone_gtt: *id334
   Milrinone_gttVisit: *id334
   Mometasone: *id335
@@ -15624,6 +15654,7 @@ visit:
     type: string
   NeonatalRespiratoryDistressDx: *id339
   NeonatalRespiratoryDistressDxVisit: *id339
+  NeonatalRespiratoryDistressVisit: *id339
   NeurologicalDisease: *id340
   NeurologicalDiseaseVisit: *id340
   Neutropenia: *id341
@@ -15646,16 +15677,20 @@ visit:
   ObesityBMIVisit: *id349
   ObesityDx: *id350
   ObesityDxVisit: *id350
+  ObesityVisit: *id350
   Omalizumab: *id351
   OmalizumabVisit: *id351
   OvarianCancerDx: *id352
   OvarianCancerDxVisit: *id352
+  OvarianCancerVisit: *id352
   OvarianDysfunctionDx: *id353
   OvarianDysfunctionDxVisit: *id353
+  OvarianDysfunctionVisit: *id353
   PCA_Race: *id354
   PCA_RaceVisit: *id354
   PCDDx: *id355
   PCDDxVisit: *id355
+  PCDVisit: *id355
   PM25_ANNUAL_AVERAGE_cut: *id356
   PM25_ANNUAL_AVERAGE_cutVisit: *id356
   PM25_ANNUAL_AVERAGE_qcut: *id357
@@ -15676,6 +15711,7 @@ visit:
   PlateletCount_flag_lastVisit: *id364
   PneumoniaDx: *id365
   PneumoniaDxVisit: *id365
+  PneumoniaVisit: *id365
   Prasterone: *id366
   PrasteroneVisit: *id366
   Prednisone: *id367
@@ -15686,6 +15722,7 @@ visit:
   PrednisoneVisit: *id367
   PregnancyDx: *id370
   PregnancyDxVisit: *id370
+  PregnancyVisit: *id370
   PrimaryBiliaryCirrhosis: *id371
   PrimaryBiliaryCirrhosisVisit: *id371
   PrimarySclerosingCholangitis: *id372
@@ -15702,6 +15739,7 @@ visit:
   PropranololVisit: *id377
   ProstateCancerDx: *id378
   ProstateCancerDxVisit: *id378
+  ProstateCancerVisit: *id378
   PulmonaryDisease: *id379
   PulmonaryDiseaseVisit: *id379
   QXAGE: *id380
@@ -15724,6 +15762,7 @@ visit:
   RashVisit: *id388
   ReactiveAirwayDx: *id389
   ReactiveAirwayDxVisit: *id389
+  ReactiveAirwayVisit: *id389
   Remdesivir: *id390
   RemdesivirVisit: *id390
   RenalDisease: *id391
@@ -15867,8 +15906,10 @@ visit:
   TamoxifenVisit: *id449
   TesticularCancerDx: *id450
   TesticularCancerDxVisit: *id450
+  TesticularCancerVisit: *id450
   TesticularDysfunctionDx: *id451
   TesticularDysfunctionDxVisit: *id451
+  TesticularDysfunctionVisit: *id451
   Testosterone: *id452
   TestosteroneVisit: *id452
   Theophylline: *id453
@@ -15897,6 +15938,7 @@ visit:
   UnexplainedAbnormalLiverTestVisit: *id464
   UterineCancerDx: *id465
   UterineCancerDxVisit: *id465
+  UterineCancerVisit: *id465
   Vasopressin_gtt: *id466
   Vasopressin_gttVisit: *id466
   Venlafaxine: *id467

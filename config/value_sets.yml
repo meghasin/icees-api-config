@@ -213,6 +213,10 @@ AlcoholDependenceDxVisit:
 - '0'
 - '1'
 - '>1'
+AlcoholDependenceVisit:
+- '0'
+- '1'
+- '>1'
 AlcoholRelatedLiverDisease:
 - 'No'
 - 'Yes'
@@ -233,6 +237,10 @@ AlopeciaDxVisit:
 - '0'
 - '1'
 - '>1'
+AlopeciaVisit:
+- '0'
+- '1'
+- '>1'
 Amiodarone_gtt:
 - '0'
 - '1'
@@ -245,6 +253,9 @@ AmoxicillinDILIDx:
 - 0
 - 1
 AmoxicillinDILIDxVisit:
+- 0
+- 1
+AmoxicillinDILIVisit:
 - 0
 - 1
 Anakinra:
@@ -327,6 +338,10 @@ AnxietyDxVisit:
 - '0'
 - '1'
 - '>1'
+AnxietyVisit:
+- '0'
+- '1'
+- '>1'
 Arformoterol:
 - '0'
 - '1'
@@ -343,11 +358,19 @@ AsthmaDxVisit:
 - '0'
 - '1'
 - '>1'
+AsthmaVisit:
+- '0'
+- '1'
+- '>1'
 AutismDx:
 - '0'
 - '1'
 - '>1'
 AutismDxVisit:
+- '0'
+- '1'
+- '>1'
+AutismVisit:
 - '0'
 - '1'
 - '>1'
@@ -1041,6 +1064,10 @@ BronchiectasisDxVisit:
 - '0'
 - '1'
 - '>1'
+BronchiectasisVisit:
+- '0'
+- '1'
+- '>1'
 Budesonide:
 - '0'
 - '1'
@@ -1149,6 +1176,10 @@ CancerDxVisit:
 - '0'
 - '1'
 - '>1'
+CancerVisit:
+- '0'
+- '1'
+- '>1'
 CardiovascularSupportAmiodarone_gtt:
 - '0'
 - '1'
@@ -1202,6 +1233,10 @@ CervicalCancerDx:
 - '1'
 - '>1'
 CervicalCancerDxVisit:
+- '0'
+- '1'
+- '>1'
+CervicalCancerVisit:
 - '0'
 - '1'
 - '>1'
@@ -1321,6 +1356,10 @@ ChronicKidneyDiseaseDxVisit:
 - '0'
 - '1'
 - '>1'
+ChronicKidneyDiseaseVisit:
+- '0'
+- '1'
+- '>1'
 ChronicNasalCongestion:
 - '0'
 - '1'
@@ -1333,11 +1372,19 @@ ChronicNasalCongestionDxVisit:
 - '0'
 - '1'
 - '>1'
+ChronicNasalCongestionVisit:
+- '0'
+- '1'
+- '>1'
 ChronicObstructivePulmonaryDiseaseDx:
 - '0'
 - '1'
 - '>1'
 ChronicObstructivePulmonaryDiseaseDxVisit:
+- '0'
+- '1'
+- '>1'
+ChronicObstructivePulmonaryDiseaseVisit:
 - '0'
 - '1'
 - '>1'
@@ -1405,11 +1452,19 @@ CoughDxVisit:
 - '0'
 - '1'
 - '>1'
+CoughVisit:
+- '0'
+- '1'
+- '>1'
 CroupDx:
 - '0'
 - '1'
 - '>1'
 CroupDxVisit:
+- '0'
+- '1'
+- '>1'
+CroupVisit:
 - '0'
 - '1'
 - '>1'
@@ -1422,6 +1477,10 @@ CysticFibrosisDx:
 - '1'
 - '>1'
 CysticFibrosisDxVisit:
+- '0'
+- '1'
+- '>1'
+CysticFibrosisVisit:
 - '0'
 - '1'
 - '>1'
@@ -1521,6 +1580,9 @@ DILIN_SeverityScoreVisit:
 - Moderate Hospitalized
 - Severe
 - Fatal
+DILIVisit:
+- 0
+- 1
 DISTANCE:
 - 1
 - 2
@@ -1569,6 +1631,10 @@ DailyWetCoughDxVisit:
 - '0'
 - '1'
 - '>1'
+DailyWetCoughVisit:
+- '0'
+- '1'
+- '>1'
 Death:
 - 'No'
 - 'Yes'
@@ -1580,6 +1646,10 @@ DepressionDx:
 - '1'
 - '>1'
 DepressionDxVisit:
+- '0'
+- '1'
+- '>1'
+DepressionVisit:
 - '0'
 - '1'
 - '>1'
@@ -1605,6 +1675,10 @@ DiabetesEndocrineDisorder:
 DiabetesEndocrineDisorderVisit:
 - 'No'
 - 'Yes'
+DiabetesVisit:
+- '0'
+- '1'
+- '>1'
 Diphenhydramine:
 - '0'
 - '1'
@@ -1640,6 +1714,10 @@ DrugDependenceDx:
 - '1'
 - '>1'
 DrugDependenceDxVisit:
+- '0'
+- '1'
+- '>1'
+DrugDependenceVisit:
 - '0'
 - '1'
 - '>1'
@@ -1792,6 +1870,10 @@ EndometriosisDx:
 - '1'
 - '>1'
 EndometriosisDxVisit:
+- '0'
+- '1'
+- '>1'
+EndometriosisVisit:
 - '0'
 - '1'
 - '>1'
@@ -2037,8 +2119,9 @@ FeverDxVisit:
 - '1'
 - '>1'
 FeverVisit:
-- 'No'
-- 'Yes'
+- '0'
+- '1'
+- '>1'
 Fexofenadine:
 - '0'
 - '1'
@@ -2052,6 +2135,10 @@ FibromyalgiaDx:
 - '1'
 - '>1'
 FibromyalgiaDxVisit:
+- '0'
+- '1'
+- '>1'
+FibromyalgiaVisit:
 - '0'
 - '1'
 - '>1'
@@ -2167,6 +2254,10 @@ HIVInfectionDxVisit:
 - '0'
 - '1'
 - '>1'
+HIVInfectionVisit:
+- '0'
+- '1'
+- '>1'
 HIV_Positive:
 - 'No'
 - 'Yes'
@@ -2192,6 +2283,10 @@ HeartFailureDiseaseDx:
 - '1'
 - '>1'
 HeartFailureDiseaseDxVisit:
+- '0'
+- '1'
+- '>1'
+HeartFailureDiseaseVisit:
 - '0'
 - '1'
 - '>1'
@@ -2294,6 +2389,10 @@ HypertensionDx:
 - '1'
 - '>1'
 HypertensionDxVisit:
+- '0'
+- '1'
+- '>1'
+HypertensionVisit:
 - '0'
 - '1'
 - '>1'
@@ -2523,6 +2622,10 @@ KidneyCancerDxVisit:
 - '0'
 - '1'
 - '>1'
+KidneyCancerVisit:
+- '0'
+- '1'
+- '>1'
 LDH:
 - 0
 - 1
@@ -2593,6 +2696,10 @@ LateralityDefect_SitusInversusOrHeterotaxyDxVisit:
 - '0'
 - '1'
 - '>1'
+LateralityDefect_SitusInversusOrHeterotaxyVisit:
+- '0'
+- '1'
+- '>1'
 Leuprolide:
 - '0'
 - '1'
@@ -2620,6 +2727,10 @@ LiverDiseaseDx:
 - '1'
 - '>1'
 LiverDiseaseDxVisit:
+- '0'
+- '1'
+- '>1'
+LiverDiseaseVisit:
 - '0'
 - '1'
 - '>1'
@@ -2692,6 +2803,10 @@ MaleInfertilityDueToSpermDysfunctionDx:
 - '1'
 - '>1'
 MaleInfertilityDueToSpermDysfunctionDxVisit:
+- '0'
+- '1'
+- '>1'
+MaleInfertilityDueToSpermDysfunctionVisit:
 - '0'
 - '1'
 - '>1'
@@ -2969,6 +3084,10 @@ MenopauseDxVisit:
 - '0'
 - '1'
 - '>1'
+MenopauseVisit:
+- '0'
+- '1'
+- '>1'
 Mepolizumab:
 - '0'
 - '1'
@@ -3002,6 +3121,10 @@ MiddleEarDiseaseDx:
 - '1'
 - '>1'
 MiddleEarDiseaseDxVisit:
+- '0'
+- '1'
+- '>1'
+MiddleEarDiseaseVisit:
 - '0'
 - '1'
 - '>1'
@@ -3058,6 +3181,10 @@ NeonatalRespiratoryDistressDx:
 - '1'
 - '>1'
 NeonatalRespiratoryDistressDxVisit:
+- '0'
+- '1'
+- '>1'
+NeonatalRespiratoryDistressVisit:
 - '0'
 - '1'
 - '>1'
@@ -3143,6 +3270,10 @@ ObesityDxVisit:
 - '0'
 - '1'
 - '>1'
+ObesityVisit:
+- '0'
+- '1'
+- '>1'
 Omalizumab:
 - '0'
 - '1'
@@ -3159,11 +3290,19 @@ OvarianCancerDxVisit:
 - '0'
 - '1'
 - '>1'
+OvarianCancerVisit:
+- '0'
+- '1'
+- '>1'
 OvarianDysfunctionDx:
 - '0'
 - '1'
 - '>1'
 OvarianDysfunctionDxVisit:
+- '0'
+- '1'
+- '>1'
+OvarianDysfunctionVisit:
 - '0'
 - '1'
 - '>1'
@@ -3184,6 +3323,10 @@ PCDDx:
 - '1'
 - '>1'
 PCDDxVisit:
+- '0'
+- '1'
+- '>1'
+PCDVisit:
 - '0'
 - '1'
 - '>1'
@@ -3265,6 +3408,10 @@ PneumoniaDxVisit:
 - '0'
 - '1'
 - '>1'
+PneumoniaVisit:
+- '0'
+- '1'
+- '>1'
 Prasterone:
 - '0'
 - '1'
@@ -3300,6 +3447,10 @@ PregnancyDx:
 - '1'
 - '>1'
 PregnancyDxVisit:
+- '0'
+- '1'
+- '>1'
+PregnancyVisit:
 - '0'
 - '1'
 - '>1'
@@ -3358,6 +3509,10 @@ ProstateCancerDx:
 - '1'
 - '>1'
 ProstateCancerDxVisit:
+- '0'
+- '1'
+- '>1'
+ProstateCancerVisit:
 - '0'
 - '1'
 - '>1'
@@ -3466,6 +3621,10 @@ ReactiveAirwayDx:
 - '1'
 - '>1'
 ReactiveAirwayDxVisit:
+- '0'
+- '1'
+- '>1'
+ReactiveAirwayVisit:
 - '0'
 - '1'
 - '>1'
@@ -3935,11 +4094,19 @@ TesticularCancerDxVisit:
 - '0'
 - '1'
 - '>1'
+TesticularCancerVisit:
+- '0'
+- '1'
+- '>1'
 TesticularDysfunctionDx:
 - '0'
 - '1'
 - '>1'
 TesticularDysfunctionDxVisit:
+- '0'
+- '1'
+- '>1'
+TesticularDysfunctionVisit:
 - '0'
 - '1'
 - '>1'
@@ -4022,6 +4189,10 @@ UterineCancerDx:
 - '1'
 - '>1'
 UterineCancerDxVisit:
+- '0'
+- '1'
+- '>1'
+UterineCancerVisit:
 - '0'
 - '1'
 - '>1'
