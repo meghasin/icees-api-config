@@ -15470,13 +15470,8 @@ visit:
   MajorRoadwayHighwayExposureVisit: *id310
   MaleInfertilityDueToSpermDysfunctionDx: *id312
   MaleInfertilityDueToSpermDysfunctionDxVisit: *id312
-  MaleInfertilityDueToSpermDysfunction:
-    biolinkType: Disease, DiseaseOrPhenotypicFeature
-    enum:
-    - '0'
-    - '1'
-    - '>1'
-    type: string
+  MaleInfertilityDueToSpermDysfunction: *id312
+  MaleInfertilityDueToSpermDysfunctionVisit: *id312
   Malignancy: *id313
   MalignancyVisit: *id313
   Max24hOzoneExposure:
