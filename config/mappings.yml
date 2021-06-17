@@ -5367,11 +5367,6 @@ Days_DILIOnsetToInitialVisit:
   - biolink:PhenotypicFeature
   identifiers: []
   type: integer
-Days_DILIOnsetToInitialVisitVisit:
-  categories:
-  - biolink:PhenotypicFeature
-  identifiers: []
-  type: integer
 Days_DrugStartToEarliestSign:
   categories:
   - biolink:PhenotypicFeature
@@ -12232,6 +12227,14 @@ MajorRoadwayHighwayExposureVisit:
   - biolink:EnvironmentalExposure
   identifiers: []
   type: integer
+MaleInfertilityDueToSpermDysfunction:
+  categories:
+  - biolink:Disease
+  - biolink:DiseaseOrPhenotypicFeature
+  identifiers:
+  - MeSH:D013081
+  - SCITD:414643008
+  type: string
 MaleInfertilityDueToSpermDysfunctionDx:
   categories:
   - biolink:Disease
@@ -12239,12 +12242,6 @@ MaleInfertilityDueToSpermDysfunctionDx:
   identifiers: []
   type: string
 MaleInfertilityDueToSpermDysfunctionDxVisit:
-  categories:
-  - biolink:Disease
-  - biolink:DiseaseOrPhenotypicFeature
-  identifiers: []
-  type: string
-MaleInfertilityDueToSpermDysfunctoon:
   categories:
   - biolink:Disease
   - biolink:DiseaseOrPhenotypicFeature

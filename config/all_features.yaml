@@ -15470,7 +15470,7 @@ visit:
   MajorRoadwayHighwayExposureVisit: *id310
   MaleInfertilityDueToSpermDysfunctionDx: *id312
   MaleInfertilityDueToSpermDysfunctionDxVisit: *id312
-  MaleInfertilityDueToSpermDysfunctoon:
+  MaleInfertilityDueToSpermDysfunction:
     biolinkType: Disease, DiseaseOrPhenotypicFeature
     enum:
     - '0'
