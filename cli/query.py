@@ -17,71 +17,37 @@ def retrieve_result_url(server_url, pk):
 def submit_query_url(server_url):
     return f"{server_url}/ars/api/submit"
 
-def workflow_b_query(name, id):
-    return {
-      "nodes": {
-        "n0": {
-          "name": name,
-          "ids": [id]
-        },
-        "n1": {
-          "categories": [
-            "biolink:DiseaseOrPhenotypicFeature"
-          ],
-          "name": "Disease Or Phenotypic Feature"
-        },
-        "n2": {
-          "categories": [
-            "biolink:Gene"
-          ],
-          "name": "Gene"
-        },
-        "n3": {
-          "categories": [
-            "biolink:ChemicalSubstance"
-          ],
-          "name": "Chemical Substance"
-        }
-      },
-      "edges": {
-        "e0": {
-          "subject": "n0",
-          "object": "n1",
-          "predicates": [
-            "biolink:correlated_with"
-          ]
-        },
-        "e1": {
-          "subject": "n1",
-          "object": "n2",
-          "predicates": [
-            "biolink:condition_associated_with_gene"
-          ]
-        },
-        "e2": {
-          "subject": "n2",
-          "object": "n3",
-          "predicates": [
-            "biolink:related_to"
-          ]
-        }
-      }
-    }
+def workflow_query(file_path):
+    with open(file_path) as f:
+        obj = json.load(f)
+        
+    return obj
 
-def post_query(name, id, server_url):
-    res = requests.post(submit_query_url(server_url), json=workflow_b_query(name, id))
-    obj = res.json()
-    pk = obj["pk"]
-    print(pk)
-    status = obj["fields"]["status"]
-    return pk
+
+def post_query(file_path, server_url):
+    res = requests.post(submit_query_url(server_url), json=workflow_query(file_path))
+    try:
+        obj = res.json()
+        pk = obj["pk"]
+        print(pk)
+        status = obj["fields"]["status"]
+        return pk
+    except:
+        text = res.text
+        print(text)
+        return None
 
 
 def retrieve_result(pk, server_url):
-    res = requests.get(retrieve_result_url(server_url, pk))
-    obj = res.json()
-    status = obj["status"]
-    return status, obj
+    try:
+        res = requests.get(retrieve_result_url(server_url, pk))
+        obj = res.json()
+        status = obj["status"]
+        return status, obj
+    except:
+        text = res.text
+        print(text)
+        return None, None
 
 
 def retrieve_result_print(pk, server_url):
@@ -158,13 +124,13 @@ def navigate_result(pk, server_url):
                 print(e)
     
 
-def post_query_wait_result(name, id, interval, server_url):
-    pk = post_query(name, id, server_url)
+def post_query_wait_result(file_path, interval, server_url):
+    pk = post_query(file_path, server_url)
     wait_result(pk, interval, server_url)
 
 
-def post_query_navigate_result(name, id, interval, server_url):
-    pk = post_query(name, id, server_url)
+def post_query_navigate_result(file_path, interval, server_url):
+    pk = post_query(file_path, server_url)
     wait_result(pk, interval, server_url)
     navigate_result(pk, server_url)
 
@@ -179,8 +145,7 @@ if __name__ == "__main__":
     parser.add_argument("-s", "--server_url", type=str, default=default_server_url)
     subparsers = parser.add_subparsers(help='sub-command help')
     parser_a = subparsers.add_parser('send', help='a help')
-    parser_a.add_argument('name', type=str, help='bar help')
-    parser_a.add_argument('id', type=str, help='bar help')
+    parser_a.add_argument('file_path', type=str, help='bar help')
     parser_a.set_defaults(func=post_query)
     parser_b = subparsers.add_parser('recv', help='b help')
     parser_b.add_argument('pk', type=str, help='baz help')
@@ -193,13 +158,11 @@ if __name__ == "__main__":
     parser_e.add_argument('pk', type=str, help='baz help')
     parser_e.set_defaults(func=navigate_result)
     parser_d = subparsers.add_parser('send_and_wait', help='b help')
-    parser_d.add_argument('name', type=str, help='bar help')
-    parser_d.add_argument('id', type=str, help='bar help')
+    parser_d.add_argument('file_path', type=str, help='bar help')
     parser_d.add_argument('-i', '--interval', type=int, default=60, help='baz help')
     parser_d.set_defaults(func=post_query_wait_result)
     parser_f = subparsers.add_parser('send_and_nav', help='b help')
-    parser_f.add_argument('name', type=str, help='bar help')
-    parser_f.add_argument('id', type=str, help='bar help')
+    parser_f.add_argument('file_path', type=str, help='bar help')
     parser_f.add_argument('-i', '--interval', type=int, default=60, help='baz help')
     parser_f.set_defaults(func=post_query_navigate_result)
     parser_g = subparsers.add_parser('wait_and_nav', help='b help')
