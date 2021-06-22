@@ -1,91 +1,23 @@
 import json
 import requests
 import sys
+import argparse
 from treelib import Tree
 from colorama import init, Fore, Back
 import pandas as pd
 
-output_file_path = sys.argv[1]
-
 init()
 
-ids = ["MONDO:0005359", "SNOMEDCT:197358007", "MESH:D056487", "MESH:D006760", "NCIT:C26991"]
-
-workflow = [
-    {
-        "name": "icees-dili",
-        "url": "https://icees.renci.org:16341/query",
-        "query": lambda id: {
-            "nodes": {
-                "n0": {
-                    "name": "drug-induced liver injury",
-                    "ids": [id]
-                },
-                "n1": {
-                    "categories": [
-                        "biolink:DiseaseOrPhenotypicFeature"
-                    ],
-                    "name": "Disease Or Phenotypic Feature"
-                }
-            },
-            "edges": {
-                "e0": {
-                    "subject": "n0",
-                    "object": "n1",
-                    "predicates": [
-                        "biolink:correlated_with"
-                    ]
-                }
-            }
-        },
-        "result_node": "n1",
-        "additional_properties": {
-            "query_options": {
-                "maximum_p_value": 0.1
-            }
-        }
-    }, {
-        "name": "arax",
-        "url": "https://arax.ncats.io/api/arax/v1.1/query",
-        "query": lambda id: {
-            "nodes": {
-                "n1": {
-                    "ids": [id],
-                    "name": "Disease Or Phenotypic Feature"
-                },
-                "n2": {
-                    "categories": [
-                        "biolink:Gene"
-                    ],
-                    "name": "Gene"
-                },
-                "n3": {
-                    "categories": [
-                        "biolink:ChemicalSubstance"
-                    ],
-                    "name": "Chemical Substance"
-                }
-            },
-            "edges": {
-                "e1": {
-                    "subject": "n1",
-                    "object": "n2",
-                    "predicates": [
-                        "biolink:condition_associated_with_gene"
-                    ]
-                },
-                "e2": {
-                    "subject": "n2",
-                    "object": "n3",
-                    "predicates": [
-                        "biolink:related_to"
-                    ]
-                }
-            }
-        }
-    }
-]
-
+def replace(template, values):
+    if isinstance(template, dict):
+        return {key:replace(val, values) for key, val in template.items()}
+    elif isinstance(template, list):
+        return [replace(e, values) for e in template]
+    elif isinstance(template, str):
+        return values.get(template, template)
+    else:
+        return template
+    
 
 def get_ids(binding):
     return [a["id"] for a in binding]
@@ -126,7 +58,7 @@ def runStepsOnId(progress, subprogress, i, n, depth, id, steps, verbose):
     key = f"{name}({str(i).rjust(len(str(n-1)))}:{id})"
     subprogress[key] = f"{Fore.BLUE}Running{Fore.RESET}"
     to_tree(progress).show()
-    obj = query(id)
+    obj = replace(query, {"$id": [id]})
     qedges = list(obj["edges"].keys())
     qnodes = list(obj["nodes"].keys())
     message = {
@@ -198,7 +130,26 @@ def runWorkflow(ids, workflow, verbose=False, columns=None):
            df = df[columns]
        df.to_csv(output_file_path, index=False)
     
-runWorkflow(ids, workflow)
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Process some integers.')
+    parser.add_argument('input_file_path', type=str, help='an integer for the accumulator')
+    parser.add_argument('output_file_path', type=str, help='an integer for the accumulator')
+    parser.add_argument('-v', '--verbose', action='store_true', default=False, help='sum the integers (default: find the max)')
+
+    args = parser.parse_args()
+    input_file_path = args.input_file_path
+    output_file_path = args.output_file_path
+    verbose = args.verbose
+
+    with open(input_file_path) as f:
+        query = json.load(f)
+    
+    ids = query["ids"]
+    workflow = query["steps"]
+    columns = query.get("columns", None)
+
+    runWorkflow(ids, workflow, verbose=verbose, columns=columns)
     
 
 

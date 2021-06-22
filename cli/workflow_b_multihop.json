@@ -1,0 +1,77 @@
+{
+    "ids": ["MONDO:0005359", "SNOMEDCT:197358007", "MESH:D056487", "MESH:D006760", "NCIT:C26991"],
+    "steps": [
+	{
+	    "name": "icees-dili",
+	    "url": "https://icees.renci.org:16341/query",
+	    "query": {
+		"nodes": {
+		    "n0": {
+			"name": "drug-induced liver injury",
+			"ids": "$id"
+		    },
+		    "n1": {
+			"categories": [
+			    "biolink:DiseaseOrPhenotypicFeature"
+			],
+			"name": "Disease Or Phenotypic Feature"
+		    }
+		},
+		"edges": {
+		    "e0": {
+			"subject": "n0",
+			"object": "n1",
+			"predicates": [
+			    "biolink:correlated_with"
+			]
+		    }
+		}
+	    },
+	    "result_node": "n1",
+	    "additional_properties": {
+		"query_options": {
+		    "maximum_p_value": 0.1
+		}
+	    }
+	}, {
+	    "name": "arax",
+	    "url": "https://arax.ncats.io/api/arax/v1.1/query",
+	    "query": {
+		"nodes": {
+		    "n1": {
+			"ids": "$id",
+			"name": "Disease Or Phenotypic Feature"
+		    },
+		    "n2": {
+			"categories": [
+			    "biolink:Gene"
+			],
+			"name": "Gene"
+		    },
+		    "n3": {
+			"categories": [
+			    "biolink:ChemicalSubstance"
+			],
+			"name": "Chemical Substance"
+		    }
+		},
+		"edges": {
+		    "e1": {
+			"subject": "n1",
+			"object": "n2",
+			"predicates": [
+			    "biolink:condition_associated_with_gene"
+			]
+		    },
+		    "e2": {
+			"subject": "n2",
+			"object": "n3",
+			"predicates": [
+			    "biolink:related_to"
+			]
+		    }
+		}
+	    }
+	}
+    ]
+}
