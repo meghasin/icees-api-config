@@ -145,7 +145,7 @@ patient:
     - high
     type: string
   Active_In_Year: &id029
-    biolinkType: []
+    biolinkType: PhenotypicFeature
     maximum: 1
     minimum: 0
     type: integer

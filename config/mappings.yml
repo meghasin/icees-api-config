@@ -965,11 +965,13 @@ AbsoluteNeutrophilCount_flag_lastVisit:
   identifiers: []
   type: string
 Active_In_Year:
-  categories: biolink:[]
+  categories:
+  - biolink:PhenotypicFeature
   identifiers: []
   type: integer
 Active_In_YearVisit:
-  categories: biolink:[]
+  categories:
+  - biolink:PhenotypicFeature
   identifiers: []
   type: integer
 AgeInteger:
