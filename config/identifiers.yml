@@ -10982,7 +10982,7 @@ patient:
   - MONDO:0009842
   AgeQualifyingLab: *id011
   AlcoholRelatedLiverDisease:
-  - MES:D008108
+  - MESH:D008108
   - UMLS:C0023896
   AlcoholUse:
   - NCIT:C81229
@@ -22612,7 +22612,7 @@ visit:
   - MONDO:0009842
   AgeQualifyingLab: *id011
   AlcoholRelatedLiverDisease:
-  - MES:D008108
+  - MESH:D008108
   - UMLS:C0023896    
   AlcoholUse:
   - NCIT:C81229

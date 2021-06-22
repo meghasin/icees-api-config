@@ -1233,7 +1233,7 @@ AlcoholRelatedLiverDisease:
   - biolink:Disease
   - biolink:DiseaseOrPhenotypicFeature
   identifiers:
-  - MES:D008108
+  - MESH:D008108
   - UMLS:C0023896
   type: string
 AlcoholRelatedLiverDiseaseVisit:
