@@ -19519,7 +19519,13 @@ TotalEDInpatientVisits:
 TotalEDVisits:
   categories:
   - biolink:ActivityAndBehavior
-  identifiers: []
+  identifiers:
+  - NCIT:C53513
+  - UMLSCUI:C0562508
+  - NCIT:C150760
+  - NCIT:C68605
+  - UMLSCUI:C2348993
+  - SCTID:103324002
   type: string
 TotalInpatientVisits:
   categories:
