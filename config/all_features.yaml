@@ -2750,13 +2750,21 @@ patient:
     type: string
   TotalEDInpatientVisits: &id456
     biolinkType: ActivityAndBehavior
-    type: integer
-  TotalEDVisits: &id457
-    biolinkType: ActivityAndBehavior
-    type: integer
-  TotalInpatientVisits: &id458
-    biolinkType: ActivityAndBehavior
-    type: integer
+    type: string
+    enum:
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+      - '6'
+      - '7'
+      - '8'
+      - '9'
+      - '>9'
+  TotalEDVisits: *id456
+  TotalInpatientVisits: *id456
   Trazodone: &id459
     biolinkType: ChemicalSubstance, ChemicalExposure, Drug
     enum:
@@ -15918,12 +15926,6 @@ visit:
   ThrombocytopeniaVisit: *id454
   Tocilizumab: *id455
   TocilizumabVisit: *id455
-  TotalEDInpatientVisits: *id456
-  TotalEDInpatientVisitsVisit: *id456
-  TotalEDVisits: *id457
-  TotalEDVisitsVisit: *id457
-  TotalInpatientVisits: *id458
-  TotalInpatientVisitsVisit: *id458
   Trazodone: *id459
   TrazodoneVisit: *id459
   Triptorelin: *id460

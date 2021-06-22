@@ -19515,22 +19515,12 @@ TotalEDInpatientVisits:
   - NCIT:C68605
   - UMLSCUI:C2348993
   - SCTID:103324002
-  type: integer
-TotalEDInpatientVisitsVisit:
-  categories:
-  - biolink:ActivityAndBehavior
-  identifiers: []
-  type: integer
+  type: string
 TotalEDVisits:
   categories:
   - biolink:ActivityAndBehavior
   identifiers: []
-  type: integer
-TotalEDVisitsVisit:
-  categories:
-  - biolink:ActivityAndBehavior
-  identifiers: []
-  type: integer
+  type: string
 TotalInpatientVisits:
   categories:
   - biolink:ActivityAndBehavior
@@ -19541,12 +19531,7 @@ TotalInpatientVisits:
   - NCIT:C68605
   - UMLSCUI:C2348993
   - SCTID:103324002
-  type: integer
-TotalInpatientVisitsVisit:
-  categories:
-  - biolink:ActivityAndBehavior
-  identifiers: []
-  type: integer
+  type: string
 Trazodone:
   categories:
   - biolink:ChemicalSubstance
