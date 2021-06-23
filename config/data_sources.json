@@ -1,0 +1,38 @@
+[
+    {
+        "name": "UNC Health electronic health record system data"
+    },
+    {
+        "name": "NIEHS EPR participant data"
+    },
+    {
+        "name": "US Environmental Protection Agency airborne pollutant exposures data",
+        "url": "https://www.epa.gov/hesc/rsig-related-downloadable-data-files"
+    },
+    {
+        "name": "US Department of Transportation major roadway/highway exposures data",
+        "url": "https://www.fhwa.dot.gov/policyinformation/hpms.cfm"
+    },
+    {
+        "name": "US Census Bureau American Community Survey socio-economic exposures data",
+        "url": "https://www.census.gov/programs-surveys/acs/"
+    },
+    {
+        "name": "NC Department of Environmental Quality concentrated animal farming operations (CAFO) exposures data"
+	"urls": [
+	    "https://deq.nc.gov/about/divisions/water-resources/water-resources-permits/wastewater-branch/animal-feeding-operation-permits/animal-facility-map",
+	    "https://deq.nc.gov/cafo-map"
+	]
+    },
+    {
+        "name": "NC Department of Environmental Quality landfill exposures data",
+	"urls": [
+	    "https://deq.nc.gov/about/divisions/waste-management/waste-management-rules-data/waste-management-gis-maps",
+	    "https://www.nconemap.gov/datasets/ncdenr::active-permitted-landfills/about"
+	]
+    },
+    {
+        "name": "National Center for Education Statistics public school exposures data",
+	"url": "https://nces.ed.gov/datatools/"
+    }
+]
