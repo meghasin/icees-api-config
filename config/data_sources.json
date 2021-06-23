@@ -18,7 +18,7 @@
         "url": "https://www.census.gov/programs-surveys/acs/"
     },
     {
-        "name": "NC Department of Environmental Quality concentrated animal farming operations (CAFO) exposures data"
+        "name": "NC Department of Environmental Quality concentrated animal farming operations (CAFO) exposures data",
 	"urls": [
 	    "https://deq.nc.gov/about/divisions/water-resources/water-resources-permits/wastewater-branch/animal-feeding-operation-permits/animal-facility-map",
 	    "https://deq.nc.gov/cafo-map"
