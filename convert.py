@@ -20,15 +20,7 @@ for table, table_mappings in old_mappings.items():
         if column in mappings:
             pass
         else:
-            biolinkType = column_mapping["biolinkType"]
-            if biolinkType is None:
-                categories = []
-            elif isinstance(biolinkType, str):
-                categories = [f"biolink:{c.strip()}" for c in biolinkType.split(",")]
-            elif isinstance(biolinkType, list):
-                categories = f"biolink:{biolinkType}"
-            else:
-                raise TypeError(f"unsupported biolinkType {biolinkType}")
+            categories = column_mapping["categories"]
             if len(categories) == 0:
                 print("no biolinkType, default to NameThing")
                 categories = ["NamedThing"]
