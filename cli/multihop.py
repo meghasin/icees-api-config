@@ -7,6 +7,11 @@ import urllib.parse
 from treelib import Tree
 from colorama import init, Fore, Back
 import pandas as pd
+import traceback
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 init()
 
@@ -57,11 +62,6 @@ def to_subtree(obj, tree, tree_node):
         tree.create_node(f"{obj}", subtree_node, parent=tree_node)
 
         
-def runSteps(progress, subprogress, depth, ids, steps, verbose):
-    results_list = [runStepsOnId(progress, subprogress, i, len(ids), depth, id, steps, verbose) for i, id in enumerate(ids)]
-    return None if all(results is None for results in results_list) else pd.concat(results_list)
-
-
 def label(obj, id):
     id_label = get_label(obj, id)
     return f"{id}, {id_label}" if id_label is not None else id
@@ -72,120 +72,211 @@ def add_synonyms(ids, knowledge_graph, verbose):
     for id in ids:
         all_ids |= {value for a in knowledge_graph["nodes"][id].get("attributes", []) if a["attribute_type_id"] == "biolink:synonym" for value in a["value"]}
     if verbose:
-        print(f"found synonyms of {ids} are {all_ids}")
+        logger.info(f"found synonyms of {ids} are {all_ids}")
     return sorted(list(all_ids))
 
 
-def runStepsOnId(progress, subprogress, i, n, depth, id, steps, verbose):
-    step, *tail = steps
-    name = step["name"]
+def prefix_of(node_id):
+    return node_id.split(":")[0]
+
+
+def filter_node_ids_by_prefix(prefixes, node_ids):
+    return [node_id for node_id in node_ids if prefix_of(node_id) in prefixes] if prefixes is not None else node_ids
+
+
+def get_supported_prefixes(step, verbose):
+    metadata_url = step["metadata_url"]
+    curl_cmd = f"curl -XGET {metadata_url}"
+    if verbose:
+        logger.info(curl_cmd)
+    try:
+        resp = requests.get(metadata_url)
+        if verbose:
+            logger.info(resp.content)
+        if resp.status_code != 200:
+            logger.info(f"{curl_cmd}")
+            logger.info(f"error: cannot get meta kg {resp}")
+            return None
+        metakg = resp.json()
+        return [prefix for node in metakg["nodes"].values() for prefix in node["id_prefixes"]]
+    except Exception as e:
+        logger.info(f"{curl_cmd}")
+        logger.info(f"error: cannot get meta kg {traceback.format_exc()}")
+        return None
+
+
+def run_query(step, subprogress, key, ids, verbose):
     url = step["url"]
     query = step["query"]
-    result_node = step.get("result_node")
     additional_properties = step.get("additional_properties", {})
-    print(f"running {name} with {id}")
-    key = f"{name}({str(i).rjust(len(str(n-1)))}:{id})"
-    subprogress[key] = f"{Fore.BLUE}Running{Fore.RESET}"
-    to_tree(progress).show()
-    obj = replace(query, {"$id": [id]})
-    qedges = list(obj["edges"].keys())
-    qnodes = list(obj["nodes"].keys())
+    obj = replace(query, {"$id": ids})
     message = {
         "message": {
             "query_graph": obj
         }, **additional_properties
     }
     curl_cmd = f"curl -XPOST {url} -H \"Content-Type: application/json\" -d '{json.dumps(message)}'"
-    curl_cmd2 = None
     if verbose:
-        print(curl_cmd)
+        logger.info(curl_cmd)
     try:
         resp = requests.post(url, json=message)
         if resp.status_code != 200:
-            subprogress[key] = f"{Fore.RED}Error{Fore.RESET} {resp.content if verbose else resp.status_code}"
+            subprogress[key] = f"{Fore.RED}Error{Fore.RESET} {resp if verbose else resp.status_code}"
             return None
         else:
-            knowledge_graph = resp.json()["message"]["knowledge_graph"]
-            if verbose:
-                print(json.dumps(knowledge_graph, indent=4))
-            results = resp.json()["message"]["results"]
-            nodes_list = []
-            edges_list = []
-            result_node_list = []
-            if len(results) == 0:
-                subprogress[key] = f"{Fore.YELLOW}No Results{Fore.RESET}"
-                return None
-            else:
-                for result in results:
-                    edge_bindings = result["edge_bindings"]
-                    node_bindings = result["node_bindings"]
-                    edges = [get_ids(edge_bindings[qedge]) for qedge in qedges]
-                    nodes = [add_synonyms(get_ids(node_bindings[qnode]), knowledge_graph, verbose) for qnode in qnodes]
-                    edges_list.append(edges)
-                    nodes_list.append(nodes)
+            return resp.json()
+    except Exception as e:
+        subprogress[key] = f"{Fore.RED}Error{Fore.RESET} {traceback.format_exc() if verbose else e}"
+        return None
 
-                id_set = set()
-                for nodes in nodes_list:
-                    for node in nodes:
-                        id_set |= set(node)
-                for edges in edges_list:
-                    for edge in edges:
-                        id_set |= set(edge)
 
-                input_obj = {
-                    "curies": list(id_set)
-                }
-                resp = requests.post(NODE_NORMALIZER_QUERY_URL, headers={
-                    "Content-Type": "application/json",
-                    "Accept": "applicaton/json"
-                }, json=input_obj)                    
-                curl_cmd2 = f"curl -XPOST {NODE_NORMALIZER_QUERY_URL} -H \"Content-Type: application/json\" -d '{json.dumps(input_obj)}'"
-                obj = resp.json()
+def parse_resp(step, resp_obj, subprogress, key, verbose):
+    query = step["query"]
+    qedges = query["edges"].keys()
+    qnodes = query["nodes"].keys()
+    knowledge_graph = resp_obj["message"]["knowledge_graph"]
+    if verbose:
+        logger.info(json.dumps(knowledge_graph, indent=4))
+    results = resp_obj["message"]["results"]
+    nodes_list = []
+    edges_list = []
+    result_node_list = []
 
-                results_df = pd.DataFrame([list(map(lambda a: "\n".join(map(partial(label, obj), sorted(list(set(a))))), nodes + edges)) for nodes, edges in zip(nodes_list, edges_list)], columns = [f"{depth}_{column}" for column in qnodes + qedges])
-                results_df[f"step_{depth}"] = f"{name}:{label(obj, id)}"
+    for result in results:
+        edge_bindings = result["edge_bindings"]
+        node_bindings = result["node_bindings"]
+        edges = [get_ids(edge_bindings[qedge]) for qedge in qedges]
+        nodes = [add_synonyms(get_ids(node_bindings[qnode]), knowledge_graph, verbose) for qnode in qnodes]
+        edges_list.append(edges)
+        nodes_list.append(nodes)
 
-                if result_node is not None:
-                    subprogress[key] = {}
-                    subsubprogress = subprogress[key]
-                    result_node_index = qnodes.index(result_node)
-                    result_node_id_lists = [nodes[result_node_index] for nodes in nodes_list]
+    if len(results) == 0:
+        subprogress[key] = f"{Fore.YELLOW}No Results{Fore.RESET}"
+        return None, None
 
-                    next_results_df_list = []
+    return nodes_list, edges_list
 
-                    for j, result_node_id_list in enumerate(result_node_id_lists):
-                        subkey = f"result({str(j).rjust(len(str(len(result_node_id_lists)-1)))}:{list(map(partial(label, obj), result_node_id_list))})"
-                        subsubprogress[subkey] = {}
-                        subsubsubprogress = subsubprogress[subkey]
 
-                        df = runSteps(progress, subsubsubprogress, depth + 1, result_node_id_list, tail, verbose)
-                        if df is not None:
-                            df = results_df[j:j+1].merge(df, how="cross")
-                            next_results_df_list.append(df)
+def get_id_set(l):
+    id_set = set()
+    for nodes in l:
+        id_set |= set(nodes)
+    return id_set
 
-                    return pd.concat(next_results_df_list) if len(next_results_df_list) > 0 else None
-                else:
-                    subprogress[key] = f"{Fore.GREEN}{len(results)} Result(s){Fore.RESET}"
-                    return results_df
-    except:
-        print(curl_cmd)
-        if curl_cmd2:
-            print(curl_cmd2)
-        raise
+
+def get_equivalent_ids(id_set, verbose):
+    input_obj = {
+        "curies": list(id_set)
+    }
+    curl_cmd = f"curl -XPOST {NODE_NORMALIZER_QUERY_URL} -H \"Content-Type: application/json\" -d '{json.dumps(input_obj)}'"
+    if verbose:
+        logger.info(curl_cmd)
+    try:
+        resp = requests.post(NODE_NORMALIZER_QUERY_URL, headers={
+            "Content-Type": "application/json",
+            "Accept": "applicaton/json"
+        }, json=input_obj)
+        if resp.status_code != 200:
+            logger.info(curl_cmd)
+            logger.info(f"error: node normalization {resp.content}")
+            return None
+        obj = resp.json()
+        return obj
+    except Exception as e:
+        logger.info(curl_cmd)
+        logger.info(f"error: node normalization {traceback.format_exc()}")
+        return None
+
+
+def create_results_df(ids, nodes_list, edges_list, equivalent_ids, step, depth, verbose):
+    query = step["query"]
+    qedges = list(query["edges"].keys())
+    qnodes = list(query["nodes"].keys())
+    name = step["name"]
+    results_df = pd.DataFrame([list(map(lambda a: "\n".join(map(partial(label, equivalent_ids), sorted(list(set(a))))), nodes + edges)) for nodes, edges in zip(nodes_list, edges_list)], columns = [f"{depth}_{column}" for column in qnodes + qedges])
+    results_df[f"step_{depth}"] = f"{name}:{[label(equivalent_ids, id) for id in ids]}"
+    return results_df
+
+#            
+def runSteps(progress, subprogress, key, depth, ids_list, steps, verbose):
+    if len(steps) == 0:
+        subprogress[key] = f"{Fore.GREEN}{len(ids_list)} Result(s){Fore.RESET}"
+        return [pd.DataFrame([[]])]
+    else:
+        step, *tail = steps
+        supported_prefixes = get_supported_prefixes(step, verbose)
+        id_set = get_id_set(ids_list)
+        equivalent_ids = get_equivalent_ids(id_set, verbose)
+        if equivalent_ids is None:
+            equivalent_ids = {}
+    
+        next_results_df_list = []
+        subkey = f"{[list(map(partial(label, equivalent_ids), ids)) for ids in ids_list]}"
+        subprogress[subkey] = {}
+        subsubprogress = subprogress[subkey]
+        for ids in ids_list:
+            subsubkey = f"{ids}"
+            subsubprogress[subsubkey] = {}
+            subsubsubprogress = subsubprogress[subsubkey]
+            df = runStepsWithIds(progress, subsubsubprogress, equivalent_ids, depth, filter_node_ids_by_prefix(supported_prefixes, ids), step, tail, verbose)
+            next_results_df_list.append(df)
+
+        return next_results_df_list
+
+    
+def runStepsWithIds(progress, subprogress, equivalent_ids, depth, ids, step, tail, verbose):
+    name = step["name"]
+    query = step["query"]
+    qnodes = list(query["nodes"].keys())
+    result_node = step.get("result_node")
+    logger.info(f"running {name} with {ids}")
+    key = f"{name}({ids})"
+    if len(ids) == 0:
+        subprogress[key] = f"{Fore.YELLOW}No supported identifiers{Fore.RESET}"
+        return None
+    subprogress[key] = f"{Fore.BLUE}Running{Fore.RESET}"
+    to_tree(progress).show()
+
+    resp_obj = run_query(step, subprogress, key, ids, verbose)
+
+    if resp_obj is not None:
+        nodes_list, edges_list = parse_resp(step, resp_obj, subprogress, key, verbose)
+
+        results_df = create_results_df(ids, nodes_list, edges_list, equivalent_ids, step, depth, verbose)
+
+        result_node_index = qnodes.index(result_node)
+        result_node_id_lists = [nodes[result_node_index] for nodes in nodes_list]
+
+        df_list = runSteps(progress, subprogress, key, depth + 1, result_node_id_lists, tail, verbose)
+
+        next_results_df_list = []
+        for i, df in enumerate(df_list):
+            if df is not None:
+                next_results_df_list.append(results_df[i:i+1].merge(df, how="cross"))
+
+        return pd.concat(next_results_df_list) if len(next_results_df_list) > 0 else None
+    else:
+        return None
 
             
 def runWorkflow(ids, workflow, verbose=False, columns=None):
     progress = {}
-    df = runSteps(progress, progress, 0, ids, workflow, verbose)
-    print(to_tree(progress))
-    if df is None:
-        print("No Results")
-    else:
-       if columns is not None:
-           df = df[columns]
-       df.to_csv(output_file_path, index=False)
-    
+    df_list = runSteps(progress, progress, "start", 0, ids, workflow, verbose)
+    logger.info(to_tree(progress))
+    next_results_df_list = []
+    for df in df_list:
+        if df is not None:
+            if columns is not None:
+                df = df[columns]
+                
+            next_results_df_list.append(df)
 
+    if len(next_results_df_list) > 0:
+        pd.concat(next_results_df_list).to_csv(output_file_path, index=False)
+    else:
+        logger.info("No Results")
+
+        
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Process some integers.')
     parser.add_argument('input_file_path', type=str, help='an integer for the accumulator')

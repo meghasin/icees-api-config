@@ -4,6 +4,7 @@
 	{
 	    "name": "icees-dili",
 	    "url": "https://icees.renci.org:16341/query",
+	    "metadata_url": "https://icees.renci.org:16341/meta_knowledge_graph",
 	    "query": {
 		"nodes": {
 		    "n0": {
@@ -36,6 +37,7 @@
 	}, {
 	    "name": "arax",
 	    "url": "https://arax.ncats.io/api/arax/v1.1/query",
+	    "metadata_url": "https://arax.ncats.io/api/arax/v1.1/meta_knowledge_graph",
 	    "query": {
 		"nodes": {
 		    "n1": {
