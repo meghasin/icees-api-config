@@ -1,0 +1,626 @@
+step_0,step_1,0_n0,0_n1,1_n1,1_n2,1_n3
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF
+UniProtKB:P42898, MTHFR
+UniProtKB:P49638, TTPA","CHEMBL.COMPOUND:CHEMBL1200689, Nitric oxide"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:O43272, PRODH
+UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42574, CASP3
+UniProtKB:Q12882, DPYD","MESH:D034741, Bevasiranib"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00374, DHFR
+UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42898, MTHFR
+UniProtKB:Q12882, DPYD","CHEMBL.COMPOUND:CHEMBL1622, Folic acid"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00374, DHFR
+UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF
+UniProtKB:P49638, TTPA",MESH:D010957
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:O43272, PRODH
+UniProtKB:P00374, DHFR
+UniProtKB:P00441, SOD1
+UniProtKB:P42898, MTHFR
+UniProtKB:Q12882, DPYD","CHEBI:15378, Hydron"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF
+UniProtKB:P42574, CASP3","CHEMBL.COMPOUND:CHEMBL600, Acetylcysteine"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF
+UniProtKB:Q12882, DPYD",MESH:D024506
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:O43272, PRODH
+UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF",UMLS:C0086222
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF
+UniProtKB:P49638, TTPA",CHEMBL.COMPOUND:CHEMBL2109588
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00374, DHFR
+UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL2369717, (2S)-2-[[(2S)-4-Amino-2-[[(2S)-2-[[(2S,3R)-2-[[(2S)-2-[[16-[(2S)-2-[[(2S)-5-amino-1-[[(2S,3S)-1-[[(2S,3S)-1-[[(2S)-1-[[(1S)-1-carboxy-2-(1H-indol-3-yl)ethyl]amino]-4-methyl-1-oxopentan-2-yl]amino]-3-hydroxy-1-oxobutan-2-yl]amino]-3-methyl-1-oxopentan-2-yl]amino]-1,5-dioxopentan-2-yl]carbamoyl]pyrrolidin-1-yl]-16-oxohexadecanoyl]amino]-3-hydroxypropanoyl]amino]-3-hydroxybutanoyl]amino]-4-methylpentanoyl]amino]-4-oxobutanoyl]amino]-3-phenylpropanoic acid"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42898, MTHFR
+UniProtKB:Q12882, DPYD","CHEMBL.COMPOUND:CHEMBL1543, Glutathione"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42574, CASP3
+UniProtKB:P42898, MTHFR",CHEMBL.COMPOUND:CHEMBL1201583
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF",MESH:D012045
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL337702, Oxidopamine"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P49638, TTPA
+UniProtKB:Q12882, DPYD",UMLS:C0772158
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42574, CASP3
+UniProtKB:Q12882, DPYD",UMLS:C0243071
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:O43272, PRODH
+UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL1200574, Sodium chloride"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00374, DHFR
+UniProtKB:P01138, NGF
+UniProtKB:P42898, MTHFR
+UniProtKB:Q12882, DPYD","CHEMBL.COMPOUND:CHEMBL295069, [(2R,3R,4R,5R)-5-(6-Aminopurin-9-yl)-3-hydroxy-4-phosphonooxyoxolan-2-yl]methyl [[(2R,3S,4R,5R)-5-(3-carbamoylpyridin-1-ium-1-yl)-3,4-dihydroxyoxolan-2-yl]methoxy-hydroxyphosphoryl] phosphate"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:O43272, PRODH
+UniProtKB:P00441, SOD1
+UniProtKB:P42898, MTHFR
+UniProtKB:Q12882, DPYD","CHEMBL.COMPOUND:CHEMBL1232653, Flavin adenine dinucleotide"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL135, Estradiol"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42898, MTHFR",CHEMBL.COMPOUND:CHEMBL11359
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:Q12882, DPYD",MESH:Q000037
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:O43272, PRODH
+UniProtKB:P00374, DHFR
+UniProtKB:P01375, TNF
+UniProtKB:P42898, MTHFR","CHEMBL.COMPOUND:CHEMBL1234613, CID 10897651"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42898, MTHFR",CHEMBL.COMPOUND:CHEMBL1201451
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42574, CASP3","CHEMBL.COMPOUND:CHEMBL71595, CID 22326046"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL2146121, CALCIUM"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42898, MTHFR",MESH:D011401
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL985, Urea"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42574, CASP3","CHEMBL.COMPOUND:CHEMBL140, Curcumin"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","MESH:D002630, Chemotactic Factors"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:Q12882, DPYD",CHEMBL.TARGET:CHEMBL2363058
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42574, CASP3","CHEMBL.COMPOUND:CHEMBL1236594, Ubiquinone-1"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P49638, TTPA",CHEBI:53439
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:O43272, PRODH
+UniProtKB:P00374, DHFR
+UniProtKB:P01375, TNF
+UniProtKB:P42898, MTHFR","CHEMBL.COMPOUND:CHEMBL1364, Pyridoxine"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF",MESH:D020218
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF
+UniProtKB:P42574, CASP3",VANDF:4021636
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF",MESH:Q000819
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL1807688, (2S)-1-[(2S)-2-[[(2S)-2-Aminopropanoyl]amino]-3-methylbutanoyl]pyrrolidine-2-carboxylic acid"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL986, Retinol"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL2368776, [(2R,3R,4R,5R)-4-Methoxy-2-(methoxymethyl)-5-(1-propyl-6-sulfanylidenepurin-9-yl)oxolan-3-yl]oxy-methylphosphinic acid"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF",CHEMBL.COMPOUND:CHEMBL1201563
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00374, DHFR
+UniProtKB:P42898, MTHFR
+UniProtKB:Q12882, DPYD","CHEMBL.COMPOUND:CHEMBL407009, [[(2R,3R,4R,5R)-5-(6-Aminopurin-9-yl)-3-hydroxy-4-phosphonooxyoxolan-2-yl]methoxy-hydroxyphosphoryl] [(2R,3S,4R,5R)-5-(3-carbamoyl-1,4-dihydropyridin-1-ium-1-yl)-3,4-dihydroxyoxolan-2-yl]methyl phosphate"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF",CHEMBL.COMPOUND:CHEMBL2108230
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF","CHEBI:24636, Proton"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF",RXNORM:3008
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42898, MTHFR",RXNORM:8375
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:Q12882, DPYD",VANDF:4021594
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","MESH:D012739, Gonadal Steroid Hormones"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL1689064, Hydridooxygen(.)"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42574, CASP3","CHEMBL.COMPOUND:CHEMBL112, Acetaminophen"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:O43272, PRODH
+UniProtKB:P00374, DHFR
+UniProtKB:P42898, MTHFR","DRUGBANK:DB00157, 1,4-Dihydronicotinamide adenine dinucleotide"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF",CHEMBL.TARGET:CHEMBL3545434
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF
+UniProtKB:P42574, CASP3","CHEMBL.COMPOUND:CHEMBL25, Aspirin"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF",CHEMBL.COMPOUND:CHEMBL2107858
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL316966, Cyclic AMP"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01375, TNF
+UniProtKB:P42898, MTHFR","CHEMBL.COMPOUND:CHEMBL112570, Cholesterol"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF","MESH:D017392, Thiobarbituric Acid Reactive Substances"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL290916, Edaravone"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42898, MTHFR","CHEBI:37527, acid"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","MESH:D018076, DNA, Complementary"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL1064, Simvastatin"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:O43272, PRODH
+UniProtKB:P00441, SOD1
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL424, 2-Carboxyphenolate;hydron"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42898, MTHFR","CHEMBL.COMPOUND:CHEMBL239243, Taurine"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL807, Memantine"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF",RXNORM:8031
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00374, DHFR
+UniProtKB:P01375, TNF
+UniProtKB:P42898, MTHFR",CHEMBL.COMPOUND:CHEMBL1200373
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42574, CASP3","CHEMBL.COMPOUND:CHEMBL162, Indolocarbazole nitrogen derivative"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF",CHEBI:35225
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF",UMLS:C0301871
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL52606, Forskolin"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL493, Bromocriptine"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF",RXNORM:1314330
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42574, CASP3","CHEMBL.COMPOUND:CHEMBL1200881, MINOCYCLINE HYDROCHLORIDE"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF",CHEMBL.COMPOUND:CHEMBL1201564
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL858, 2-[2-[Carboxylatomethyl(carboxymethyl)azaniumyl]ethyl-(carboxymethyl)azaniumyl]acetate"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF",CHEMBL.COMPOUND:CHEMBL1201572
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL3321993, (2S)-2-[[(2S,3R)-2-Azaniumyl-3-hydroxybutanoyl]amino]-3-phenylpropanoate"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00374, DHFR
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL83, Tamoxifen"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL1234886, Oxygen"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL291278, N-Methyl-D-aspartic acid"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL384467, Dexamethasone"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF",RXNORM:1426381
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P42574, CASP3","CHEMBL.COMPOUND:CHEMBL1201753, Pitavastatin"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF",VANDF:4017424
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF",CHEMBL.COMPOUND:CHEMBL1201670
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","MESH:D012322, RNA Precursors"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL1200330, Schembl21643740"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL105867, N-Acetylsphingosine"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF","CHEBI:22586, antioxidant"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P49638, TTPA","MESH:D000305, Adrenal Cortex Hormones"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL3351088, [5-(3-Dodecanoyloxytetradecanoylamino)-6-[6-hydroxy-5-(3-hydroxytetradecanoylamino)-4-(3-hydroxytetradecanoyloxy)oxan-2-yl]oxy-2-(hydroxymethyl)-4-(3-tetradecanoyloxytetradecanoyloxy)oxan-3-yl]oxyphosphonic acid"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P42898, MTHFR
+UniProtKB:Q12882, DPYD","MESH:D002244, Carbon"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:Q12882, DPYD","CHEMBL.COMPOUND:CHEMBL6, Indomethacin"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P42898, MTHFR","CHEMBL.COMPOUND:CHEMBL42, Clozapine"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF
+UniProtKB:P42898, MTHFR","CHEMBL.COMPOUND:CHEMBL920, Choline"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00441, SOD1
+UniProtKB:P01138, NGF
+UniProtKB:P01375, TNF",CHEBI:52214
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:O43272, PRODH
+UniProtKB:P01375, TNF
+UniProtKB:Q12882, DPYD","CHEMBL.COMPOUND:CHEMBL352418, Hydroxyproline"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL279115, Phorbol 12-myristate 13-acetate"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P00374, DHFR
+UniProtKB:P42898, MTHFR
+UniProtKB:Q12882, DPYD","CHEMBL.COMPOUND:CHEMBL185, 5-Fluorouracil"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D009422, nervous system disorder","MESH:D006760, Hospitalization","MESH:D009422, nervous system disorder","MONDO:0005071, nervous system disorder","UniProtKB:P01138, NGF
+UniProtKB:P01210, PENK
+UniProtKB:P01375, TNF","CHEMBL.COMPOUND:CHEMBL440464, 3-(1-Methylpyrrolidin-2-yl)pyridine"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:O14558, HSPB6
+UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA
+UniProtKB:P16615, ATP2A2
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL316966, Cyclic AMP"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:O14558, HSPB6
+UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA
+UniProtKB:P16615, ATP2A2","CHEMBL.COMPOUND:CHEMBL2146121, CALCIUM"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:O14558, HSPB6
+UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","MESH:D034741, Bevasiranib"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:O14558, HSPB6
+UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA
+UniProtKB:P16615, ATP2A2",MESH:Q000819
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL1807688, (2S)-1-[(2S)-2-[[(2S)-2-Aminopropanoyl]amino]-3-methylbutanoyl]pyrrolidine-2-carboxylic acid"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:O14558, HSPB6
+UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL2369717, (2S)-2-[[(2S)-4-Amino-2-[[(2S)-2-[[(2S,3R)-2-[[(2S)-2-[[16-[(2S)-2-[[(2S)-5-amino-1-[[(2S,3S)-1-[[(2S,3S)-1-[[(2S)-1-[[(1S)-1-carboxy-2-(1H-indol-3-yl)ethyl]amino]-4-methyl-1-oxopentan-2-yl]amino]-3-hydroxy-1-oxobutan-2-yl]amino]-3-methyl-1-oxopentan-2-yl]amino]-1,5-dioxopentan-2-yl]carbamoyl]pyrrolidin-1-yl]-16-oxohexadecanoyl]amino]-3-hydroxypropanoyl]amino]-3-hydroxybutanoyl]amino]-4-methylpentanoyl]amino]-4-oxobutanoyl]amino]-3-phenylpropanoic acid"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2",MESH:D011401
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:O14558, HSPB6
+UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL434, Isoproterenol"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL196228, Epitestosterone"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2
+UniProtKB:Q96AD5, PNPLA2","CHEMBL.COMPOUND:CHEMBL3343985, Trilinolein"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:P16615, ATP2A2
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL384467, Dexamethasone"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:P16615, ATP2A2
+UniProtKB:Q92887, ABCC2
+UniProtKB:Q96AD5, PNPLA2","CHEMBL.COMPOUND:CHEMBL1098659, Hydron;hydroxide"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA",VANDF:4021850
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2",MESH:D024363
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:Q96AD5, PNPLA2","CHEMBL.COMPOUND:CHEMBL986, Retinol"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:P16615, ATP2A2
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL481, Irinotecan"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2",CHEMBL.COMPOUND:CHEMBL2074977
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL220492, Topiramate"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL135, Estradiol"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL165, Resveratrol"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:O14558, HSPB6
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2",MESH:D010957
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:P16615, ATP2A2",MESH:Q000037
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P16615, ATP2A2
+UniProtKB:Q92887, ABCC2
+UniProtKB:Q96AD5, PNPLA2","CHEBI:15378, Hydron"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL438945, Human Neuropeptide Y"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA
+UniProtKB:P16615, ATP2A2",CHEMBL.COMPOUND:CHEMBL2109588
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL25, Aspirin"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:P55084, HADHB","CHEMBL.COMPOUND:CHEMBL71595, CID 22326046"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL577, Enalaprilat"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL389621, Hydrocortisone"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA","MESH:D018076, DNA, Complementary"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:P16615, ATP2A2","CHEMBL.COMPOUND:CHEMBL1525298, Diethylstilbestrol dipropionate"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL1064, Simvastatin"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA",CHEBI:35225
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA",RXNORM:1314330
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:P55084, HADHB
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL941, Imatinib"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:P16615, ATP2A2
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL1236189, Arsenous acid"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:P55084, HADHB
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL83, Tamoxifen"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2",MESH:D024506
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2",MESH:D020218
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2",RXNORM:3100
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA",VANDF:4017424
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:O14558, HSPB6
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2",UMLS:C0596973
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL1200574, Sodium chloride"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL70, Morphine"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA",CHEMBL.COMPOUND:CHEMBL2107857
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2",UMLS:C0304402
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA
+UniProtKB:P55084, HADHB","CHEMBL.COMPOUND:CHEMBL1280, Einecs 245-579-2"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:P16615, ATP2A2
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL1543, Glutathione"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2",VANDF:4021759
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:P16615, ATP2A2
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL14249, Adenosine-5'-triphosphate"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL408403, Angiotensin II"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL1487, Atorvastatin"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL4071382, [(4S,6S,7R,8S)-11-Amino-7-methoxy-12-methyl-10,13-dioxo-2,5-diazatetracyclo[7.4.0.02,7.04,6]tridec-11-en-8-yl]methyl carbamate"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2",CHEBI:52214
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL1513, Irbesartan"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA
+UniProtKB:P55084, HADHB","CHEMBL.COMPOUND:CHEMBL1139, Epoprostenol"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL452715, (2S)-2-Azaniumyl-3-[hydroxy(nitroso)amino]propanoate"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL111, Rimonabant"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL21333, Pranlukast"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL334966, Cangrelor"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL1189432, 2-[(11Z)-11-[3-(Dimethylazaniumyl)propylidene]-6H-benzo[c][1]benzoxepin-2-yl]acetate"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:O14558, HSPB6
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL395336, Cyclic guanosine monophosphate"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P08913, ADRA2A
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL741, Lamotrigine"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA",CHEMBL.COMPOUND:CHEMBL2108230
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:O14558, HSPB6
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL1657, Tazarotene"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL1431, Metformin"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:Q96AD5, PNPLA2","CHEMBL.COMPOUND:CHEMBL1734767, 1-Stearoyl-2-linoleoyl-sn-glycerol"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL1336, Sorafenib"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:P16615, ATP2A2","CHEMBL.COMPOUND:CHEMBL118, Celecoxib"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P08913, ADRA2A","DRUGBANK:DB14516, Sodium ion"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:O14558, HSPB6
+UniProtKB:P15692, VEGFA",HMDB:HMDB11757
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA",UMLS:C1520007
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q96AD5, PNPLA2","CHEMBL.COMPOUND:CHEMBL15594, Arachidonic acid"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2",RXNORM:3008
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA",RXNORM:8375
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2",CHEMBL.COMPOUND:CHEMBL2108744
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL406291, Bradykinin"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL1047, alpha-Tocopherol acetate"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA",VANDF:4021594
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL499458, Leurocristine"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL62381, Sodium butyrate"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL2391146, (3S)-3-Amino-4-[[(2S)-1-[[(2S)-1-[[(2S)-1-[[(2S)-1-[[(2S)-1-[(2S)-2-[[(1S)-1-carboxyethyl]carbamoyl]pyrrolidin-1-yl]-3-(1H-imidazol-5-yl)-1-oxopropan-2-yl]amino]-3-methyl-1-oxobutan-2-yl]amino]-3-(4-hydroxyphenyl)-1-oxopropan-2-yl]amino]-3-methyl-1-oxobutan-2-yl]amino]-5-(diaminomethylideneamino)-1-oxopentan-2-yl]amino]-4-oxobutanoic acid"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL1017, Telmisartan"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL273453, Aldosterone"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2",CHEMBL.COMPOUND:CHEMBL11359
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA",CHEMBL.COMPOUND:CHEMBL1201565
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL441687, Glycyrrhizic acid"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL1393, Spironolactone"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA",MESH:D012045
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA",UMLS:C1513344
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL888, Gemcitabine"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL150, Kaempferol"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL1200692, Olmesartan medoxomil"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2",RXNORM:1791700
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:P16615, ATP2A2","CHEMBL.COMPOUND:CHEMBL595, Pioglitazone"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL844, Brimonidine"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P01019, AGT
+UniProtKB:P15692, VEGFA",CHEMBL.TARGET:CHEMBL3545434
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q92887, ABCC2","CHEMBL.COMPOUND:CHEMBL1069, Valsartan"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P15692, VEGFA
+UniProtKB:Q96AD5, PNPLA2","CHEMBL.COMPOUND:CHEMBL8659, Oleic acid"
+"icees-dili:MESH:D006760, Hospitalization","arax:MESH:D006331, heart disease","MESH:D006760, Hospitalization","MESH:D006331, heart disease","MONDO:0005267, heart disease","UniProtKB:P08913, ADRA2A
+UniProtKB:P15692, VEGFA","CHEMBL.COMPOUND:CHEMBL1215, Phenylephrine"
