@@ -12,7 +12,7 @@ The output is the incorrect enumerated features. You can modify to print bith co
 
 
 import yaml
-import pandas as pd
+
 
 def test_config_consistency(yamlfile):
     
@@ -46,10 +46,9 @@ def print_unique_values(df):
     
     for col in df.columns:
         print(col)
-        print(dili[col].unique())
+        print(df[col].unique())
 
 if __name__ == "__main__": 
     test_config_consistency() 
-if __name__ == "__main__": 
     print_unique_values()
 
