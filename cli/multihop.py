@@ -278,10 +278,10 @@ def runWorkflow(ids, workflow, verbose=False, columns=None):
 
         
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument('input_file_path', type=str, help='an integer for the accumulator')
-    parser.add_argument('output_file_path', type=str, help='an integer for the accumulator')
-    parser.add_argument('-v', '--verbose', action='store_true', default=False, help='sum the integers (default: find the max)')
+    parser = argparse.ArgumentParser(description='Run multihop query.')
+    parser.add_argument('input_file_path', type=str, help='input file')
+    parser.add_argument('output_file_path', type=str, help='output file')
+    parser.add_argument('-v', '--verbose', action='store_true', default=False, help='print more information')
 
     args = parser.parse_args()
     input_file_path = args.input_file_path
