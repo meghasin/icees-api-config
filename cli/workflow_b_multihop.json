@@ -1,5 +1,5 @@
 {
-    "ids": ["MONDO:0005359", "SNOMEDCT:197358007", "MESH:D056487", "MESH:D006760", "NCIT:C26991"],
+    "ids": [["MONDO:0005359"], ["SNOMEDCT:197358007"], ["MESH:D056487"], ["MESH:D006760"], ["NCIT:C26991"]],
     "steps": [
 	{
 	    "name": "icees-dili",
