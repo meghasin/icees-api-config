@@ -199,7 +199,7 @@ def create_results_df(ids, nodes_list, edges_list, equivalent_ids, step, depth, 
     qnodes = list(query["nodes"].keys())
     name = step["name"]
     results_df = pd.DataFrame([list(map(lambda a: "\n".join(map(partial(label, equivalent_ids), sorted(list(set(a))))), nodes + edges)) for nodes, edges in zip(nodes_list, edges_list)], columns = [f"{depth}_{column}" for column in qnodes + qedges])
-    results_df[f"step_{depth}"] = f"{name}:{[label(equivalent_ids, id) for id in ids]}"
+    results_df[f"step_{depth}"] = f"{name}:{json.dumps([label(equivalent_ids, id) for id in ids], indent=4)}"
     return results_df
 
 
