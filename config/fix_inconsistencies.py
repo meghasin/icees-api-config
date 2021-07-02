@@ -44,7 +44,7 @@ def check_inconsistency(identifiers):
                 for identifier in identifier_list:
                     if not checkIdExits(identifier):
                         print(identifier)
-                        writer.writerow(iter(identifier))
+                        writer.writerow([identifier])
 
 with open(r'identifiers.yml') as file:
     document = yaml.full_load(file)
