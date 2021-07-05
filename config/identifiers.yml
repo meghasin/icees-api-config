@@ -21776,8 +21776,7 @@ visit:
   ea_b194h_pen_ink: []
   ea_b194i_toner: []
   ea_b194j_soy_ink: []
-  ea_b194k_pharma_ink:
-    ea_a012_current_home_type: []
+  ea_a012_current_home_type: []
   ea_a017h_heat_other: []
   ea_a017i_heat_none: []
   ea_a017j_heat_dk: []
