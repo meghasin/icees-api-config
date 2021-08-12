@@ -40,10 +40,8 @@ def extract_identifiers(document):
     print(len(a))
     return a
 
-
 def check_inconsistency(identifiers):
     with open("inconsistencies.csv", 'w') as f:
-<<<<<<< HEAD
         writer = csv.writer(f, lineterminator='\n')
         for item in identifiers:
             if not checkIdExits(item):
@@ -69,17 +67,8 @@ def update_identifiers(document):
                     #print(identifier)
                     identifier_list.remove(identifier)
     return document
-=======
-        writer = csv.writer(f, delimiter='\t', lineterminator='\n', )
-        for table, feature in document.items():
-            for feature_name, identifier_list in feature.items():
-                for identifier in identifier_list:
-                    if not checkIdExits(identifier):
-                        print(identifier)
-                        writer.writerow([identifier])
->>>>>>> 313c5dab2bc07b9345187333f735d00098f113a3
 
-with open(r'identifiers.yml') as file:
+with open(r'../identifiers.yml') as file:
     document = yaml.full_load(file)
 #identifiers = extract_identifiers(document)
 #check_inconsistency(identifiers)
